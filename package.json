@@ -1,6 +1,9 @@
 {
   "name": "quantto",
   "type": "module",
+  "private": true,
+  "description": "Quantto is quoter of services online",
+  "author": "rxtsel",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -10,6 +13,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.2.3"
+    "@astrojs/react": "2.1.1",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "astro": "2.2.3",
+    "astro-icon": "0.8.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "typed.js": "2.0.15"
   }
 }
