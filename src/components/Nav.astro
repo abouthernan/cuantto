@@ -1,0 +1,109 @@
+---
+import { ToggleMenu } from './ToggleMenu'
+---
+
+<nav class="nav">
+  <a href="#" class="nav__link">¿Qué es?</a>
+  <a href="#" class="nav__link">¿Cómo funciona?</a>
+  <a href="#" class="nav__link">Precio</a>
+  <a href="#" class="nav__link">Ir al demo</a>
+</nav>
+
+<ToggleMenu client:load />
+
+<style>
+.nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+}
+
+:global(:has(.burger.open)) .nav {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav__link {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav__link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--dark-blue);
+  transition: all 0.5s ease;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+:global(.burger) {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  cursor: pointer;
+  z-index: 2;
+}
+
+:global(.burger > svg) {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  :global(.burger) {
+    display: none;
+  }
+
+  .nav {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    opacity: 1;
+    transform: translateY(0);
+    background: transparent;
+  }
+
+  .nav__link {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .nav__link:last-child {
+    padding: 2rem 4rem;
+    background: var(--dark-blue);
+    color: var(--white);
+  }
+}
+</style>

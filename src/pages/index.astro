@@ -1,7 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Hero from '../components/Hero.astro'
+import Partners from '../components/Partners.astro'
+import AboutQuantto from '../components/AboutQantto.astro'
+import HowWorkQuantto from '../components/HowWorkQuantto.astro'
 ---
 
 <Layout title="Quantto.io">
-  <h1>Home</h1>
+  <Header />
+  <div class="container">
+    <Hero />
+    <Partners />
+    <AboutQuantto />
+    <HowWorkQuantto />
+  </div>
 </Layout>
