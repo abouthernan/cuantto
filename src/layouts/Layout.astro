@@ -33,6 +33,10 @@ html {
   overflow-x: hidden;
 }
 
+:global(:has(.burger.open)) html {
+  overflow: hidden;
+}
+
 *,
 *:before,
 *:after {

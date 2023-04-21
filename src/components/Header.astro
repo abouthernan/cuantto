@@ -1,9 +1,10 @@
 ---
-import logo from '../assets/img/logo.png'
+import 'animate.css'
+import logo from '../assets/img/logo-dark.png'
 import Nav from './Nav.astro'
 ---
 
-<header class="header">
+<header class="header animate__animated animate__fadeIn">
   <div class="content">
     <a class="logo" href="/">
       <img
@@ -19,7 +20,7 @@ import Nav from './Nav.astro'
 
 <style>
 .header {
-  background-color: var(--green);
+  background-color: var(--dark-blue);
 }
 
 .content {

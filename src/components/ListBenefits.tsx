@@ -1,3 +1,4 @@
+import 'animate.css';
 import { useState } from 'react'
 import { IoCheckmarkSharp } from 'react-icons/io5/index'
 
@@ -27,7 +28,7 @@ export function ListBenefits() {
   }
   return (
     <>
-      <ul className="list">
+      <ul className="list animate__animated animate__fadeIn">
         {listOfBenefist.map(item => (
           <li className="list__item" key={item}>
             <IoCheckmarkSharp />
@@ -36,7 +37,7 @@ export function ListBenefits() {
         )).slice(0, viewAll ? listOfBenefist.length : 3)}
       </ul>
 
-      <div className="buttons buttons-view-more">
+      <div className="buttons buttons-view-more animate__animated animate__fadeIn">
         <button
           className="button button--outline"
           type="button"

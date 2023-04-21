@@ -10,6 +10,9 @@ dependencies:
   '@types/react-dom':
     specifier: 18.0.6
     version: 18.0.6
+  animate.css:
+    specifier: 4.1.1
+    version: 4.1.1
   astro:
     specifier: 2.2.3
     version: 2.2.3
@@ -919,6 +922,10 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}

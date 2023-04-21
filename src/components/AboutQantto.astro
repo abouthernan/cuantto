@@ -1,8 +1,9 @@
 ---
 import Button from "./button.astro"
+import bgDashboard from '../assets/img/hero.png'
+import quoterImg from '../assets/img/quoter.png'
 ---
-
-<div class="section">
+<div class="section" id="about">
   <h2 class="title">¿Qué es Qantto?</h2>
   <p>
     En Qantto entendemos que cotizar productos y servicios puede ser una tarea complicada y consumir muchos recursos tecnológicos y humanos. Por eso, hemos creado una herramienta tecnológica que te permite personalizar cada aspecto de la cotización y generar cientos de propuestas de manera automática y ágil, en tiempo real, 24/7. 
@@ -10,9 +11,14 @@ import Button from "./button.astro"
 Nuestra aplicación está diseñada para ayudar empresas, negocios y personas a ahorrar tiempo y dinero en el proceso de cotización, eliminando la necesidad de tener un gran equipo de ventas y permitiendo enfocarte en hacer crecer tu negocio.
   </p>
   <div class="content-button">
-    <Button text="Ir al demo" style="primary" url="#"  />
+    <Button text="Ir al demo" style="primary" url="https://abouthernan.github.io/public-quoter-landing/"  /> 
   </div>
-
+  <div class="demo">
+    <two-up>
+      <img src={bgDashboard} alt=""/>
+      <img src={quoterImg} alt=""/>
+    </two-up>
+  </div>
 </div>
 
 <style>
@@ -36,6 +42,19 @@ p {
   line-height: 1.5;
 }
 
+.demo {
+  max-height: 100vh;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.demo img {
+  width: 100%;
+  height: 30rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
 @media (min-width: 768px) {
   .section {
     margin-top: 8rem;
@@ -52,5 +71,11 @@ p {
     margin: 0 auto;
   }
 
+  .demo img {
+    height: 70rem;
+  }
+
 }
 </style>
+
+<script src="https://unpkg.com/two-up-element@1" />
