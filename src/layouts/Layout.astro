@@ -1,76 +1,41 @@
 ---
+import "@fontsource/inter";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/inter/900.css";
+
 export interface Props {
-  title: string
-  dark?: boolean
+  title: string;
+  dark?: boolean;
 }
 
-import '../assets/css/normalize.css'
-import favicon from '../assets/img/isotipo-claro.svg'
-import Metatags from '../components/Metatags.astro'
-
-const { title, dark } = Astro.props as Props
+const { title, dark } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={favicon} />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet" />
-    <Metatags />
-	</head>
-	<body class={dark ? 'bg-black text-white grid place-content-center min-h-screen container mx-auto' : ''}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Dark themed website template built on AstroJS, designed for technological startup business."
+    />
+    <title>{title}</title>
+  </head>
+  <body class={dark ? 'bg-black text-white grid place-content-center min-h-screen mx-auto' : ''}>
     <slot />
-	</body>
+    <style is:global>
+      html {
+        font-family: Inter;
+        background-color: #26272b;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
 </html>
-
-<style is:global>
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-:global(:has(.burger.open)) html {
-  overflow: hidden;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: 'Poppins',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--bg);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-:root {
-  --bg: #ffffff;
-  --black: #000;
-  --blue: #0055FF;
-  --dark-blue: #212135;
-  --green: #6EF96E;
-  --white: #ffffff;
-}
-</style>
-

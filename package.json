@@ -1,10 +1,8 @@
 {
-  "name": "quantto",
+  "name": "qantto",
   "type": "module",
-  "private": true,
-  "description": "Quantto is quoter of services online",
-  "author": "rxtsel",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,22 +11,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "2.1.1",
     "@astrojs/tailwind": "3.1.1",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "animate.css": "4.1.1",
-    "astro": "2.2.3",
-    "astro-icon": "0.8.0",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "tailwindcss": "3.0.24",
+    "@fontsource/inter": "4.5.15",
+    "astro": "2.2.0",
+    "framer-motion": "10.11.2",
+    "npm-check-updates": "16.10.7",
+    "tailwindcss": "3.3.1",
     "typed.js": "2.0.15"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "5.58.0",
-    "eslint": "8.36.0",
-    "eslint-plugin-astro": "0.26.1",
-    "react-icons": "4.8.0"
+    "@astrojs/react": "2.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "two-up-element": "1.0.1"
   }
 }

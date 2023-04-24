@@ -1,20 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Header from '../components/Header.astro'
-import Hero from '../components/Hero.astro'
-import Partners from '../components/Partners.astro'
-import AboutQuantto from '../components/AboutQantto.astro'
-import HowWorkQuantto from '../components/HowWorkQuantto.astro'
-import Footer from '../components/Footer.astro'
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Testimonials } from "../components/Testimonials.jsx";
+import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
+import { FAQ } from "../components/FAQ.jsx";
+import { Brands } from "../components/Brands.jsx";
+import { Divider } from "../components/Divider";
+import { Footer } from "../components/Footer.jsx";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
 ---
 
-<Layout title="Qantto - Cotizador de servicios online">
-  <Header />
-  <div class="container">
-    <Hero />
-    <Partners />
-    <AboutQuantto />
-    <HowWorkQuantto />
-  </div>
+<Layout title="Qantto - Cotizador online">
+  <Navbar client:load />
+  <Hero client:load />
+  <Features1 client:load />
+  <Divider />
+  <Features2 client:load />
+  <Testimonials client:load />
+  <FeaturesDiagonal client:load />
+  <Brands client:load />
+  <FAQ client:load />
   <Footer />
+  <ScrollUpButton client:load />
 </Layout>
