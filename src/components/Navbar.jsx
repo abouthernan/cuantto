@@ -5,7 +5,8 @@ import QuanttoLogo from "../assets/logos/QuanttoLogoClaro.svg";
 
 const navbarLinks = [
   { label: "¿Qué es?", href: "#about", ariaLabel: "About" },
-  { label: "¿Cómo funciona?", href: "#how-does-it-work", ariaLabel: "How does it work" },
+  // { label: "¿Cómo funciona?", href: "#how-does-it-work", ariaLabel: "How does it work" },
+  { label: "Precios", href: "#pricing", ariaLabel: "Pricing" },
   { label: "FAQ", href: "#faq", ariaLabel: "Faq" }
 ];
 
