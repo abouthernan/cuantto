@@ -5,7 +5,6 @@ import QuanttoLogo from "../assets/logos/QuanttoLogoClaro.svg";
 
 const navbarLinks = [
   { label: "¿Qué es?", href: "#about", ariaLabel: "About" },
-  // { label: "¿Cómo funciona?", href: "#how-does-it-work", ariaLabel: "How does it work" },
   { label: "Precios", href: "#pricing", ariaLabel: "Pricing" },
   { label: "FAQ", href: "#faq", ariaLabel: "Faq" }
 ];
@@ -53,14 +52,18 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="grow basis-0 justify-end hidden lg:flex">
+          <div className="grow basis-0 justify-end hidden lg:flex items-center space-x-4">
+            <a
+              className="text-white hover:text-customPrimary rounded-md font-semibold transition-colors durantion-300 "
+              href="/login"
+            >Login</a>
             <a
               className="text-customDarkBlue rounded-md font-bold transition-colors durantion-300
            bg-customPrimary hover:bg-customPrimary/80 px-6 py-2 text-sm flex"
-              href="/demo"
-              aria-label="Ir al demo"
+              href="/signup"
+              aria-label="Sign up"
             >
-              <span className="pt-px">Ir al demo</span>
+              <span className="pt-px">Sign up</span>
             </a>
           </div>
         </motion.div>
@@ -98,14 +101,22 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a
-                className="text-customDarkBlue rounded-md font-bold
-           bg-customPrimary hover:bg-customPrimary/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                Ir al demo
-              </a>
+
+              <div className="flex items-center justify-center space-x-4">
+                <a
+                  className="text-white font-semibold py-1 px-2"
+                  title="login"
+                  href="/login"
+                >Login</a>
+
+                <a
+                  className="text-customDarkBlue rounded-md font-bold bg-customPrimary hover:bg-customPrimary/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                  href="/signup"
+                  title="sign up"
+                >
+                  Sign up
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
