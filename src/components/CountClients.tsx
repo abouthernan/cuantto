@@ -27,6 +27,7 @@ export const CountClients = () => {
         fetch(`${API_URL}/api/clients`, {
           method: 'POST',
           headers: {
+            'mode': 'no-cors',
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ count: updatedCount }), // Enviar el valor actualizado del contador
