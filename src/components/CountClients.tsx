@@ -28,6 +28,7 @@ export const CountClients = () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
           },
           body: JSON.stringify({ count: updatedCount }), // Enviar el valor actualizado del contador
         })
