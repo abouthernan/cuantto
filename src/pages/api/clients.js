@@ -6,7 +6,8 @@ export async function get() {
   return new Response(JSON.stringify({ count }), {
     status: 200,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     }
   })
 }
@@ -27,7 +28,8 @@ export async function post({ request }) {
   return new Response(null, {
     status: 200,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     }
   })
 }
