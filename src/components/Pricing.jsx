@@ -4,12 +4,40 @@ import { motion } from "framer-motion";
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-const pricingData = [
-  "Vestibulum viverra",
-  "Morbi mollis metus pretium",
-  "Etiam lectus nunc, commodo",
-  "Ut quam nisl mollis id pretium",
-  "Suspendisse bibendum",
+const pricingDataFree = [
+  "1 Servicio",
+  "Usuarios ilimitados",
+  "10 registros",
+  "5 clientes potenciales",
+  "Cotizaciones ilimitadas",
+  "Exportar a cotizaciones a PDF",
+];
+
+const pricingDataStarter = [
+  "2 servicios",
+  "Usuarios ilimitados",
+  "50 registros",
+  "30 clientes potenciales",
+  "Cotizaciones ilimitadas",
+  "Estadísticas",
+  "Link de destino personalizado",
+  "Exportar a cotizaciones a PDF",
+  "Logo (white label)",
+];
+
+const pricingDataPro = [
+  "Servicios ilimitados",
+  "Usuarios ilimitados",
+  "Registros ilimitados",
+  "Clientes potenciales ilimitados",
+  "Cotizaciones ilimitadas",
+  "Estadísticas avanzadas",
+  "Exportar Data",
+  "Logo (white label)",
+  "Exportar cotizaciones a PDF",
+  "Link de destino personalizado",
+  "Enviar cotizaciones vía email",
+  "Soporte 24/7"
 ];
 
 export const Pricing = () => {
@@ -63,7 +91,7 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-customDarkBg3 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Beginner
+                    Free
                   </h4>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
@@ -77,8 +105,9 @@ export const Pricing = () => {
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     La manera perfecta de empezar y familiarizarte con qantto.
                   </p>
+
                   <ul className="mb-2 2xl:mb-6 text-white">
-                    {pricingData.map((text, index) => (
+                    {pricingDataFree.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
@@ -96,21 +125,21 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
                   <h4 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-white text-left">
-                    Standard
+                    Starter
                   </h4>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? "$19" : "$180"}
+                      {isMonthly ? "$8" : "$5"}
                     </div>
                     <div className="text-gray-500">
-                      {isMonthly ? "/ mes" : "/ año"}
+                      / mes
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
                     La manera perfecta de empezar y familiarizarte con qantto.
                   </p>
                   <ul className="mb-14 text-white">
-                    {pricingData.map((text, index) => (
+                    {pricingDataStarter.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
@@ -128,21 +157,21 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-customDarkBg3 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Premium
+                    Pro
                   </h4>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? "$36" : "$390"}
+                      {isMonthly ? "$12" : "$10"}
                     </div>
                     <div className="text-gray-500">
-                      {isMonthly ? "/ mes" : "/ año"}
+                      / mes
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     La manera perfecta de empezar y familiarizarte con qantto.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
-                    {pricingData.map((text, index) => (
+                    {pricingDataPro.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
