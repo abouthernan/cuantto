@@ -15,7 +15,9 @@
     "@astrojs/vercel": "3.4.0",
     "@fontsource/inter": "4.5.15",
     "astro": "2.5.4",
+    "dotenv": "16.0.3",
     "framer-motion": "10.11.2",
+    "mongodb": "5.5",
     "npm-check-updates": "16.10.7",
     "tailwindcss": "3.3.1",
     "typed.js": "2.0.15"
