@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
+import dotenv from "dotenv"
+dotenv.config();
 
-const API_URL = import.meta.env.MODE === 'development' ? 'http://localhost:3000' : import.meta.env.SITE
+const API_URL = 'http://localhost:3000' || process.env.BASE_URL
 
 export const CountClients = () => {
   const [count, setCount] = useState(9543)
@@ -49,6 +51,8 @@ export const CountClients = () => {
     return () => clearTimeout(timer)
 
   }, [])
+
+  console.log(process.env.BASE_URL)
 
   return (
     <>
