@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const API_URL = 'https://quantto.io' 
+const API_URL = import.meta.env.MODE === 'development' ? 'http://localhost:3000' : import.meta.env.SITE
 
 export const CountClients = () => {
   const [count, setCount] = useState(9543)
