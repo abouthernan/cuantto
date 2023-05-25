@@ -36,7 +36,7 @@ export const Navbar = () => {
           <div className="hidden lg:flex h-full">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
-                className="text-white flex items-center justify-center h-full px-4 hover:text-customPrimary transition-colors duration-300"
+                className="text-white flex items-center justify-center h-full px-4 hover:text-customGreen transition-colors duration-300"
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
@@ -54,12 +54,12 @@ export const Navbar = () => {
         >
           <div className="grow basis-0 justify-end hidden lg:flex items-center space-x-4">
             <a
-              className="text-white hover:text-customPrimary rounded-md font-semibold transition-colors durantion-300 "
+              className="text-white hover:text-customGreen rounded-md font-semibold transition-colors durantion-300 "
               href="/login"
             >Login</a>
             <a
               className="text-customDarkBlue rounded-md font-bold transition-colors durantion-300
-           bg-customPrimary hover:bg-customPrimary/80 px-6 py-2 text-sm flex"
+           bg-customGreen hover:bg-customGreen/80 px-6 py-2 text-sm flex"
               href="/signup"
               aria-label="Sign up"
             >
@@ -110,7 +110,7 @@ export const Navbar = () => {
                 >Login</a>
 
                 <a
-                  className="text-customDarkBlue rounded-md font-bold bg-customPrimary hover:bg-customPrimary/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                  className="text-customDarkBlue rounded-md font-bold bg-customGreen hover:bg-customGreen/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
                   href="/signup"
                   title="sign up"
                 >

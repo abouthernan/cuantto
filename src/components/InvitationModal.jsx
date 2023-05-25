@@ -25,7 +25,7 @@ export const InvitationModal = ({ setIsOpen }) => (
               <h2 className="mt-6 mb-2 text-5xl font-bold tracking-normal text-white">
                 Suscríbete ahora
               </h2>
-              <h2 className="text-5xl font-bold tracking-normal text-customSecondary">
+              <h2 className="text-5xl font-bold tracking-normal text-customGreen">
                 a Qantto
               </h2>
 
@@ -68,7 +68,7 @@ export const InvitationModal = ({ setIsOpen }) => (
                 </div>
                 <div className="w-full sm:w-4/5 p-2 mt-4 mx-auto">
                   <button
-                    className="py-4 px-6 w-full text-white font-semibold rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-customPrimary hover:bg-[#7274f3] transition ease-in-out duration-200"
+                    className="py-4 px-6 w-full text-white font-semibold rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-customGreen hover:bg-[#7274f3] transition ease-in-out duration-200"
                     type="button"
                   >
                     Subscribe

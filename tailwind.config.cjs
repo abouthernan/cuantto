@@ -4,15 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // customPrimary: "rgb(99, 102, 241)",
-        customPrimary: "#6ef96e", 
-        // customSecondary: "rgb(161, 163, 247)",
-        customSecondary: "#6ef96e",
+        customGreen: "#6ef96e", 
+        customBg: "#1f2023",
         customDarkBg1: "rgb(31, 32, 35)",
-        customDarkBg2: "rgb(38, 39, 43)",
         customDarkBg3: "rgb(48, 49, 54)",
         customDarkBg3Hover: "rgb(55, 56, 62)",
-        customContentSubtitle: "#6ef96e",
         customGrayBorder: "rgb(255,255,255,0.1)",
         customGrayText: "rgb(174, 178, 183)",
         customDarkBgTransparent: "rgb(31, 32, 35, 0.7)",

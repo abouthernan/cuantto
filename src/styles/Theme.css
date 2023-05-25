@@ -7,7 +7,7 @@
   @apply text-white text-4xl xl:text-5xl font-bold tracking-normal;
 }
 .custom-block-subtitle {
-  @apply text-xs text-customPrimary tracking-wider font-bold uppercase;
+  @apply text-xs text-customGreen tracking-wider font-bold uppercase;
 }
 .custom-content-title {
   @apply text-white text-lg font-bold tracking-normal;
@@ -25,14 +25,14 @@
   @apply bg-customDarkBg1  fill-black/20;
 }
 .custom-bg-dark2 {
-  @apply bg-customDarkBg2  fill-customDarkBg2;
+  @apply bg-customBg  fill-customBg;
 }
 .custom-bg-dark3 {
   @apply bg-customDarkBg3  fill-customDarkBg3;
 }
 body,
 html {
-  @apply bg-customDarkBg2;
+  @apply bg-customBg;
 }
 
 .ondas {
@@ -52,12 +52,12 @@ html {
 
 @keyframes ondas {
   0% {
-    opacity: .4;
+    opacity: 0.4;
     background-position: bottom;
   }
   100% {
     background-position: top;
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 
@@ -73,7 +73,7 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-lg font-bold bg-customPrimary text-customDarkBlue flex justify-center items-center hover:bg-customPrimary/80 cursor-pointer transition;
+  @apply rounded-lg font-bold bg-customGreen text-customDarkBlue flex justify-center items-center hover:bg-customGreen/80 cursor-pointer transition;
 }
 
 /* Navbar */
