@@ -110,12 +110,14 @@ export const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <div
+
+                  <a
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    // onClick={() => setIsModalOpen(true)}
+                    href="/signup"
                   >
                     Empezar
-                  </div>
+                  </a>
+
                 </div>
               </div>
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0 lg:relative lg:-top-14">
@@ -140,12 +142,13 @@ export const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <div
+
+                  <a
                     className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-20"
-                    // onClick={() => setIsModalOpen(true)}
+                    href="/signup"
                   >
                     Empezar
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -171,12 +174,13 @@ export const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <div
+
+                  <a
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    // onClick={() => setIsModalOpen(true)}
+                    href="/signup"
                   >
                     Empezar
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
