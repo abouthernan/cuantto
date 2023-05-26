@@ -5,6 +5,7 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
+import Metatags from "../components/Metatags.astro";
 
 export interface Props {
   title: string;
@@ -25,6 +26,7 @@ const { title, dark } = Astro.props;
       name="description"
       content="Dark themed website template built on AstroJS, designed for technological startup business."
     />
+    <Metatags />
     <title>{title}</title>
   </head>
   <body class={dark ? 'bg-black text-white grid place-content-center min-h-screen mx-auto' : ''}>
