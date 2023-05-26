@@ -104,7 +104,7 @@ export const Pricing = () => {
 
                   <ul className="mb-2 2xl:mb-6 text-white">
                     {pricingDataFree.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
+                      <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
                       </li>
@@ -136,7 +136,7 @@ export const Pricing = () => {
 
                   <ul className="mb-14 text-white">
                     {pricingDataStarter.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
+                      <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
                       </li>
@@ -168,7 +168,7 @@ export const Pricing = () => {
 
                   <ul className="mb-2 2xl:mb-6 text-white">
                     {pricingDataPro.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
+                      <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
                       </li>
