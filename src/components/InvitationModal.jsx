@@ -1,8 +1,8 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from 'framer-motion'
 
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
-import { CloseIcon } from "../assets/icons/CloseIcon";
-import QuanttoLogo from "../assets/logos/QuanttoLogo.svg";
+import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon'
+import { CloseIcon } from '../assets/icons/CloseIcon'
+import QuanttoLogo from '../assets/logos/QuanttoLogo.svg'
 
 export const InvitationModal = ({ setIsOpen }) => (
   <AnimatePresence>
@@ -18,7 +18,7 @@ export const InvitationModal = ({ setIsOpen }) => (
       >
         <div
           className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl bg-customDarkBgTransparentLighter custom-border-gray-darker py-12 px-8 sm:px-16 backdrop-blur-xl fixed sm:mb-8 fixed mx-auto z-50"
-          onClick={(e) => e.stopPropagation()}
+          onClick={e => e.stopPropagation()}
         >
           <div className="flex relative">
             <div className="w-1/2 hidden lg:inline">
@@ -87,4 +87,4 @@ export const InvitationModal = ({ setIsOpen }) => (
       </div>
     </motion.div>
   </AnimatePresence>
-);
+)

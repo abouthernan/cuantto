@@ -1,27 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 export const ScrollUpButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisible);
-  }, []);
+    window.addEventListener('scroll', toggleVisible)
+  }, [])
 
   const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
+    const scrolled = document.documentElement.scrollTop
     if (scrolled > 300) {
-      setIsVisible(true);
+      setIsVisible(true)
     } else if (scrolled <= 300) {
-      setIsVisible(false);
+      setIsVisible(false)
     }
-  };
+  }
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    });
-  };
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <>
@@ -48,5 +48,5 @@ export const ScrollUpButton = () => {
         </div>
       )}
     </>
-  );
-};
+  )
+}

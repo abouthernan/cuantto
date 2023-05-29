@@ -1,33 +1,33 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import { QuoteIcon } from '../assets/icons/QuoteIcon'
+import testimonial1 from '../assets/images/testimonial1.png'
+import testimonial2 from '../assets/images/testimonial2.png'
+import testimonial3 from '../assets/images/testimonial3.png'
 
 const testimonialsData = [
   {
-    customerName: "John Doe",
-    customerTitle: "Founder of Microsoft",
+    customerName: 'John Doe',
+    customerTitle: 'Founder of Microsoft',
     content:
-      "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.",
-    image: testimonial1,
+      'Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.',
+    image: testimonial1
   },
   {
-    customerName: "Mary Jane",
-    customerTitle: "Founder of Google",
+    customerName: 'Mary Jane',
+    customerTitle: 'Founder of Google',
     content:
-      "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.",
-    image: testimonial2,
+      'Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.',
+    image: testimonial2
   },
   {
-    customerName: "Steve Jobs",
-    customerTitle: "Founder of Apple",
+    customerName: 'Steve Jobs',
+    customerTitle: 'Founder of Apple',
     content:
-      "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.",
-    image: testimonial3,
-  },
-];
+      'Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.',
+    image: testimonial3
+  }
+]
 
 export const Testimonials = () => (
   <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customBg relative">
@@ -75,4 +75,4 @@ export const Testimonials = () => (
       </motion.div>
     </div>
   </section>
-);
+)

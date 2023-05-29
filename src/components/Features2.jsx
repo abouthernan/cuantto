@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-import feature5 from "../assets/images/feature5.jpg";
-import feature6 from "../assets/images/feature6.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import feature5 from '../assets/images/feature5.jpg'
+import feature6 from '../assets/images/feature6.jpg'
+import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon'
 
 export const Features2 = () => (
   <section className="w-full bg-customBg mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
@@ -41,7 +41,8 @@ export const Features2 = () => (
               Obtén estadísticas de tus cotizaciones
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-              Con nuestra herramienta, podrás ver de manera clara y concisa cuáles son los servicios más solicitados.
+              Con nuestra herramienta, podrás ver de manera clara y concisa
+              cuáles son los servicios más solicitados.
             </p>
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">
@@ -50,11 +51,17 @@ export const Features2 = () => (
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Entrega mas valor al cliente dando transparencia en tus costos.</span>
+                <span>
+                  Entrega mas valor al cliente dando transparencia en tus
+                  costos.
+                </span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Cotizaciones 24/7 para tus clientes, sin tener que mover un solo dedo.</span>
+                <span>
+                  Cotizaciones 24/7 para tus clientes, sin tener que mover un
+                  solo dedo.
+                </span>
               </li>
             </ul>
           </div>
@@ -62,4 +69,4 @@ export const Features2 = () => (
       </div>
     </motion.div>
   </section>
-);
+)

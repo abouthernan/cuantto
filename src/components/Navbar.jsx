@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
-import QuanttoLogo from "../assets/logos/QuanttoLogoClaro.svg";
+import QuanttoLogo from '../assets/logos/QuanttoLogoClaro.svg'
 
 const navbarLinks = [
-  { label: "¿Qué es?", href: "#about", ariaLabel: "About" },
-  { label: "Precios", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "FAQs", href: "#faq", ariaLabel: "Faq" }
-];
+  { label: '¿Qué es?', href: '#about', ariaLabel: 'About' },
+  { label: 'Precios', href: '#pricing', ariaLabel: 'Pricing' },
+  { label: 'FAQs', href: '#faq', ariaLabel: 'Faq' }
+]
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-transparent z-40 backdrop-blur-xl">
@@ -23,7 +23,7 @@ export const Navbar = () => {
         >
           <a className="navbar-link" href="/" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-                <img src={QuanttoLogo} alt="Quantto Logo" width={150} />
+              <img src={QuanttoLogo} alt="Quantto Logo" width={150} />
             </div>
           </a>
         </motion.div>
@@ -56,7 +56,9 @@ export const Navbar = () => {
             <a
               className="text-white hover:text-customGreen rounded-md font-semibold transition-colors durantion-300 "
               href="/login"
-            >Login</a>
+            >
+              Login
+            </a>
             <a
               className="text-customDarkBlue rounded-md font-bold transition-colors durantion-300
            bg-customGreen hover:bg-customGreen/80 px-6 py-2 text-sm flex"
@@ -107,7 +109,9 @@ export const Navbar = () => {
                   className="text-white font-semibold py-1 px-2"
                   title="login"
                   href="/login"
-                >Login</a>
+                >
+                  Login
+                </a>
 
                 <a
                   className="text-customDarkBlue rounded-md font-bold bg-customGreen hover:bg-customGreen/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
@@ -122,5 +126,5 @@ export const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
-  );
-};
+  )
+}

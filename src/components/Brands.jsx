@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-import vehementLogo from "../assets/images/partners/vehement.webp"
-import locknetLogo from "../assets/images/partners/locknet.webp"
-import avillionLogo from "../assets/images/partners/avillion.webp"
+import vehementLogo from '../assets/images/partners/vehement.webp'
+import locknetLogo from '../assets/images/partners/locknet.webp'
+import avillionLogo from '../assets/images/partners/avillion.webp'
 
 export const Brands = () => (
   <section className="py-12 sm:py-24 bg-customDarkBg1 w-full mb-16 shadow-lg">
@@ -27,13 +27,28 @@ export const Brands = () => (
           <div className="w-2/3 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
             <div className="flex flex-wrap -m-4">
               <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
-                <img width={120} height={50} className="aspect-video object-contain" src={vehementLogo}/>
+                <img
+                  width={120}
+                  height={50}
+                  className="aspect-video object-contain"
+                  src={vehementLogo}
+                />
               </div>
               <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
-                <img width={120} height={50} className="aspect-video object-contain filter invert" src={locknetLogo}/>
+                <img
+                  width={120}
+                  height={50}
+                  className="aspect-video object-contain filter invert"
+                  src={locknetLogo}
+                />
               </div>
               <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
-                <img width={120} height={50} className="aspect-video object-contain" src={avillionLogo}/>
+                <img
+                  width={120}
+                  height={50}
+                  className="aspect-video object-contain"
+                  src={avillionLogo}
+                />
               </div>
             </div>
           </div>
@@ -41,4 +56,4 @@ export const Brands = () => (
       </div>
     </motion.div>
   </section>
-);
+)

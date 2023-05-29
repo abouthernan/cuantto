@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
-import { InvitationModal } from "./InvitationModal";
-import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
+import { InvitationModal } from './InvitationModal'
+import featuresdiagonal from '../assets/images/featuresdiagonal.jpg'
 
 export const FeaturesDiagonal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <section className="w-full flex flex-col justify-center items-center bg-customDarkBg1">
@@ -38,7 +38,10 @@ export const FeaturesDiagonal = () => {
               Experiencia más rápida y eficiente para tus clientes
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-              Acelera el proceso de cotización de servicios para tus clientes con <b>Qantto</b>, permitiéndoles ahorrar tiempo y esfuerzo al obtener información precisa y detallada de manera rápida y eficiente.
+              Acelera el proceso de cotización de servicios para tus clientes
+              con <b>Qantto</b>, permitiéndoles ahorrar tiempo y esfuerzo al
+              obtener información precisa y detallada de manera rápida y
+              eficiente.
             </p>
             <a
               href="/demo"
@@ -57,5 +60,5 @@ export const FeaturesDiagonal = () => {
         </div>
       </motion.div>
     </section>
-  );
-};
+  )
+}

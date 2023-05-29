@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import feature1 from '../assets/images/feature1.jpg'
+import feature2 from '../assets/images/feature2.jpg'
+import feature3 from '../assets/images/feature3.jpg'
+import feature4 from '../assets/images/feature4.jpg'
+import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon'
 
 export const Features1 = () => {
   return (
@@ -28,7 +28,9 @@ export const Features1 = () => {
                 A diferencia de cualquier herramienta que hayas usado antes
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Qantto te permite personalizar cada aspecto de la cotización y generar cientos de propuestas de manera automática y ágil, en tiempo real, 24/7.
+                Qantto te permite personalizar cada aspecto de la cotización y
+                generar cientos de propuestas de manera automática y ágil, en
+                tiempo real, 24/7.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
@@ -37,7 +39,10 @@ export const Features1 = () => {
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Reduce errores en el proceso de cotización, evitando mal entendidos y perdidas financieras.</span>
+                  <span>
+                    Reduce errores en el proceso de cotización, evitando mal
+                    entendidos y perdidas financieras.
+                  </span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
@@ -45,7 +50,10 @@ export const Features1 = () => {
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Mejora la experiencia de usuario al poder tener una propuesta económica en tiempo real.</span>
+                  <span>
+                    Mejora la experiencia de usuario al poder tener una
+                    propuesta económica en tiempo real.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -87,5 +95,5 @@ export const Features1 = () => {
         </div>
       </motion.div>
     </section>
-  );
-};
+  )
+}

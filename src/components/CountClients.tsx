@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 
-const API_URL = import.meta.env.MODE === 'development' ? 'http://localhost:3000' : 'https://www.qantto.io' 
+const API_URL =
+  import.meta.env.MODE === 'development'
+    ? 'http://localhost:3000'
+    : 'https://www.qantto.io'
 
 export const CountClients = () => {
   const [count, setCount] = useState(9543)
@@ -29,7 +32,7 @@ export const CountClients = () => {
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({ count: updatedCount }), // Enviar el valor actualizado del contador
+          body: JSON.stringify({ count: updatedCount }) // Enviar el valor actualizado del contador
         })
 
         return updatedCount // Actualizar el estado del contador
@@ -47,9 +50,7 @@ export const CountClients = () => {
     startTimer() // Iniciar el primer intervalo
 
     return () => clearTimeout(timer)
-
   }, [])
-
 
   return (
     <>

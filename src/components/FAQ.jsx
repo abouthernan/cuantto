@@ -1,8 +1,11 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export const FAQ = () => (
-  <section className="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden" id="faq">
+  <section
+    className="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden"
+    id="faq"
+  >
     <div className="absolute -top-10" id="FAQ" />
     <motion.div
       initial={{ opacity: 0 }}
@@ -104,16 +107,15 @@ En situaciones donde los requisitos específicos de tu negocio no puedan ser cub
 Ya sea mediante la personalización adicional de la herramienta existente o mediante el desarrollo de nuevas funcionalidades, nos esforzaremos por satisfacer tus requisitos específicos y asegurarnos de que obtengas el máximo valor de nuestra plataforma."
               />
             </div>
-
           </div>
         </div>
       </div>
     </motion.div>
   </section>
-);
+)
 
 const FAQBox = ({ defaultOpen, title, content }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+  const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
     <div
@@ -126,7 +128,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         </h3>
         <p
           className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden break-words whitespace-pre-wrap ${
-            isOpen ? "max-h-screen" : "max-h-0"
+            isOpen ? 'max-h-screen' : 'max-h-0'
           }`}
         >
           {content}
@@ -140,7 +142,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className={`transition-all duration-500  ${
-            isOpen ? "rotate-[360deg]" : "rotate-[180deg]"
+            isOpen ? 'rotate-[360deg]' : 'rotate-[180deg]'
           }`}
         >
           <path
@@ -153,5 +155,5 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         </svg>
       </div>
     </div>
-  );
-};
+  )
+}
