@@ -22,6 +22,10 @@
   },
   "devDependencies": {
     "@astrojs/react": "2.1.1",
+    "eslint": "8.41.0",
+    "eslint-plugin-astro": "0.27.1",
+    "prettier": "2.8.8",
+    "prettier-plugin-astro": "0.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "two-up-element": "1.0.1"
