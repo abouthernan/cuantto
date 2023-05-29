@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
-import 'two-up-element'
 
 import { InvitationModal } from './InvitationModal'
-import dashboard from '../assets/images/dashboard.webp'
-import app from '../assets/images/app.webp'
+import { useTranslation } from 'react-i18next'
 
 export const Hero = () => {
+  const { t } = useTranslation()
   return (
     <section
       className="w-screen z-10 flex justify-center items-center bg-customDarkBg1 hero-bg-gradient relative"
@@ -19,7 +18,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="text-customGreen text-sm sm:text-base mb-6 sm:mt-32 mt-16 font-bold">
-            Cambiamos la forma de cotizar
+            {t('HERO.sub')}
           </div>
         </motion.div>
 
@@ -30,7 +29,7 @@ export const Hero = () => {
         >
           <div className="text-3xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-white">
             <h1 className="inline px-1 md:px-0">
-              Cotizaciones automáticas 24/7 para tus clientes
+              {t('HERO.title')}
             </h1>
           </div>
         </motion.div>
@@ -41,8 +40,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Permite a tus clientes potenciales obtener cotizaciones de tus
-            productos o servicios en minutos.
+            {t('HERO.description')}
           </div>
         </motion.div>
 
@@ -53,7 +51,7 @@ export const Hero = () => {
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
             <a className="custom-button-colored w-64 sm:w-52 h-12 mr-0 mb-2 sm:mb-0 transition-all duration-300">
-              ¿Cómo funciona?
+              {t('HERO.cta')}
             </a>
           </div>
         </motion.div>

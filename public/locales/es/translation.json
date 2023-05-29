@@ -1,0 +1,180 @@
+{
+  "SITE": {
+    "title": "Qantto - Cotizador online",
+    "description": "Cotizador online de seguros de auto, hogar, vida y más. Cotizá, compará y contratá online.",
+    "keywords": "seguros, cotizador, online, auto, hogar, vida, accidentes personales, viajes, mascotas, comercio, responsabilidad civil, caución, retiro p"
+  },
+  "HEADER": {
+    "nav": {
+      "whatIs": "¿Qué es?",
+      "prices": "Precios",
+      "faqs": "FAQs"
+    },
+    "buttons": {
+      "login": "Ingresar",
+      "signup": "Registrarse"
+    }
+  },
+  "HERO": {
+    "sub": "Cambiamos la forma de cotizar",
+    "title": "Cotizaciones automáticas 24/7 para tus clientes",
+    "description": "Permite a tus potenciales clientes obtener cotizaciones de tus productos o servicios en minutos.",
+    "cta": "¿Cómo funciona?"
+  },
+  "FEATURES1": {
+    "sub": "CONFIGURAS UNA VEZ, COTIZAS SIEMPRE",
+    "title": "A diferencia de cualquier otra herramienta que hayas usado antes",
+    "description": "Qantto te permite generar cotizaciones personalizadas de manera automática para tus clientes en tiempo real, fácil, 24/7.",
+    "list": {
+      "one": "Cotizaciones en tiempo real.",
+      "two": "Tu negocio siempre disponible: 24/7.",
+      "three": "Enfócate en los clientes calificados.",
+      "four": "Da transparencia en tus costos.",
+      "five": "Mejora la experiencia de tus clientes.",
+      "six": "Data en tiempo real sobre tu negocio.",
+      "seven": "Llega a tu target ideal."
+    }
+  },
+  "FEATURES2": {
+    "sub": "LOREMP IPSUM DOLORE",
+    "title": "Estadísticas en tiempo real",
+    "description": "Con nuestra herramienta podrás:",
+    "list": {
+      "one": "Ver tus prospectos en tiempo real.",
+      "two": "Medir la intención de compra.",
+      "three": "Determinar la mejor estrategia de Pricing. (IA)",
+      "four": "Asignar recursos de manera inteligente. (Hint)",
+      "five": "Reduce costos de personal.",
+      "six": "Obtener la Información de tus clientes (CRM).",
+      "seven": "Almacenar la información."
+    }
+  },
+  "TESTIMONIALS": {
+    "sub": "TESTIMONIOS",
+    "title": "¿Qué dicen nuestros clientes?",
+    "clients": {
+      "one": {
+        "name": "John Doe",
+        "role": "Founder of Microsoft",
+        "quote": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida."
+      },
+      "two": {
+        "name": "Mark Zuckerberg",
+        "role": "Founder of Facebook",
+        "quote": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida."
+      },
+      "three": {
+        "name": "Steve Jobs",
+        "role": "Founder of Apple",
+        "quote": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida."
+      }
+    }
+  },
+  "PRICING": {
+    "sub": "PRECIOS",
+    "title": "Elige tu mejor plan",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "month": "/ mes",
+    "year": "/ año",
+    "cards": {
+      "one": {
+        "title": "Free",
+        "cta": "Empezar",
+        "list": {
+          "one": "1 servicio",
+          "two": "Usuarios ilimitados",
+          "three": "10 registros",
+          "four": "5 clientes potenciales",
+          "five": "Cotizaciones ilimitadas",
+          "six": "Exportar cotizaciones a PDF"
+        }
+      },
+      "two": {
+        "title": "Starter",
+        "cta": "Empezar",
+        "list": {
+          "one": "2 servicios",
+          "two": "Usuarios ilimitados",
+          "three": "50 registros",
+          "four": "30 clientes potenciales",
+          "five": "Cotizaciones ilimitadas",
+          "six": "Estadísticas",
+          "seven": "Link de destino personalizado",
+          "eight": "Exportar cotizaciones a PDF",
+          "nine": "Logo (white label)"
+        }
+      },
+      "three": {
+        "title": "Pro",
+        "cta": "Empezar",
+        "list": {
+          "one": "Servicios ilimitados",
+          "two": "Usuarios ilimitados",
+          "three": "Registros ilimitados",
+          "four": "Clientes potenciales ilimitados",
+          "five": "Cotizaciones ilimitadas",
+          "six": "Estadísticas avanzadas",
+          "seven": "Link de destino personalizado",
+          "eight": "Exportar cotizaciones a PDF",
+          "nine": "Logo (white label)",
+          "ten": "Enviar cotizaciones vía email",
+          "eleven": "Soporte 24/7"
+        }
+      }
+    }
+  },
+  "BRANDS": {
+    "title": "A ellos les gusta"
+  },
+  "FAQS": {
+    "sub": "¿Tienes alguna pregunta?",
+    "title": "Preguntas frecuentes (FAQs)",
+    "list": {
+      "one": {
+        "question": "¿Qué es Qantto?",
+        "answer": "En Qantto entendemos que cotizar productos y servicios puede ser una tarea complicada y consumir muchos recursos tecnológicos y humanos. Por eso, hemos creado una herramienta tecnológica que te permite personalizar cada aspecto de la cotización y generar cientos de propuestas de manera automática y ágil, en tiempo real, 24/7.\n\nNuestra aplicación está diseñada para ayudar empresas, negocios y personas a ahorrar tiempo y dinero en el proceso de cotización, eliminando la necesidad de tener un gran equipo de ventas y permitiendo enfocarte en lo más importante, el cierre de la venta."
+      },
+      "two": {
+        "question": "¿Cómo funciona?",
+        "answer": "Para ti:\nImagina poder entregar una cotización personalizada y precisa en minutos, sin tener que invertir en personal de ventas y dedicar horas a la tareas de cotización. Con Qantto, este sueño es una realidad.\n\nPara tus clientes:\nEl proceso es fácil y rápido. Primero, seleccionan el servicio que necesitan. Luego, responden a las preguntas que configuran previamente desde la plataforma sobre el servicio que desean cotizar. El algoritmo procesará las respuestas y proporcionará una cotización personalizada en minutos, así de sencillo."
+      },
+      "three": {
+        "question": "¿Porqué elegirnos?",
+        "answer": "Con Qantto puedes ahorrar tiempo y dinero en el proceso de cotización. Lo que te permitirá enfocarte en hacer crecer tu negocio. Nuestra aplicación es fácil de usar y completamente personalizable, lo que te permitirá adaptarla a las necesidades de tus negocio y de tus clientes. Además te brindamos soporte técnico y asesoramiento personalizado para ayudarte en el proceso de implementación.  No esperes más, únete a Qantto y ahórrale tiempo y recursos valiosos a tu organización."
+      },
+      "four": {
+        "question": "¿Cómo se personaliza la herramienta para mi negocio?",
+        "answer": "Paso a paso:\n\n1. Crear una cuenta y adquirir un plan: El usuario debera crear una cuenta en Qantto y seleccionar el plan que mejor se adapte a sus necesidades. Puede optar por un plan pago o utilizar la opción gratuita para probar la herramienta.\n\n2. Personalizar la plataforma: Una vez registrado y con un plan activo, el usuario puede personalizar la herramienta según su negocio. Puede agregar su marca, una descripción de su empresa y configurar los servicios que ofrece.\n\n3. Configurar parámetros y características del servicio: Para cada servicio, el usuario puede configurar los parámetros o características específicas, como materiales utilizados, tiempo estimado, cantidad requerida, entre otros. Estos parámetros ayudarán a calcular el valor de cada servicio.\n\n4. Validar los costos finales: Después de configurar las preguntas y servicios, el usuario puede validar los costos finales de los servicios proporcionados por Qantto. Esto le permitirá tener una visión clara de los precios y realizar ajustes si es necesario.\n\n5. Guardar la configuración y compartir el enlace: Una vez que se haya completado la personalización, el usuario puede guardar la configuración y generar un enlace único para compartir con sus clientes. Esto les permitirá acceder a la herramienta y comenzar a cotizar los servicios ofrecidos."
+      },
+      "five": {
+        "question": "¿Necesito conocimientos técnicos o de terceros para hacerlo?",
+        "answer": "No, para utilizar Qantto no se requieren conocimientos técnicos avanzados ni la intervención de terceros. El proceso de configuración inicial consiste en definir las opciones y respuestas posibles para cada pregunta y asignarles un valor. Esta configuración puede ser realizada por el propietario del negocio o la persona encargada de realizar las cotizaciones. Una vez que se haya completado esta configuración inicial, podrás utilizar Qantto de manera autónoma y sin necesidad de conocimientos técnicos adicionales."
+      },
+      "six": {
+        "question": "¿Cómo se asegura la herramienta de que la cotización que proporciona es precisa y confiable?",
+        "answer": "Qantto se basa en la configuración realizada por el usuario para calcular la cotización de cada servicio de acuerdo con los requerimientos establecidos. El usuario tiene la capacidad de configurar sus propios precios y especificar los detalles necesarios para cada proyecto.\n\nSin embargo, es importante tener en cuenta que cada proyecto es único y puede presentar requerimientos específicos adicionales. Como resultado, el valor proporcionado por la herramienta es un estimado y podría variar hasta un 20% dependiendo de los requerimientos individuales."
+      },
+      "seven": {
+        "question": "¿Qué medidas de seguridad tiene en cuenta para proteger los datos de mis clientes?",
+        "answer": "Tomamos medidas de seguridad para proteger los datos de los clientes. Se utilizan encriptación de datos, acceso restringido, respaldo y recuperación de datos, protección contra amenazas y vulnerabilidades, y se cumple con las normativas de protección de datos. Estas medidas garantizan la confidencialidad, integridad y disponibilidad de la información de los clientes."
+      },
+      "eight": {
+        "question": "¿Qué tipo de soporte técnico o asesoramiento se ofrece después de la implementación de la herramienta?",
+        "answer": "Ofrecemos un sólido servicio de soporte técnico y asesoramiento después de la implementación de la herramienta. Nuestro equipo de soporte está disponible para ayudarte con cualquier consulta técnica o problema que puedas enfrentar. Además, contamos con asesores expertos que te brindarán orientación en la configuración de la herramienta y te ayudarán a optimizar tus procesos. Estamos comprometidos en brindarte un servicio completo para garantizar tu éxito con Qantto."
+      },
+      "nine": {
+        "question": "¿Qué pasa si mi negocio tiene requisitos específicos que no pueden ser cubiertos por la herramienta?",
+        "answer": "Aunque la herramienta ofrece una amplia personalización, comprendemos que cada negocio es único y puede tener requisitos particulares.\n\nEn situaciones donde los requisitos específicos de tu negocio no puedan ser cubiertos directamente por la herramienta, ofrecemos soluciones personalizadas. Nuestro equipo de expertos está disponible para evaluar tus necesidades y trabajar contigo para encontrar una solución que se adapte a tu negocio de manera individualizada.\n\nYa sea mediante la personalización adicional de la herramienta existente o mediante el desarrollo de nuevas funcionalidades, nos esforzaremos por satisfacer tus requisitos específicos y asegurarnos de que obtengas el máximo valor de nuestra plataforma."
+      }
+    }
+  },
+  "FOOTER": {
+    "description": "Qantto, la herramienta que te permite ahorrar tiempo y dinero de una manera ágil.",
+    "product": "Producto",
+    "pricesAndPlans": "Precios y planes",
+    "termsAndConditions": "Términos y condiciones",
+    "privacyPolicy": "Política de privacidad",
+    "copyright": "Copyright. All right reserved. © Qantto"
+  }
+}

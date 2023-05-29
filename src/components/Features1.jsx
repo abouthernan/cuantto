@@ -5,8 +5,10 @@ import feature2 from '../assets/images/feature2.jpg'
 import feature3 from '../assets/images/feature3.jpg'
 import feature4 from '../assets/images/feature4.jpg'
 import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon'
+import { useTranslation } from 'react-i18next'
 
 export const Features1 = () => {
+  const { t } = useTranslation()
   return (
     <section
       className="w-full bg-customBg mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0  xl:m pt-[2rem]  md:pt-[12vw] lg:pt-0"
@@ -22,38 +24,42 @@ export const Features1 = () => {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">
-                Haz crecer tu negocio
+                {t('FEATURES1.sub')}
               </span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                A diferencia de cualquier herramienta que hayas usado antes
+                {t('FEATURES1.title')}
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Qantto te permite personalizar cada aspecto de la cotización y
-                generar cientos de propuestas de manera automática y ágil, en
-                tiempo real, 24/7.
+                {t('FEATURES1.description')}
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Cotizaciones Personalizadas con cada detalle.</span>
+                  <span>{t('FEATURES1.list.one')}</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>
-                    Reduce errores en el proceso de cotización, evitando mal
-                    entendidos y perdidas financieras.
-                  </span>
+                  <span>{t('FEATURES1.list.two')}</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Automatizas el proceso de cotización.</span>
+                  <span>{t('FEATURES1.list.three')}</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>
-                    Mejora la experiencia de usuario al poder tener una
-                    propuesta económica en tiempo real.
-                  </span>
+                  <span>{t('FEATURES1.list.four')}</span>
+                </li>
+                <li className="mb-4 flex">
+                  <CheckArrowIcon />
+                  <span>{t('FEATURES1.list.five')}</span>
+                </li>
+                <li className="mb-4 flex">
+                  <CheckArrowIcon />
+                  <span>{t('FEATURES1.list.six')}</span>
+                </li>
+                <li className="mb-4 flex">
+                  <CheckArrowIcon />
+                  <span>{t('FEATURES1.list.seven')}</span>
                 </li>
               </ul>
             </div>

@@ -14,10 +14,20 @@ import Footer from "../components/Footer.astro";
 import { ScrollUpButton } from "../components/ScrollUpButton";
 import "../styles/Theme.css";
 import "../styles/Diagonals.css";
+import { t, changeLanguage } from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
+
+changeLanguage("es");
 ---
 
-<Layout title="Qantto - Cotizador online">
+<Layout title={t("SITE.title")}>
   <Navbar client:load />
+  <LanguageSelector
+    languageMapping={{
+      es: "ES",
+      en: "EN",
+    }}
+    class="z-50 fixed right-[75px] lg:right-14 top-7 bg-transparent focus:bg-customBg text-white outline-none" />
   <Hero client:load />
   <Features1 client:load />
   <Divider />

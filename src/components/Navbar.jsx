@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 import QuanttoLogo from '../assets/logos/QuanttoLogoClaro.svg'
 
-const navbarLinks = [
-  { label: '¿Qué es?', href: '#about', ariaLabel: 'About' },
-  { label: 'Precios', href: '#pricing', ariaLabel: 'Pricing' },
-  { label: 'FAQs', href: '#faq', ariaLabel: 'Faq' }
-]
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useTranslation()
+
+  const navbarLinks = [
+  { label: t('HEADER.nav.whatIs'), href: '#about', ariaLabel: 'About' },
+  { label: t('HEADER.nav.prices'), href: '#pricing', ariaLabel: 'Pricing' },
+  { label: t('HEADER.nav.faqs'), href: '#faq', ariaLabel: 'Faq' }
+]
 
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-transparent z-40 backdrop-blur-xl">
@@ -57,15 +59,14 @@ export const Navbar = () => {
               className="text-white hover:text-customGreen rounded-md font-semibold transition-colors durantion-300 "
               href="/login"
             >
-              Login
+              {t('HEADER.buttons.login')}
             </a>
             <a
               className="text-customDarkBlue rounded-md font-bold transition-colors durantion-300
            bg-customGreen hover:bg-customGreen/80 px-6 py-2 text-sm flex"
               href="/signup"
-              aria-label="Sign up"
             >
-              <span className="pt-px">Sign up</span>
+              <span className="pt-px">{t('HEADER.buttons.signup')}</span>
             </a>
           </div>
         </motion.div>
@@ -107,18 +108,16 @@ export const Navbar = () => {
               <div className="flex items-center justify-center space-x-4">
                 <a
                   className="text-white font-semibold py-1 px-2"
-                  title="login"
                   href="/login"
                 >
-                  Login
+                  {t('HEADER.buttons.login')}
                 </a>
 
                 <a
                   className="text-customDarkBlue rounded-md font-bold bg-customGreen hover:bg-customGreen/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
                   href="/signup"
-                  title="sign up"
                 >
-                  Sign up
+                  {t('HEADER.buttons.signup')}
                 </a>
               </div>
             </div>

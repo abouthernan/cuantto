@@ -13,20 +13,20 @@ export interface Props {
 }
 
 const { title, dark } = Astro.props;
+
+import i18next from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Dark themed website template built on AstroJS, designed for technological startup business."
-    />
     <Metatags />
+    <HeadHrefLangs />
     <title>{title}</title>
   </head>
   <body class={dark ? 'bg-black text-white grid place-content-center min-h-screen mx-auto' : ''}>
