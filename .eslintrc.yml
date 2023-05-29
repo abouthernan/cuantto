@@ -12,3 +12,4 @@ overrides:
         - '.astro'
 rules:
   quotes: [error, single]
+  semi: [2, never]
