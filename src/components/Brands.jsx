@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next'
 export const Brands = () => {
   const { t } = useTranslation()
   return (
-    <section className="py-12 sm:py-24 bg-customDarkBg1 w-full mb-16 shadow-lg">
+    <section className="py-12 sm:py-24 bg-customDarkBg1 w-full mb-16">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
