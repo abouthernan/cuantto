@@ -7,17 +7,17 @@ export const Hero = () => {
   const { t } = useTranslation()
   return (
     <section
-      className="w-screen z-10 flex justify-center items-center bg-customDarkBg1 hero-bg-gradient relative"
+      className="w-screen z-10 min-h-screen grid place-content-center bg-customDarkBg1 hero-bg-gradient relative"
       id="home"
     >
       <span className="ondas" />
-      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
+      <div className="w-full max-w-5xl  flex flex-col justify-center items-center px-2 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-customGreen text-sm sm:text-base mb-6 sm:mt-32 mt-16 font-bold">
+          <div className="text-customGreen text-sm sm:text-base mb-6 sm:mt-32 font-bold">
             {t('HERO.sub')}
           </div>
         </motion.div>
@@ -49,7 +49,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
+          <div className="flex flex-col gap-2 sm:flex-row mt-14 justify-center">
             <a className="custom-button-colored w-64 sm:w-52 h-12 mr-0 mb-2 sm:mb-0 transition-all duration-300">
               {t('HERO.cta')}
             </a>

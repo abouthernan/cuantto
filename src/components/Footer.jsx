@@ -2,7 +2,6 @@ import { FacebookIcon } from '../assets/icons/FacebookIcon'
 import { InstagramIcon } from '../assets/icons/InstagramIcon'
 import QuanttoLogo from '../assets/logos/QuanttoLogoClaro.svg'
 import { TwitterIcon } from '../assets/icons/TwitterIcon'
-import { CountClients } from '../components/CountClients'
 import { useTranslation } from 'react-i18next'
 
 export function Footer() {
@@ -69,11 +68,6 @@ export function Footer() {
                     <a className="text-gray-400 hover:text-gray-300" href="mailto:hello@qantto.io" aria-label="email" >
                       hello@qantto.io
                     </a>
-                  </li>
-                  <li className="mt-4">
-                    <p className="text-gray-400" >
-                      <CountClients />
-                    </p>
                   </li>
                 </ul>
               </div>

@@ -52,9 +52,5 @@ export const CountClients = () => {
     return () => clearTimeout(timer)
   }, [])
 
-  return (
-    <>
-      <b>Clients:</b> {count.toLocaleString()}
-    </>
-  )
+  return count.toLocaleString()
 }

@@ -54,18 +54,18 @@
     "title": "¿Qué dicen nuestros clientes?",
     "clients": {
       "one": {
-        "name": "John Doe",
-        "role": "Founder of Microsoft",
+        "name": "Carlos Jimenez",
+        "role": "Director de Marketing",
         "quote": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida."
       },
       "two": {
-        "name": "Mark Zuckerberg",
-        "role": "Founder of Facebook",
+        "name": "Camila Soto",
+        "role": "Directora de Ventas",
         "quote": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida."
       },
       "three": {
-        "name": "Steve Jobs",
-        "role": "Founder of Apple",
+        "name": "Andrés Pérez",
+        "role": "Director de Operaciones",
         "quote": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida."
       }
     }
@@ -125,7 +125,7 @@
     }
   },
   "BRANDS": {
-    "title": "A ellos les gusta"
+    "title": "Clientes les gusta"
   },
   "FAQS": {
     "sub": "¿Tienes alguna pregunta?",
