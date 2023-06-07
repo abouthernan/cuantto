@@ -7,7 +7,7 @@ export const FAQ = () => {
   return (
     <section
       className="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden"
-      id="faq"
+      id="faqs"
     >
       <div className="absolute -top-10" id="FAQ" />
       <motion.div
@@ -92,7 +92,8 @@ export const FAQ = () => {
         </div>
       </motion.div>
     </section>
-)}
+  )
+}
 
 const FAQBox = ({ defaultOpen, title, content }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen)

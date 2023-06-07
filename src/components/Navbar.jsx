@@ -9,10 +9,14 @@ export const Navbar = () => {
   const { t } = useTranslation()
 
   const navbarLinks = [
-  { label: t('HEADER.nav.whatIs'), href: '#about', ariaLabel: 'About' },
-  { label: t('HEADER.nav.prices'), href: '#pricing', ariaLabel: 'Pricing' },
-  { label: t('HEADER.nav.faqs'), href: '#faq', ariaLabel: 'Faq' }
-]
+    {
+      label: t('HEADER.nav.benefits'),
+      href: '#benefits',
+      ariaLabel: 'Benefits'
+    },
+    { label: t('HEADER.nav.prices'), href: '#pricing', ariaLabel: 'Pricing' },
+    { label: t('HEADER.nav.faqs'), href: '#faqs', ariaLabel: 'Faqs' }
+  ]
 
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-transparent z-40 backdrop-blur-xl">
@@ -106,10 +110,7 @@ export const Navbar = () => {
               ))}
 
               <div className="flex items-center justify-center space-x-4">
-                <a
-                  className="text-white font-semibold py-1 px-2"
-                  href="/login"
-                >
+                <a className="text-white font-semibold py-1 px-2" href="/login">
                   {t('HEADER.buttons.login')}
                 </a>
 

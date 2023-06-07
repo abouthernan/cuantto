@@ -12,7 +12,7 @@ export const Features1 = () => {
   return (
     <section
       className="w-full bg-customBg mb-8 sm:mt-16 sm:mb-16"
-      id="about"
+      id="benefits"
     >
       <motion.div
         initial={{ opacity: 0 }}
