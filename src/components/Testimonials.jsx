@@ -65,7 +65,7 @@ export const Testimonials = () => {
                     <div className="custom-content-text-white font-medium">
                       {testimonial.customerName}
                     </div>
-                    <div className="custom-content-text-gray text-sm">
+                    <div className="text-gray-400 text-sm">
                       {testimonial.customerTitle}
                     </div>
                   </div>
