@@ -12,13 +12,16 @@ export function Footer() {
         <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
-              <a href="/" className="flex justify-center lg:justify-start items-center grow basis-0">
+              <a
+                href="/"
+                className="flex justify-center lg:justify-start items-center grow basis-0"
+              >
                 <img src={QuanttoLogo} alt="Quantto Logo" width={150} />
               </a>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
                 {t('FOOTER.description')}
               </p>
-              <div className="w-38 mx-auto lg:mx-0">
+              <div className="w-38 mx-auto lg:mx-0 flex lg:block justify-center">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customBg custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="https://www.facebook.com/qantto.io"
@@ -50,22 +53,38 @@ export function Footer() {
                 </h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#pricing" aria-label="" >
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="#pricing"
+                      aria-label=""
+                    >
                       {t('FOOTER.pricesAndPlans')}
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="#"
+                      aria-label=""
+                    >
                       {t('FOOTER.termsAndConditions')}
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="#"
+                      aria-label=""
+                    >
                       {t('FOOTER.privacyPolicy')}
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="mailto:hello@qantto.io" aria-label="email" >
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="mailto:hello@qantto.io"
+                      aria-label="email"
+                    >
                       hello@qantto.io
                     </a>
                   </li>
@@ -79,4 +98,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-)}
+  )
+}
