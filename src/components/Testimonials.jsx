@@ -50,7 +50,7 @@ export const Testimonials = () => {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
             {testimonialsData.map((testimonial, index) => (
               <div
-                className="w-11/12 relative min-h-[495px] sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
+                className="w-11/12 relative lg:h-[495px] sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
                 key={`${testimonial.customerName}-${index}`}
               >
                 <div className="flex mb-2">
