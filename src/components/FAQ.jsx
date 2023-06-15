@@ -87,6 +87,13 @@ export const FAQ = () => {
                   content={t('FAQS.list.nine.answer')}
                 />
               </div>
+              
+              <div className="w-full p-1">
+                <FAQBox
+                  title={t('FAQS.list.ten.question')}
+                  content={t('FAQS.list.ten.answer')}
+                />
+              </div>
             </div>
           </div>
         </div>
