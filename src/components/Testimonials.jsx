@@ -32,7 +32,6 @@ export const Testimonials = () => {
 
   return (
     <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customBg relative">
-      // <div className="absolute -top-16" id="feedback" />
       <div className="flex flex-col w-full lg:w-[1150px] justify-center">
         <motion.div
           initial={{ opacity: 0 }}
