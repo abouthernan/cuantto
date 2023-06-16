@@ -4,6 +4,7 @@ import { Hero } from "../../components/Hero.jsx";
 import { Navbar } from "../../components/Navbar.jsx";
 import { Features1 } from "../../components/Features1.jsx";
 import { Features2 } from "../../components/Features2.jsx";
+import { Estadistics } from "../../components/Estadistics.jsx";
 import { Testimonials } from "../../components/Testimonials.jsx";
 // import { FeaturesDiagonal } from "../../components/FeaturesDiagonal.jsx";
 import { FAQ } from "../../components/FAQ.jsx";
@@ -20,21 +21,25 @@ import { LanguageSelector } from "astro-i18next/components";
 changeLanguage("en");
 
 const lang = i18next.language;
-const title = lang === "es" ? "Qantto - Cotizador de servicios online" : "Qantto - Online services quote";
+const title = lang === "es"
+    ? "Qantto - Cotizador de servicios online"
+    : "Qantto - Online services quote";
 ---
 
 <Layout title={title}>
   <Navbar client:load />
   <LanguageSelector
     languageMapping={{
-      es: "ES",
-      en: "EN",
+      es: 'ES',
+      en: 'EN'
     }}
-    class="z-50 fixed right-[75px] lg:right-14 top-7 bg-transparent focus:bg-customBg text-white outline-none toggle-lang" />
+    class="z-50 fixed right-[75px] lg:right-14 top-7 bg-transparent focus:bg-customBg text-white outline-none toggle-lang"
+  />
   <Hero client:load />
   <Features1 client:load />
   <Divider />
   <Features2 client:load />
+  <Estadistics client:load />
   <Testimonials client:load />
   <Pricing client:load />
   <Brands client:load />

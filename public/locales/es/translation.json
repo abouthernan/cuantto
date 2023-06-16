@@ -49,6 +49,15 @@
       "seven": "Almacenar la información."
     }
   },
+  "ESTADISTICS": {
+    "one": "37% de los consumidores esperan una respuesta en redes sociales ese mismo día, mientras que el 28% la espera en menos de una hora. (fuente: Statista)",
+    "two": "41% de los consumidores esperan una respuesta por correo electrónico hasta máximo seis horas después. (fuente: Forrester)",
+    "three": "90% de los clientes dicen que una respuesta inmediata es “muy importante” para ellos al usar el chat en vivo de un sitio web. (fuente: HubSpot)",
+    "four": "La mayoría de los clientes (60%) definen “inmediato” como un máximo de 10 minutos de espera. (fuente: HubSpot)",
+    "five": "El 66% de los adultos creen que respetar su tiempo es lo mejor que una marca puede hacer por ellos en términos de customer experience. (fuente Forester)",
+    "six": "Un estudio realizado por Kayako, el cual arrojó que 95% de los clientes están dispuestos a aceptar un ritmo de chat más lento para lograr un servicio de mejor calidad.",
+    "seven": "Según un estudio de Gartner, 64% de los consumidores creen que la experiencia es más importante que el precio al momento de comprar"
+  },
   "TESTIMONIALS": {
     "sub": "TESTIMONIOS",
     "title": "¿Qué dicen nuestros clientes?",

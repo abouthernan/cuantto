@@ -49,6 +49,15 @@
       "seven": "Store the information."
     }
   },
+  "ESTADISTICS": {
+    "one": "37% of consumers expect a response on social media the same day, while 28% expect it within an hour. (source: Statista)",
+    "two": "41% of consumers expect a response via email within a maximum of six hours. (source: Forrester)",
+    "three": "90% of customers say an immediate response is 'very important' to them when using live chat on a website. (source: HubSpot)",
+    "four": "The majority of customers (60%) define 'immediate' as a maximum of 10 minutes of waiting. (source: HubSpot)",
+    "five": "66% of adults believe that respecting their time is the best thing a brand can do for them in terms of customer experience. (source: Forrester)",
+    "six": "A study conducted by Kayako found that 95% of customers are willing to accept a slower chat pace to achieve better service quality.",
+    "seven": "According to a Gartner study, 64% of consumers believe that experience is more important than price when making a purchase."
+  },
   "TESTIMONIALS": {
     "sub": "TESTIMONIALS",
     "title": "What Our Clients Say",
