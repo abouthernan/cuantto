@@ -3,6 +3,15 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      animation: {
+        scroll: 'scroll 50s linear infinite'
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-320px*7))' }
+        }
+      },
       colors: {
         customGreen: '#6ef96e',
         customBg: '#1f2023',
