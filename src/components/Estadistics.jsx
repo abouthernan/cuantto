@@ -17,8 +17,11 @@ export function Estadistics() {
       id="services"
     >
       <ul className="gap-x-5 animate-scroll overflow-hidden space-x-4 inline-flex w-[calc(320px*14)]">
-        {ESTADISTICS.map(stadistic => (
-          <li className="relative border border-customDarkBg3 w-80 p-4 rounded-md text-gray-300">
+        {ESTADISTICS.map((stadistic, index) => (
+          <li
+            key={index}
+            className="relative border border-customDarkBg3 w-80 p-4 rounded-md text-gray-300"
+          >
             <span className="relative flex h-2 w-2 mb-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-customGreen opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-customGreen" />
@@ -26,8 +29,11 @@ export function Estadistics() {
             {stadistic}
           </li>
         ))}
-        {ESTADISTICS.map(stadistic => (
-          <li className="relative border border-customDarkBg3 w-80 p-4 rounded-md text-gray-300">
+        {ESTADISTICS.map((stadistic, index) => (
+          <li
+            key={index}
+            className="relative border border-customDarkBg3 w-80 p-4 rounded-md text-gray-300"
+          >
             <span className="relative flex h-2 w-2 mb-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-customGreen opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-customGreen" />
