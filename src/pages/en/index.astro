@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Hero } from "../../components/Hero.jsx";
+import Stepper from "../../components/Stepper.astro";
 import { Navbar } from "../../components/Navbar.jsx";
 import { Features1 } from "../../components/Features1.jsx";
 import { Features2 } from "../../components/Features2.jsx";
@@ -36,6 +37,7 @@ const title = lang === "es"
     class="z-50 fixed right-[75px] lg:right-14 top-7 bg-transparent focus:bg-customBg text-white outline-none toggle-lang"
   />
   <Hero client:load />
+  <Stepper />
   <Features1 client:load />
   <Divider />
   <Features2 client:load />

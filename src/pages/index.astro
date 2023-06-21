@@ -1,31 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import { Hero } from '../components/Hero.jsx'
-import Stepper from '../components/Stepper.astro'
-import { Navbar } from '../components/Navbar.jsx'
-import { Features1 } from '../components/Features1.jsx'
-import { Features2 } from '../components/Features2.jsx'
-import { Estadistics } from '../components/Estadistics.jsx'
-import { Testimonials } from '../components/Testimonials.jsx'
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.jsx";
+import Stepper from "../components/Stepper.astro";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Estadistics } from "../components/Estadistics.jsx";
+import { Testimonials } from "../components/Testimonials.jsx";
 // import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
-import { FAQ } from '../components/FAQ.jsx'
-import { Pricing } from '../components/Pricing'
-import { Brands } from '../components/Brands.jsx'
-import { Divider } from '../components/Divider'
-import { Footer } from '../components/Footer.jsx'
-import { ScrollUpButton } from '../components/ScrollUpButton'
-import '../styles/Theme.css'
-import '../styles/Diagonals.css'
-import i18next, { changeLanguage } from 'i18next'
-import { LanguageSelector } from 'astro-i18next/components'
+import { FAQ } from "../components/FAQ.jsx";
+import { Pricing } from "../components/Pricing";
+import { Brands } from "../components/Brands.jsx";
+import { Divider } from "../components/Divider";
+import { Footer } from "../components/Footer.jsx";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+import i18next, { changeLanguage } from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
 
-changeLanguage('es')
+changeLanguage("es");
 
-const lang = i18next.language
-const title =
-  lang === 'es'
-    ? 'Qantto - Cotizador de servicios online'
-    : 'Qantto - Online services quote'
+const lang = i18next.language;
+const title = lang === "es"
+    ? "Qantto - Cotizador de servicios online"
+    : "Qantto - Online services quote";
 ---
 
 <Layout title={title}>
