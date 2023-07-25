@@ -16,10 +16,17 @@
     }
   },
   "HERO": {
-    "sub": "Cambiamos la forma de cotizar",
-    "title": "Cotizaciones automáticas 24/7 para tus clientes",
-    "description": "Permite a tus potenciales clientes obtener cotizaciones de tus productos o servicios en minutos.",
-    "cta": "¿Cómo funciona?"
+    "sub": "Cambiamos la experiencia de cotizar",
+    "title": "Somos la primera plataforma de Quoting-Automation",
+    "description": "Aumenta tu tasa de conversión automatizando el proceso de ventas. No somos un software de plantillas.",
+    "cta": "Agendar demo"
+  },
+  "ONBOARDING": {
+    "one": "Creamos tu espacio de trabajo",
+    "two": "Agregamos tu equipo",
+    "three": "Hacemos la Implementación",
+    "four": "Lanzamos",
+    "five": "Te acompañamos y crecemos juntos"
   },
   "FEATURES1": {
     "sub": "CONFIGURAS UNA VEZ, COTIZAS SIEMPRE",
@@ -59,7 +66,7 @@
     "seven": " de los consumidores creen que la experiencia es más importante que el precio al momento de comprar. Gartner"
   },
   "TESTIMONIALS": {
-    "sub": "TESTIMONIOS",
+    "sub": "Sabemos que la clave para crear un gran producto es escuchar",
     "title": "¿Qué dicen nuestros clientes?",
     "clients": {
       "one": {
@@ -81,6 +88,7 @@
   },
   "PRICING": {
     "sub": "PRECIOS",
+    "description": "Nuestros planes se ajustan a las necesidades de cada empresas según su tamaño.\n\nNo generalizamos nada. Somos emprendedores",
     "title": "Elige tu mejor plan",
     "monthly": "Mensual",
     "yearly": "Anual",
@@ -92,11 +100,11 @@
         "cta": "Empezar",
         "list": {
           "one": "1 servicio",
-          "two": "Usuarios ilimitados",
-          "three": "10 registros",
-          "four": "5 clientes potenciales",
-          "five": "Cotizaciones ilimitadas",
-          "six": "Exportar cotizaciones a PDF"
+          "two": "1 usuario",
+          "three": "Ver hasta 5 cotizaciones creadas",
+          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "five": "Exportar cotizaciones a PDF",
+          "six": "Logo (white label)"
         }
       },
       "two": {
@@ -104,37 +112,49 @@
         "cta": "Empezar",
         "list": {
           "one": "2 servicios",
-          "two": "Usuarios ilimitados",
-          "three": "50 registros",
-          "four": "30 clientes potenciales",
-          "five": "Cotizaciones ilimitadas",
-          "six": "Estadísticas",
-          "seven": "Link de destino personalizado",
-          "eight": "Exportar cotizaciones a PDF",
-          "nine": "Logo (white label)"
+          "two": "2 usuarios",
+          "three": "Ver hasta 30 cotizaciones creadas",
+          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "five": "Estadísticas",
+          "six": "Link de destino personalizable",
+          "seven": "Exportar Cotizaciones en PDF",
+          "eight": "Logo de tu empresa"
         }
       },
       "three": {
-        "title": "Pro",
+        "title": "Business",
+        "cta": "Empezar",
+        "list": {
+          "one": "Hasta 5 servicios",
+          "two": "Hasta 5 Usuarios",
+          "three": "Ver hasta 100 cotizaciones creadas",
+          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "five": "Estadísticas Avanzadas",
+          "six": "Exportar Data",
+          "seven": "Logo de tu empresa",
+          "eight": "Exportar Cotizaciones en PDF",
+          "nine": "Enviar Quote vía email"
+        }
+      },
+      "four": {
+        "title": "Enterprise",
         "cta": "Empezar",
         "list": {
           "one": "Servicios ilimitados",
           "two": "Usuarios ilimitados",
-          "three": "Registros ilimitados",
-          "four": "Clientes potenciales ilimitados",
-          "five": "Cotizaciones ilimitadas",
-          "six": "Estadísticas avanzadas",
-          "seven": "Link de destino personalizado",
-          "eight": "Exportar cotizaciones a PDF",
-          "nine": "Logo (white label)",
-          "ten": "Enviar cotizaciones vía email",
-          "eleven": "Soporte 24/7"
+          "three": "Cotizaciones ilimitadas",
+          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "five": "Estadísticas Avanzadas",
+          "six": "Exportar Data",
+          "seven": "Logo de tu empresa",
+          "eight": "Exportar Cotizaciones en PDF",
+          "nine": "Enviar Quote vía email"
         }
       }
     }
   },
   "BRANDS": {
-    "title": "Clientes usan"
+    "title": "empresas y emprendedores están aumentando sus ingresos con"
   },
   "FAQS": {
     "sub": "¿Tienes alguna pregunta?",
@@ -183,11 +203,13 @@
     }
   },
   "FOOTER": {
-    "description": "Cotizaciones automáticas 24/7 para tus clientes.",
-    "product": "Producto",
+    "description": "Qantto es la primera plataforma de Quoting-Automation para tu negocio o empresa.\n\nBienvenido a la era de la AI y la automatización. Aumenta tu tasa de conversión automatizando el proceso de ventas",
+    "product": "Legal",
     "pricesAndPlans": "Precios y planes",
     "termsAndConditions": "Términos y condiciones",
     "privacyPolicy": "Política de privacidad",
-    "copyright": "Copyright. All right reserved. © Qantto"
+    "copyright": "Copyright. All right reserved. © Qantto",
+    "security": "Seguridad",
+    "location": "Ubicación"
   }
 }

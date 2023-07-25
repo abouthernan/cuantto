@@ -39,9 +39,10 @@ export const Testimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.3 }}
         >
-          <p className="custom-block-subtitle text-center mb-6">
+          <p className="custom-block-subtitle text-center mb-6 px-2 md:px-0">
             {t('TESTIMONIALS.sub')}
           </p>
+
           <h3 className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
             {t('TESTIMONIALS.title')}
           </h3>

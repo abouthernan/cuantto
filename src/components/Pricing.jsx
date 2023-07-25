@@ -20,18 +20,17 @@ export const Pricing = () => {
   ]
 
   const pricingDataStarter = [
-      t('PRICING.cards.two.list.one'),
-      t('PRICING.cards.two.list.two'),
-      t('PRICING.cards.two.list.three'),
-      t('PRICING.cards.two.list.four'),
-      t('PRICING.cards.two.list.five'),
-      t('PRICING.cards.two.list.six'),
-      t('PRICING.cards.two.list.seven'),
-      t('PRICING.cards.two.list.eight'),
-      t('PRICING.cards.two.list.nine'),
+    t('PRICING.cards.two.list.one'),
+    t('PRICING.cards.two.list.two'),
+    t('PRICING.cards.two.list.three'),
+    t('PRICING.cards.two.list.four'),
+    t('PRICING.cards.two.list.five'),
+    t('PRICING.cards.two.list.six'),
+    t('PRICING.cards.two.list.seven'),
+    t('PRICING.cards.two.list.eight'),
   ]
 
-const pricingDataPro = [
+  const pricingDataBusines = [
     t('PRICING.cards.three.list.one'),
     t('PRICING.cards.three.list.two'),
     t('PRICING.cards.three.list.three'),
@@ -40,10 +39,8 @@ const pricingDataPro = [
     t('PRICING.cards.three.list.six'),
     t('PRICING.cards.three.list.seven'),
     t('PRICING.cards.three.list.eight'),
-    t('PRICING.cards.three.list.nine'),
-    t('PRICING.cards.three.list.ten'),
-    t('PRICING.cards.three.list.eleven')
-]
+    t('PRICING.cards.three.list.nine')
+  ]
 
   const handleChange = () => {
     setIsMonthly(!isMonthly)
@@ -55,7 +52,7 @@ const pricingDataPro = [
       id="pricing"
     >
       <div className="absolute -top-16" id="pricing" />
-      <div className="pb-20 pt-12 bg-customBg  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
+      <div className="pb-20 pt-12 bg-customBg w-full  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -68,6 +65,9 @@ const pricingDataPro = [
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
                 {t('PRICING.title')}
               </h2>
+              <p className="text-gray-300 w-full text-center">
+                {t('PRICING.description')}
+              </p>
               <br />
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -130,9 +130,11 @@ const pricingDataPro = [
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? '$8' : '$5'}
+                      {isMonthly ? '$48' : '$432'}
                     </div>
-                    <div className="text-gray-500">{t('PRICING.month')}</div>
+                    <div className="text-gray-500">
+                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                    </div>
                   </div>
 
                   <ul className="mb-14 text-white">
@@ -160,13 +162,15 @@ const pricingDataPro = [
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? '$12' : '$10'}
+                      {isMonthly ? '$250' : '$2.244'}
                     </div>
-                    <div className="text-gray-500">{t('PRICING.month')}</div>
+                    <div className="text-gray-500">
+                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                    </div>
                   </div>
 
                   <ul className="mb-2 2xl:mb-6 text-white">
-                    {pricingDataPro.map((text, index) => (
+                    {pricingDataBusines.map((text, index) => (
                       <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>

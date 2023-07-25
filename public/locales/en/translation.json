@@ -16,10 +16,17 @@
     }
   },
   "HERO": {
-    "sub": "Changing the way you quote",
-    "title": "Automatic 24/7 Quotes for Your Clients",
-    "description": "Enable your potential clients to obtain quotes for your products or services in minutes.",
-    "cta": "How does it work?"
+    "sub": "We change the quoting experience",
+    "title": "We are the first Quoting-Automation platform",
+    "description": "Aumenta tu tasa de conversión automatizando el proceso de ventas. No somos un software de plantillas.",
+    "cta": "Book a demo"
+  },
+  "ONBOARDING": {
+    "one": "We create your workspace",
+    "two": "We add your team",
+    "three": "We carry out the implementation",
+    "four": "We launch",
+    "five": "We accompany you and grow together"
   },
   "FEATURES1": {
     "sub": "SET UP ONCE, QUOTE ALWAYS",
@@ -59,7 +66,7 @@
     "seven": " of consumers believe that experience is more important than price when making a purchase. Gartner."
   },
   "TESTIMONIALS": {
-    "sub": "TESTIMONIALS",
+    "sub": "We know that the key to creating a great product is listening",
     "title": "What Our Clients Say",
     "clients": {
       "one": {
@@ -81,6 +88,7 @@
   },
   "PRICING": {
     "sub": "PRICING",
+    "description": "Our plans are tailored to the needs of each company according to its size.\n\nWe don't generalize anything. We are entrepreneurs",
     "title": "Choose Your Best Plan",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -92,11 +100,11 @@
         "cta": "Get Started",
         "list": {
           "one": "1 service",
-          "two": "Unlimited users",
-          "three": "10 records",
-          "four": "5 potential clients",
-          "five": "Unlimited quotes",
-          "six": "Export quotes to PDF"
+          "two": "1 user",
+          "three": "View up to 5 created quotes",
+          "four": "Your clients will be able to make unlimited quotes",
+          "five": "Export quotes to PDF",
+          "six": "Logo (white label)"
         }
       },
       "two": {
@@ -104,37 +112,49 @@
         "cta": "Get Started",
         "list": {
           "one": "2 services",
-          "two": "Unlimited users",
-          "three": "50 records",
-          "four": "30 potential clients",
-          "five": "Unlimited quotes",
-          "six": "Statistics",
-          "seven": "Custom destination link",
-          "eight": "Export quotes to PDF",
-          "nine": "Logo (white label)"
+          "two": "2 users",
+          "three": "View up to 30 created quotes",
+          "four": "Your clients can create unlimited quotes",
+          "five": "Statistics",
+          "six": "Customizable destination link",
+          "seven": "Export Quotes to PDF",
+          "eight": "Your company's logo"
         }
       },
       "three": {
-        "title": "Pro",
+        "title": "Business",
+        "cta": "Get Started",
+        "list": {
+          "one": "Up to 5 services",
+          "two": "Up to 5 users",
+          "three": "View up to 100 created quotes",
+          "four": "Your clients can make unlimited quotes",
+          "five": "Advanced Statistics",
+          "six": "Export Data",
+          "seven": "Your company's logo",
+          "eight": "Export Quotes to PDF",
+          "nine": "Send Quote via email"
+        }
+      },
+      "four": {
+        "title": "Enterprise",
         "cta": "Get Started",
         "list": {
           "one": "Unlimited services",
           "two": "Unlimited users",
-          "three": "Unlimited records",
-          "four": "Unlimited potential clients",
-          "five": "Unlimited quotes",
-          "six": "Advanced statistics",
-          "seven": "Custom destination link",
-          "eight": "Export quotes to PDF",
-          "nine": "Logo (white label)",
-          "ten": "Send quotes via email",
-          "eleven": "24/7 support"
+          "three": "Unlimited quotes",
+          "four": "Your clients can create unlimited quotes",
+          "five": "Advanced Statistics",
+          "six": "Export Data",
+          "seven": "Your company's logo",
+          "eight": "Export Quotes to PDF",
+          "nine": "Send Quote via email"
         }
       }
     }
   },
   "BRANDS": {
-    "title": "Clients use"
+    "title": "companies and entrepreneurs are increasing their income with"
   },
   "FAQS": {
     "sub": "Do you have any questions?",
@@ -183,11 +203,13 @@
     }
   },
   "FOOTER": {
-    "description": "Automatic 24/7 quotations for your clients",
-    "product": "Product",
+    "description": "Qantto is the first Quoting-Automation platform for your business or company.\n\nWelcome to the era of AI and automation. Increase your conversion rate by automating the sales process",
+    "product": "Legal",
     "pricesAndPlans": "Prices and plans",
     "termsAndConditions": "Terms and conditions",
     "privacyPolicy": "Privacy policy",
-    "copyright": "Copyright. All right reserved. © Qantto"
+    "copyright": "Copyright. All right reserved. © Qantto",
+    "security": "Security",
+    "location": "Location"
   }
 }

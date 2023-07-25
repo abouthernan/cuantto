@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "../components/Hero.jsx";
-import Stepper from "../components/Stepper.astro";
+import { Stepper } from "../components/Stepper.jsx";
 import { Navbar } from "../components/Navbar.jsx";
 import { Features1 } from "../components/Features1.jsx";
 import { Features2 } from "../components/Features2.jsx";
 import { Estadistics } from "../components/Estadistics.jsx";
 import { Testimonials } from "../components/Testimonials.jsx";
-// import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
 import { FAQ } from "../components/FAQ.jsx";
 import { Pricing } from "../components/Pricing";
 import { Brands } from "../components/Brands.jsx";
@@ -37,7 +36,7 @@ const title = lang === "es"
     class="z-50 fixed right-[75px] lg:right-14 top-7 bg-transparent focus:bg-customBg text-white outline-none toggle-lang"
   />
   <Hero client:load />
-  <Stepper />
+  <Stepper client:load />
   <Features1 client:load />
   <Divider />
   <Features2 client:load />

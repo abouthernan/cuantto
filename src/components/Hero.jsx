@@ -50,7 +50,10 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 justify-center">
-            <a className="custom-button-colored w-64 sm:w-52 h-12 mr-0 mb-2 sm:mb-0 transition-all duration-300">
+            <a className="custom-button-colored w-64 sm:w-52 h-12 mr-0 mb-2 sm:mb-0 transition-all duration-300"
+            href='https://calendly.com/qantto/30min?back=1&month=2023-07'
+            target='_blank'
+            >
               {t('HERO.cta')}
             </a>
           </div>

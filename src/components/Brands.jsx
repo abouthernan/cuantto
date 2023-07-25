@@ -21,11 +21,11 @@ export const Brands = () => {
             <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
               <div className="flex flex-col">
                 <p className='text-3xl lg:text-4xl text-white lg:mb-2'>+<span className='font-semibold'><CountClients /></span></p>
-                <h2 className="mb-2 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-white">
-                  {t('BRANDS.title')}
-                </h2>
-                <h2 className="text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customGreen">
-                  Qantto
+                <h2 className="mb-2 text-xl sm:text-2xl lg:text-4xl font-bold tracking-normal text-white">
+                  {t('BRANDS.title')} {' '}
+                  <span className="font-bold tracking-normal text-customGreen">
+                    Qantto
+                  </span>
                 </h2>
               </div>
             </div>
@@ -61,4 +61,5 @@ export const Brands = () => {
         </div>
       </motion.div>
     </section>
-)}
+  )
+}

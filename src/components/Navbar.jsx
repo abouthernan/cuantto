@@ -71,7 +71,8 @@ export const Navbar = () => {
             <a
               className="text-customDarkBlue rounded-md font-bold transition-colors durantion-300
            bg-customGreen hover:bg-customGreen/80 px-6 py-2 text-sm flex"
-              href="#"
+              href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+              target='_blank'
             >
               <span className="pt-px">{getDemo}</span>
               {/* <span className="pt-px">{t('HEADER.buttons.signup')}</span> */}
@@ -120,7 +121,8 @@ export const Navbar = () => {
 
                 <a
                   className="text-customDarkBlue rounded-md font-bold bg-customGreen hover:bg-customGreen/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                  href="#"
+                  href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+              target='_blank'
                 >
                   {getDemo}
                 </a>
