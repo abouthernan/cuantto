@@ -18,6 +18,9 @@ export const Navbar = () => {
     { label: t('HEADER.nav.faqs'), href: '#faqs', ariaLabel: 'Faqs' }
   ]
 
+  const lang = useTranslation().i18n.language
+  const getDemo = lang === 'es' ? 'Agendar demo' : 'Book a demo'
+
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-transparent z-40 backdrop-blur-xl">
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -59,18 +62,19 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <div className="grow basis-0 justify-end hidden lg:flex items-center space-x-4">
-            <a
+            {/* <a
               className="text-white hover:text-customGreen rounded-md font-semibold transition-colors durantion-300 "
               href="/login"
             >
               {t('HEADER.buttons.login')}
-            </a>
+            </a> */}
             <a
               className="text-customDarkBlue rounded-md font-bold transition-colors durantion-300
            bg-customGreen hover:bg-customGreen/80 px-6 py-2 text-sm flex"
-              href="/signup"
+              href="#"
             >
-              <span className="pt-px">{t('HEADER.buttons.signup')}</span>
+              <span className="pt-px">{getDemo}</span>
+              {/* <span className="pt-px">{t('HEADER.buttons.signup')}</span> */}
             </a>
           </div>
         </motion.div>
@@ -110,16 +114,23 @@ export const Navbar = () => {
               ))}
 
               <div className="flex items-center justify-center space-x-4">
-                <a className="text-white font-semibold py-1 px-2" href="/login">
+                {/* <a className="text-white font-semibold py-1 px-2" href="/login">
                   {t('HEADER.buttons.login')}
-                </a>
+                </a> */}
 
                 <a
+                  className="text-customDarkBlue rounded-md font-bold bg-customGreen hover:bg-customGreen/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                  href="#"
+                >
+                  {getDemo}
+                </a>
+
+                {/* <a
                   className="text-customDarkBlue rounded-md font-bold bg-customGreen hover:bg-customGreen/80 pl-6 pr-8 pt-2 pb-2 text-sm flex"
                   href="/signup"
                 >
                   {t('HEADER.buttons.signup')}
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>
