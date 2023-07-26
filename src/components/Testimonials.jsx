@@ -9,6 +9,9 @@ import { useTranslation } from 'react-i18next'
 export const Testimonials = () => {
   const { t } = useTranslation()
 
+  const lang = useTranslation().i18n.language
+  const isEs = lang === 'es'
+
   const testimonialsData = [
     {
       customerName: t('TESTIMONIALS.clients.one.name'),
@@ -44,7 +47,7 @@ export const Testimonials = () => {
           </p>
 
           <h3 className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-            {t('TESTIMONIALS.title')}
+            {t('TESTIMONIALS.title')} <span className='text-customGreen'>{isEs ? 'escuchar' : 'listening'}</span>
           </h3>
 
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
