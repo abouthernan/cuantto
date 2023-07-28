@@ -11,13 +11,13 @@ export const Hero = () => {
       id="home"
     >
       <span className="ondas" />
-      <div className="w-full max-w-5xl  flex flex-col justify-center items-center px-2 text-center">
+      <div className="w-full max-w-5xl flex flex-col justify-center items-center px-2 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-customGreen text-sm sm:text-base mb-6 sm:mt-32 font-bold">
+          <div className="text-customGreen text-sm sm:text-base mb-6 sm:mt-20 font-bold">
             {t('HERO.sub')}
           </div>
         </motion.div>
@@ -28,7 +28,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.05 }}
         >
           <div className="text-3xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-white">
-            <h1 className="inline px-1 md:px-0">
+            <h1 className="inline px-1 md:px-0 whitespace-break-spaces">
               {t('HERO.title')}
             </h1>
           </div>

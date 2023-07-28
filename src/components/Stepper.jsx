@@ -54,8 +54,9 @@ export const Stepper = () => {
   }, [])
   return (
     <div
-      className="container max-w-[1220px]  mx-auto h-full px-5 md:pr-12 overflow-x-hidden mb-24"
+      className="container max-w-[1220px] mx-auto h-full px-5 md:pr-12 overflow-x-hidden mb-24"
     >
+      <h2 className='text-center mb-20 mt-5 text-white font-semibold text-4xl lg:text-5xl'>{t("ONBOARDING.title")}</h2>
       <div className="relative wrap h-full w-full grid place-content-center">
         <div
           className="border-2-2 hidden md:block absolute border-opacity-20 border-gray-700 border h-full left-2/4"

@@ -10,6 +10,9 @@ export const Pricing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { t } = useTranslation()
 
+  const lang = useTranslation().i18n.language
+  const isEs = lang === 'es'
+
   const pricingDataFree = [
     t('PRICING.cards.one.list.one'),
     t('PRICING.cards.one.list.two'),
@@ -69,7 +72,7 @@ export const Pricing = () => {
                 {t('PRICING.description')}
               </p>
               <br />
-              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
+              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer overflow-hidden">
                 <input
                   type="checkbox"
                   className="peer appearance-none"
@@ -87,6 +90,7 @@ export const Pricing = () => {
                   </div>
                   <div className={isMonthly && 'text-gray-400'}>
                     {t('PRICING.yearly')}
+                    <span className='absolute text-black bg-orange-400 shadow -top-[7px] -right-[60px] w-24 text-[11px] rotate-[45deg]'>25% Off</span>
                   </div>
                 </div>
               </label>

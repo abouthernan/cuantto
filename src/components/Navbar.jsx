@@ -18,9 +18,6 @@ export const Navbar = () => {
     { label: t('HEADER.nav.faqs'), href: '#faqs', ariaLabel: 'Faqs' }
   ]
 
-  const lang = useTranslation().i18n.language
-  const getDemo = lang === 'es' ? 'Agendar demo' : 'Book a demo'
-
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-transparent z-40 backdrop-blur-xl">
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -74,7 +71,7 @@ export const Navbar = () => {
               href="https://calendly.com/qantto/30min?back=1&month=2023-07"
               target='_blank'
             >
-              <span className="pt-px">{getDemo}</span>
+              <span className="pt-px">{t("HERO.cta")}</span>
               {/* <span className="pt-px">{t('HEADER.buttons.signup')}</span> */}
             </a>
           </div>
@@ -124,7 +121,7 @@ export const Navbar = () => {
                   href="https://calendly.com/qantto/30min?back=1&month=2023-07"
               target='_blank'
                 >
-                  {getDemo}
+                  {t("HERO.cta")}
                 </a>
 
                 {/* <a

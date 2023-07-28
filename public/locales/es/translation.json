@@ -7,7 +7,7 @@
   "HEADER": {
     "nav": {
       "benefits": "Beneficios",
-      "prices": "Precios",
+      "prices": "Planes",
       "faqs": "FAQs"
     },
     "buttons": {
@@ -16,12 +16,13 @@
     }
   },
   "HERO": {
-    "sub": "Cambiamos la experiencia de cotizar",
-    "title": "Somos la primera plataforma de Quoting-Automation",
-    "description": "Aumenta tu tasa de conversión automatizando el proceso de ventas. No somos un software de plantillas.",
-    "cta": "Agendar demo"
+    "sub": "Aumenta tu tasa de conversión automatizando el proceso de ventas",
+    "title": "Somos la primera plataforma de\nQuoting-Automation",
+    "description": "Cambiamos la experiencia de cotizar. No somos un software de plantillas.",
+    "cta": "Agenda tu demo"
   },
   "ONBOARDING": {
+    "title": "Empezar es muy fácil",
     "one": "Creamos tu espacio de trabajo",
     "two": "Agregamos tu equipo",
     "three": "Hacemos la Implementación",
@@ -29,9 +30,9 @@
     "five": "Te acompañamos y crecemos juntos"
   },
   "FEATURES1": {
-    "sub": "CONFIGURAS UNA VEZ, COTIZAS SIEMPRE",
-    "title": "A diferencia de cualquier otra herramienta que hayas usado antes",
-    "description": "Qantto te permite generar cotizaciones personalizadas de manera automática para tus clientes en tiempo real, fácil, 24/7.",
+    "sub": "El tiempo de respuesta sí importa",
+    "title": "Configura un vez y recibe cientos de cotizaciones al día",
+    "description": "Elimina la sobre carga laborar del equipo de ventas y aumenta tus ingresos eliminando los cuellos de botella y reprocesos. Mejora la experiencia de compra de tus clientes cliente.",
     "list": {
       "one": "Cotizaciones en tiempo real.",
       "two": "Tu negocio siempre disponible: 24/7.",
@@ -43,9 +44,9 @@
     }
   },
   "FEATURES2": {
-    "sub": "ENFÓCATE EN LO QUE IMPORTA",
-    "title": "Estadísticas en tiempo real",
-    "description": "Con nuestra herramienta podrás:",
+    "sub": "Estadísticas en tiempo real",
+    "title": "Enfócate en lo que importa",
+    "description": "No pierdas tiempo con valioso para tu equipo de ventas.",
     "list": {
       "one": "Ver tus prospectos en tiempo real.",
       "two": "Medir la intención de compra.",
@@ -82,7 +83,7 @@
       "three": {
         "name": "Andrés Pérez",
         "role": "Director de Operaciones",
-        "quote": "Qantto ha revolucionado la forma en que gestiono mis cotizaciones de servicios. Antes, pasaba horas calculando costos y elaborando documentos. Con Qantto, todo se hace automáticamente, lo que me ahorra tiempo y esfuerzo. Además, la precisión de las cotizaciones me ha ayudado a mejorar mi rentabilidad y evitar errores costosos. Recomiendo Qantto a todos los emprendedores y profesionales que deseen simplificar su proceso de cotización."
+        "quote": "Qantto es una herramienta imprescindible para mi negocio. La posibilidad de crear cotizaciones las 24 horas del día, los 7 días de la semana, me permite responder rápidamente a las solicitudes de mis clientes. La plataforma es fácil de usar y personalizable, lo que me permite adaptar las cotizaciones a las necesidades específicas de cada cliente. Estoy encantado con los resultados que he obtenido gracias a Qantto y no puedo imaginar mi negocio sin esta valiosa herramienta."
       }
     }
   },
@@ -203,12 +204,12 @@
     }
   },
   "FOOTER": {
-    "description": "Qantto es la primera plataforma de Quoting-Automation para tu negocio o empresa.\n\nBienvenido a la era de la AI y la automatización. Aumenta tu tasa de conversión automatizando el proceso de ventas",
+    "description": "Qantto es la primera plataforma de Quoting-Automation para tu negocio o empresa.\n\nBienvenido a la era de la AI y la automatización. Aumenta tu tasa de conversión automatizando el proceso de ventas.",
     "product": "Legal",
     "pricesAndPlans": "Precios y planes",
     "termsAndConditions": "Términos y condiciones",
     "privacyPolicy": "Política de privacidad",
-    "copyright": "Copyright. All right reserved. © Qantto",
+    "copyright": "Copyright. All right reserved. © Qantto LLC",
     "security": "Seguridad",
     "location": "Ubicación"
   }

@@ -7,7 +7,7 @@
   "HEADER": {
     "nav": {
       "benefits": "Benefits",
-      "prices": "Prices",
+      "prices": "Pricing",
       "faqs": "FAQs"
     },
     "buttons": {
@@ -16,12 +16,13 @@
     }
   },
   "HERO": {
-    "sub": "We change the quoting experience",
-    "title": "We are the first Quoting-Automation platform",
-    "description": "Aumenta tu tasa de conversión automatizando el proceso de ventas. No somos un software de plantillas.",
-    "cta": "Book a demo"
+    "sub": "Increase your conversion rate by automating the sales process",
+    "title": "We are the first\nQuoting-Automation platform",
+    "description": "We change the quoting experience. We are not a template software.",
+    "cta": "Schedule your demo"
   },
   "ONBOARDING": {
+    "title": "Getting started is very easy",
     "one": "We create your workspace",
     "two": "We add your team",
     "three": "We carry out the implementation",
@@ -29,9 +30,9 @@
     "five": "We accompany you and grow together"
   },
   "FEATURES1": {
-    "sub": "SET UP ONCE, QUOTE ALWAYS",
-    "title": "Unlike any other tool you've used before",
-    "description": "Qantto allows you to generate personalized quotes automatically for your clients in real time, easily, 24/7.",
+    "sub": "Response time does matter",
+    "title": "Configure once and receive hundreds of quotes per day",
+    "description": "Eliminate the sales team's work overload and increase your income by eliminating bottlenecks and rework. Improve your customer's buying experience.",
     "list": {
       "one": "Real-time quotes.",
       "two": "Your business always available: 24/7.",
@@ -43,9 +44,9 @@
     }
   },
   "FEATURES2": {
-    "sub": "FOCUS ON WHAT MATTERS",
-    "title": "Real-Time Statistics",
-    "description": "With our tool, you can:",
+    "sub": "Real-Time Statistics",
+    "title": "Focus on what matters",
+    "description": "Don't waste valuable time for your sales team.",
     "list": {
       "one": "View your prospects in real time.",
       "two": "Measure purchase intent.",
@@ -203,12 +204,12 @@
     }
   },
   "FOOTER": {
-    "description": "Qantto is the first Quoting-Automation platform for your business or company.\n\nWelcome to the era of AI and automation. Increase your conversion rate by automating the sales process",
+    "description": "Qantto is the first Quoting-Automation platform for your business or company.\n\nWelcome to the era of AI and automation. Increase your conversion rate by automating the sales process.",
     "product": "Legal",
     "pricesAndPlans": "Prices and plans",
     "termsAndConditions": "Terms and conditions",
     "privacyPolicy": "Privacy policy",
-    "copyright": "Copyright. All right reserved. © Qantto",
+    "copyright": "Copyright. All right reserved. © Qantto LLC",
     "security": "Security",
     "location": "Location"
   }
