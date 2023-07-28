@@ -45,6 +45,18 @@ export const Pricing = () => {
     t('PRICING.cards.three.list.nine')
   ]
 
+    const pricingDataEnterprise = [
+    t('PRICING.cards.four.list.one'),
+    t('PRICING.cards.four.list.two'),
+    t('PRICING.cards.four.list.three'),
+    t('PRICING.cards.four.list.four'),
+    t('PRICING.cards.four.list.five'),
+    t('PRICING.cards.four.list.six'),
+    t('PRICING.cards.four.list.seven'),
+    t('PRICING.cards.four.list.eight'),
+    t('PRICING.cards.four.list.nine')
+  ]
+
   const handleChange = () => {
     setIsMonthly(!isMonthly)
   }
@@ -55,7 +67,7 @@ export const Pricing = () => {
       id="pricing"
     >
       <div className="absolute -top-16" id="pricing" />
-      <div className="pb-20 pt-12 bg-customBg w-full  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
+      <div className="pb-20 pt-12 bg-customBg w-full max-w-7xl">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -95,9 +107,10 @@ export const Pricing = () => {
                 </div>
               </label>
             </div>
-            <div className="flex flex-wrap flex-col lg:flex-row lg:items-baseline -mx-4 items-center lg:mt-32">
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
+
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center items-start gap-2 lg:mt-20">
+
+                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
                     {t('PRICING.cards.one.title')}
                   </h4>
@@ -110,7 +123,7 @@ export const Pricing = () => {
                     </div>
                   </div>
 
-                  <ul className="mb-2 2xl:mb-6 text-white">
+                  <ul className="mb-2 sm:min-h-[316px] text-white">
                     {pricingDataFree.map((text, index) => (
                       <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
@@ -120,16 +133,15 @@ export const Pricing = () => {
                   </ul>
 
                   <a
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
                     href="/signup"
                   >
                     {t('PRICING.cards.one.cta')}
                   </a>
                 </div>
-              </div>
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0 lg:relative lg:-top-14">
-                <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-white text-left">
+
+                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
+                  <h4 className="mb-2 text-2xl font-bold font-heading text-white text-left">
                     {t('PRICING.cards.two.title')}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
@@ -141,7 +153,7 @@ export const Pricing = () => {
                     </div>
                   </div>
 
-                  <ul className="mb-14 text-white">
+                  <ul className="mb-2 sm:min-h-[316px] text-white">
                     {pricingDataStarter.map((text, index) => (
                       <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
@@ -151,16 +163,14 @@ export const Pricing = () => {
                   </ul>
 
                   <a
-                    className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-20"
+                    className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-5"
                     href="/signup"
                   >
                     {t('PRICING.cards.two.cta')}
                   </a>
                 </div>
-              </div>
 
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
                     {t('PRICING.cards.three.title')}
                   </h4>
@@ -173,7 +183,7 @@ export const Pricing = () => {
                     </div>
                   </div>
 
-                  <ul className="mb-2 2xl:mb-6 text-white">
+                  <ul className="mb-2 sm:min-h-[316px] text-white">
                     {pricingDataBusines.map((text, index) => (
                       <li className="mb-1 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
@@ -183,13 +193,42 @@ export const Pricing = () => {
                   </ul>
 
                   <a
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
                     href="/signup"
                   >
                     {t('PRICING.cards.three.cta')}
                   </a>
                 </div>
-              </div>
+
+                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
+                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
+                    {t('PRICING.cards.four.title')}
+                  </h4>
+                  <div className="flex justify-start items-end mb-10">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                      {isMonthly ? '$498' : '$4.476'}
+                    </div>
+                    <div className="text-gray-500">
+                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                    </div>
+                  </div>
+
+                  <ul className="mb-2 sm:min-h-[316px] text-white">
+                    {pricingDataEnterprise.map((text, index) => (
+                      <li className="mb-1 flex" key={`${text}-${index}`}>
+                        <CheckArrowIcon />
+                        <span>{text}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
+                    href="/signup"
+                  >
+                    {t('PRICING.cards.four.cta')}
+                  </a>
+                </div>
             </div>
           </div>
         </motion.div>
