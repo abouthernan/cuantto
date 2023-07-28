@@ -45,7 +45,7 @@ export const Pricing = () => {
     t('PRICING.cards.three.list.nine')
   ]
 
-    const pricingDataEnterprise = [
+  const pricingDataEnterprise = [
     t('PRICING.cards.four.list.one'),
     t('PRICING.cards.four.list.two'),
     t('PRICING.cards.four.list.three'),
@@ -108,127 +108,131 @@ export const Pricing = () => {
               </label>
             </div>
 
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center items-start gap-2 lg:mt-20">
+            <div className="grid place-items-center grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center items-start gap-2 lg:mt-20">
 
-                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    {t('PRICING.cards.one.title')}
-                  </h4>
-                  <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      $0
-                    </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
-                    </div>
+              <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
+                  {t('PRICING.cards.one.title')}
+                </h4>
+                <div className="flex justify-start items-end mb-10">
+                  <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    $0
                   </div>
-
-                  <ul className="mb-2 sm:min-h-[316px] text-white">
-                    {pricingDataFree.map((text, index) => (
-                      <li className="mb-1 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
-                    href="/signup"
-                  >
-                    {t('PRICING.cards.one.cta')}
-                  </a>
+                  <div className="text-gray-500">
+                    {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                  </div>
                 </div>
 
-                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 text-2xl font-bold font-heading text-white text-left">
-                    {t('PRICING.cards.two.title')}
-                  </h4>
-                  <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? '$48' : '$432'}
-                    </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
-                    </div>
+                <ul className="mb-2 sm:min-h-[316px] text-white">
+                  {pricingDataFree.map((text, index) => (
+                    <li className="mb-1 flex" key={`${text}-${index}`}>
+                      <CheckArrowIcon />
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
+                  href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                  target='_blank'
+                >
+                  {t('PRICING.cards.one.cta')}
+                </a>
+              </div>
+
+              <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-2xl font-bold font-heading text-white text-left">
+                  {t('PRICING.cards.two.title')}
+                </h4>
+                <div className="flex justify-start items-end mb-10">
+                  <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    {isMonthly ? '$48' : '$432'}
                   </div>
-
-                  <ul className="mb-2 sm:min-h-[316px] text-white">
-                    {pricingDataStarter.map((text, index) => (
-                      <li className="mb-1 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a
-                    className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-5"
-                    href="/signup"
-                  >
-                    {t('PRICING.cards.two.cta')}
-                  </a>
+                  <div className="text-gray-500">
+                    {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                  </div>
                 </div>
 
-                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    {t('PRICING.cards.three.title')}
-                  </h4>
-                  <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? '$250' : '$2.244'}
-                    </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
-                    </div>
+                <ul className="mb-2 sm:min-h-[316px] text-white">
+                  {pricingDataStarter.map((text, index) => (
+                    <li className="mb-1 flex" key={`${text}-${index}`}>
+                      <CheckArrowIcon />
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-5"
+                  href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                  target='_blank'
+                >
+                  {t('PRICING.cards.two.cta')}
+                </a>
+              </div>
+
+              <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
+                  {t('PRICING.cards.three.title')}
+                </h4>
+                <div className="flex justify-start items-end mb-10">
+                  <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    {isMonthly ? '$250' : '$2.244'}
                   </div>
-
-                  <ul className="mb-2 sm:min-h-[316px] text-white">
-                    {pricingDataBusines.map((text, index) => (
-                      <li className="mb-1 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
-                    href="/signup"
-                  >
-                    {t('PRICING.cards.three.cta')}
-                  </a>
+                  <div className="text-gray-500">
+                    {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                  </div>
                 </div>
 
-                <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    {t('PRICING.cards.four.title')}
-                  </h4>
-                  <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? '$498' : '$4.476'}
-                    </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
-                    </div>
+                <ul className="mb-2 sm:min-h-[316px] text-white">
+                  {pricingDataBusines.map((text, index) => (
+                    <li className="mb-1 flex" key={`${text}-${index}`}>
+                      <CheckArrowIcon />
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
+                  href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                  target='_blank'
+                >
+                  {t('PRICING.cards.three.cta')}
+                </a>
+              </div>
+
+              <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
+                  {t('PRICING.cards.four.title')}
+                </h4>
+                <div className="flex justify-start items-end mb-10">
+                  <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    {isMonthly ? '$498' : '$4.476'}
                   </div>
-
-                  <ul className="mb-2 sm:min-h-[316px] text-white">
-                    {pricingDataEnterprise.map((text, index) => (
-                      <li className="mb-1 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
-                    href="/signup"
-                  >
-                    {t('PRICING.cards.four.cta')}
-                  </a>
+                  <div className="text-gray-500">
+                    {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                  </div>
                 </div>
+
+                <ul className="mb-2 sm:min-h-[316px] text-white">
+                  {pricingDataEnterprise.map((text, index) => (
+                    <li className="mb-1 flex" key={`${text}-${index}`}>
+                      <CheckArrowIcon />
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
+                  href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                  target='_blank'
+                >
+                  {t('PRICING.cards.four.cta')}
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
