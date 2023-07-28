@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
-import feature5 from '../assets/images/feature5.jpg'
-import feature6 from '../assets/images/feature6.jpg'
+import feature5 from '../assets/images/feature5.jpeg'
+import feature6 from '../assets/images/feature6.jpeg'
 import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon'
 import { useTranslation } from 'react-i18next'
 

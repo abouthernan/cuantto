@@ -1,14 +1,32 @@
 import { motion } from 'framer-motion'
 
-import feature1 from '../assets/images/feature1.jpg'
-import feature2 from '../assets/images/feature2.jpg'
-import feature3 from '../assets/images/feature3.jpg'
-import feature4 from '../assets/images/feature4.jpg'
+// spanish
+import img1es from '../assets/images/feature1/es/1.webp'
+import img2es from '../assets/images/feature1/es/2.webp'
+import img3es from '../assets/images/feature1/es/3.webp'
+import img4es from '../assets/images/feature1/es/4.webp'
+
+// english
+import img1en from '../assets/images/feature1/en/1.webp'
+import img2en from '../assets/images/feature1/en/2.webp'
+import img3en from '../assets/images/feature1/en/3.webp'
+import img4en from '../assets/images/feature1/en/4.webp'
+
+const IMGS = {
+  es: [img1es, img2es, img3es, img4es],
+  en: [img1en, img2en, img3en, img4en],
+}
+
+
 import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon'
 import { useTranslation } from 'react-i18next'
 
 export const Features1 = () => {
   const { t } = useTranslation()
+
+  const lang = useTranslation().i18n.language
+  const isEs = lang === 'es'
+
   return (
     <section
       className="w-full bg-customBg mb-8 sm:mt-16 sm:mb-16"
@@ -68,14 +86,14 @@ export const Features1 = () => {
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
               <div className="mb-4 py-3 pl-3 pr-2 rounded">
                 <img
-                  src={feature1}
+                  src={IMGS[isEs ? 'es' : 'en'][0]}
                   alt="f1"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
-                  src={feature2}
+                  src={IMGS[isEs ? 'es' : 'en'][1]}
                   alt="f2"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
@@ -84,14 +102,15 @@ export const Features1 = () => {
             <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
               <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature3}
+                  src={IMGS[isEs ? 'es' : 'en'][2]}
                   alt="f3"
                   className="rounded-xl  custom-border-gray"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature4}
+
+                  src={IMGS[isEs ? 'es' : 'en'][3]}
                   alt="f4"
                   className="rounded-xl  custom-border-gray"
                 />
