@@ -4,12 +4,17 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        scroll: 'scroll 70s linear infinite'
+        scroll: 'scroll 70s linear infinite',
+        integrations: 'scrollIntegrations 50s linear infinite'
       },
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(calc(-320px*7))' }
+        },
+        scrollIntegrations: {
+          '0%': { transform: 'translateX(calc(-240px*5))' },
+          '100%': { transform: 'translateX(0)' }
         }
       },
       colors: {

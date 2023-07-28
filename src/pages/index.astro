@@ -17,6 +17,7 @@ import "../styles/Theme.css";
 import "../styles/Diagonals.css";
 import i18next, { changeLanguage } from "i18next";
 import { LanguageSelector } from "astro-i18next/components";
+import Integrations from "../components/Integrations.astro";
 
 changeLanguage("es");
 
@@ -42,6 +43,7 @@ const title = lang === "es"
   <Features2 client:load />
   <Estadistics client:load />
   <Testimonials client:load />
+  <Integrations />
   <Pricing client:load />
   <Brands client:load />
   <FAQ client:load />
