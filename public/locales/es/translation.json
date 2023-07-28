@@ -29,10 +29,15 @@
     "four": "Lanzamos",
     "five": "Te acompañamos y crecemos juntos"
   },
+  "INTEGRATIONS": {
+    "sub": "INTEGRACIONES",
+    "title": "Dale super poderes",
+    "description": "a tu equipo de ventas. Integra Qantto con"
+  },
   "FEATURES1": {
     "sub": "El tiempo de respuesta sí importa",
     "title": "Configura un vez y recibe cientos de cotizaciones al día",
-    "description": "Elimina la sobre carga laborar del equipo de ventas y aumenta tus ingresos eliminando los cuellos de botella y reprocesos. Mejora la experiencia de compra de tus clientes cliente.",
+    "description": "Elimina la sobre carga laborar del equipo de ventas y aumenta tus ingresos eliminando los cuellos de botella y reprocesos. Mejora la experiencia de compra de tus clientes.",
     "list": {
       "one": "Cotizaciones en tiempo real.",
       "two": "Tu negocio siempre disponible: 24/7.",
@@ -46,7 +51,7 @@
   "FEATURES2": {
     "sub": "Estadísticas en tiempo real",
     "title": "Enfócate en lo que importa",
-    "description": "No pierdas tiempo con valioso para tu equipo de ventas.",
+    "description": "No pierdas tiempo valioso para tu equipo de ventas.",
     "list": {
       "one": "Ver tus prospectos en tiempo real.",
       "two": "Medir la intención de compra.",

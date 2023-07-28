@@ -10,13 +10,13 @@ import { Testimonials } from "../../components/Testimonials.jsx";
 import { FAQ } from "../../components/FAQ.jsx";
 import { Pricing } from "../../components/Pricing";
 import { Brands } from "../../components/Brands.jsx";
-import { Divider } from "../../components/Divider";
 import { Footer } from "../../components/Footer.jsx";
 import { ScrollUpButton } from "../../components/ScrollUpButton";
 import "../../styles/Theme.css";
 import "../../styles/Diagonals.css";
 import i18next, { changeLanguage } from "i18next";
 import { LanguageSelector } from "astro-i18next/components";
+import { Integrations } from "../../components/Integrations.jsx";
 
 changeLanguage("en");
 
@@ -38,11 +38,11 @@ const title = lang === "es"
   <Hero client:load />
   <Stepper client:load />
   <Features1 client:load />
-  <Divider />
-  <Features2 client:load />
   <Estadistics client:load />
-  <Testimonials client:load />
+  <Features2 client:load />
+  <Integrations client:load/>
   <Pricing client:load />
+  <Testimonials client:load />
   <Brands client:load />
   <FAQ client:load />
   <Footer client:load />

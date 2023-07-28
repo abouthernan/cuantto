@@ -17,7 +17,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-customGreen text-sm sm:text-base mb-6 sm:mt-20 font-bold">
+          <div className="text-customGreen text-[18px] mb-6 sm:mt-20 font-bold">
             {t('HERO.sub')}
           </div>
         </motion.div>

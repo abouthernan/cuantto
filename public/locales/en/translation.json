@@ -29,6 +29,11 @@
     "four": "We launch",
     "five": "We accompany you and grow together"
   },
+  "INTEGRATIONS": {
+    "sub": "INTEGRATIONS",
+    "title": "Give them superpowers",
+    "description": "to your sales team. Integrate Qantto and unleash their potential"
+  },
   "FEATURES1": {
     "sub": "Response time does matter",
     "title": "Configure once and receive hundreds of quotes per day",
