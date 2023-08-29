@@ -103,58 +103,69 @@
     "cards": {
       "one": {
         "title": "Free",
-        "cta": "Get Started",
+        "cta": "Start",
         "list": {
           "one": "1 service",
-          "two": "1 user",
-          "three": "View up to 5 created quotes",
-          "four": "Your clients will be able to make unlimited quotes",
-          "five": "Export quotes to PDF",
-          "six": "Logo (white label)"
+          "two": "1 subservice",
+          "three": "1 user",
+          "four": "3 leads per month",
+          "five": "3 queries per month",
+          "six": "Your clients can make unlimited quotes",
+          "seven": "Your company's logo on quotes",
+          "eight": "Dashboard notifications",
+          "nine": "Appointment scheduling"
         }
       },
       "two": {
         "title": "Starter",
-        "cta": "Get Started",
+        "cta": "Start",
         "list": {
           "one": "2 services",
-          "two": "2 users",
-          "three": "View up to 30 created quotes",
-          "four": "Your clients can create unlimited quotes",
-          "five": "Statistics",
-          "six": "Customizable destination link",
-          "seven": "Export Quotes to PDF",
-          "eight": "Your company's logo"
+          "two": "4 subservices",
+          "three": "2 users",
+          "four": "15 leads per month",
+          "five": "15 queries per month",
+          "six": "History of up to the last 5 records",
+          "seven": "Your clients can make unlimited quotes",
+          "eight": "Your company's logo on quotes",
+          "nine": "Dashboard notifications",
+          "ten": "Appointment scheduling",
+          "eleven": "Statistics"
         }
       },
       "three": {
         "title": "Business",
-        "cta": "Get Started",
+        "cta": "Start",
         "list": {
-          "one": "Up to 5 services",
-          "two": "Up to 5 users",
-          "three": "View up to 100 created quotes",
-          "four": "Your clients can make unlimited quotes",
-          "five": "Advanced Statistics",
-          "six": "Export Data",
-          "seven": "Your company's logo",
-          "eight": "Export Quotes to PDF",
-          "nine": "Send Quote via email"
+          "one": "5 services",
+          "two": "10 subservices",
+          "three": "5 users",
+          "four": "30 quotes per month",
+          "five": "30 queries per month",
+          "six": "History of up to the last 10 records",
+          "seven": "Your clients can make unlimited quotes",
+          "eight": "Your company's logo on quotes",
+          "nine": "Dashboard notifications",
+          "ten": "Appointment scheduling",
+          "eleven": "Advanced Statistics",
+          "twelve": "Export Data"
         }
       },
       "four": {
         "title": "Enterprise",
-        "cta": "Get Started",
+        "cta": "Start",
         "list": {
           "one": "Unlimited services",
-          "two": "Unlimited users",
-          "three": "Unlimited quotes",
-          "four": "Your clients can create unlimited quotes",
-          "five": "Advanced Statistics",
-          "six": "Export Data",
-          "seven": "Your company's logo",
-          "eight": "Export Quotes to PDF",
-          "nine": "Send Quote via email"
+          "two": "Unlimited subservices",
+          "three": "Unlimited users",
+          "four": "Unlimited quotes",
+          "five": "Your clients can make unlimited quotes",
+          "six": "Unlimited record history",
+          "seven": "Your company's logo on quotes",
+          "eight": "Dashboard notifications",
+          "nine": "Appointment scheduling",
+          "ten": "Advanced Statistics",
+          "eleven": "Export Data"
         }
       }
     }

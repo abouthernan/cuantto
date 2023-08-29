@@ -106,11 +106,14 @@
         "cta": "Empezar",
         "list": {
           "one": "1 servicio",
-          "two": "1 usuario",
-          "three": "Ver hasta 5 cotizaciones creadas",
-          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
-          "five": "Exportar cotizaciones a PDF",
-          "six": "Logo (white label)"
+          "two": "1 subservicio",
+          "three": "1 usuario",
+          "four": "3 leads / mes",
+          "five": "3 consultas / mes",
+          "six": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "seven": "Logo de tu empresa en las quotes",
+          "eight": "Notificaciones en dashboard",
+          "nine": "Agendamiento de citas"
         }
       },
       "two": {
@@ -118,28 +121,34 @@
         "cta": "Empezar",
         "list": {
           "one": "2 servicios",
-          "two": "2 usuarios",
-          "three": "Ver hasta 30 cotizaciones creadas",
-          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
-          "five": "Estadísticas",
-          "six": "Link de destino personalizable",
-          "seven": "Exportar Cotizaciones en PDF",
-          "eight": "Logo de tu empresa"
+          "two": "4 subservicios",
+          "three": "2 usuarios",
+          "four": "15 leads / mes",
+          "five": "15 consultas / mes",
+          "six": "Historial de hasta 5 últimos registros",
+          "seven": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "eight": "Logo de tu empresa en las quotes",
+          "nine": "Notificaciones en dashboard",
+          "ten": "Agendamiento de citas",
+          "eleven": "Estadísticas"
         }
       },
       "three": {
         "title": "Business",
         "cta": "Empezar",
         "list": {
-          "one": "Hasta 5 servicios",
-          "two": "Hasta 5 Usuarios",
-          "three": "Ver hasta 100 cotizaciones creadas",
-          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
-          "five": "Estadísticas Avanzadas",
-          "six": "Exportar Data",
-          "seven": "Logo de tu empresa",
-          "eight": "Exportar Cotizaciones en PDF",
-          "nine": "Enviar Quote vía email"
+          "one": "5 servicios",
+          "two": "10 subservicios",
+          "three": "5 usuarios",
+          "four": "30 cotizaciones / mes",
+          "five": "30 consultas / mes",
+          "six": "Historial de hasta 10 últimos registros",
+          "seven": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "eight": "Logo de tu empresa en las quotes",
+          "nine": "Notificaciones en dashboard",
+          "ten": "Agendamiento de citas",
+          "eleven": "Estadísticas Avavzadas",
+          "twelve": "Exportar Data"
         }
       },
       "four": {
@@ -147,14 +156,16 @@
         "cta": "Empezar",
         "list": {
           "one": "Servicios ilimitados",
-          "two": "Usuarios ilimitados",
-          "three": "Cotizaciones ilimitadas",
-          "four": "Tus clientes podrán hacer cotizaciones ilimitadas",
-          "five": "Estadísticas Avanzadas",
-          "six": "Exportar Data",
-          "seven": "Logo de tu empresa",
-          "eight": "Exportar Cotizaciones en PDF",
-          "nine": "Enviar Quote vía email"
+          "two": "Subservicios ilimitados",
+          "three": "Usuarios ilimitados",
+          "four": "Cotizaciones ilimitadas",
+          "five": "Tus clientes podrán hacer cotizaciones ilimitadas",
+          "six": "Historial de registros ilimitados",
+          "seven": "Logo de tu empresa en las quotes",
+          "eight": "Notificaciones en dashboard",
+          "nine": "Agendamiento de citas",
+          "ten": "Estadísticas Avanzadas",
+          "eleven": "Exportar Data"
         }
       }
     }

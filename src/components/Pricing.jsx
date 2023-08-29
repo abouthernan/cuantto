@@ -10,9 +10,6 @@ export const Pricing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { t } = useTranslation()
 
-  const lang = useTranslation().i18n.language
-  const isEs = lang === 'es'
-
   const pricingDataFree = [
     t('PRICING.cards.one.list.one'),
     t('PRICING.cards.one.list.two'),
@@ -20,6 +17,9 @@ export const Pricing = () => {
     t('PRICING.cards.one.list.four'),
     t('PRICING.cards.one.list.five'),
     t('PRICING.cards.one.list.six'),
+    t('PRICING.cards.one.list.seven'),
+    t('PRICING.cards.one.list.eight'),
+    t('PRICING.cards.one.list.nine')
   ]
 
   const pricingDataStarter = [
@@ -31,6 +31,9 @@ export const Pricing = () => {
     t('PRICING.cards.two.list.six'),
     t('PRICING.cards.two.list.seven'),
     t('PRICING.cards.two.list.eight'),
+    t('PRICING.cards.two.list.nine'),
+    t('PRICING.cards.two.list.ten'),
+    t('PRICING.cards.two.list.eleven')
   ]
 
   const pricingDataBusines = [
@@ -42,7 +45,10 @@ export const Pricing = () => {
     t('PRICING.cards.three.list.six'),
     t('PRICING.cards.three.list.seven'),
     t('PRICING.cards.three.list.eight'),
-    t('PRICING.cards.three.list.nine')
+    t('PRICING.cards.three.list.nine'),
+    t('PRICING.cards.three.list.ten'),
+    t('PRICING.cards.three.list.eleven'),
+    t('PRICING.cards.three.list.twelve')
   ]
 
   const pricingDataEnterprise = [
@@ -54,7 +60,9 @@ export const Pricing = () => {
     t('PRICING.cards.four.list.six'),
     t('PRICING.cards.four.list.seven'),
     t('PRICING.cards.four.list.eight'),
-    t('PRICING.cards.four.list.nine')
+    t('PRICING.cards.four.list.nine'),
+    t('PRICING.cards.four.list.ten'),
+    t('PRICING.cards.four.list.eleven')
   ]
 
   const handleChange = () => {
@@ -102,14 +110,15 @@ export const Pricing = () => {
                   </div>
                   <div className={isMonthly && 'text-gray-400'}>
                     {t('PRICING.yearly')}
-                    <span className='absolute text-black bg-orange-400 shadow -top-[7px] -right-[60px] w-24 text-[11px] rotate-[45deg]'>25% Off</span>
+                    <span className="absolute text-black bg-orange-400 shadow -top-[7px] -right-[60px] w-24 text-[11px] rotate-[45deg]">
+                      25% Off
+                    </span>
                   </div>
                 </div>
               </label>
             </div>
 
             <div className="grid place-items-center grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center items-start gap-2 lg:mt-20">
-
               <div className="w-[300px] p-8 bg-customDarkBg3 rounded-3xl">
                 <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
                   {t('PRICING.cards.one.title')}
@@ -123,7 +132,7 @@ export const Pricing = () => {
                   </div>
                 </div>
 
-                <ul className="mb-2 sm:min-h-[316px] text-white">
+                <ul className="mb-2 md:min-h-[428px] text-white">
                   {pricingDataFree.map((text, index) => (
                     <li className="mb-1 flex" key={`${text}-${index}`}>
                       <CheckArrowIcon />
@@ -135,7 +144,7 @@ export const Pricing = () => {
                 <a
                   className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
                   href="https://calendly.com/qantto/30min?back=1&month=2023-07"
-                  target='_blank'
+                  target="_blank"
                 >
                   {t('PRICING.cards.one.cta')}
                 </a>
@@ -154,7 +163,7 @@ export const Pricing = () => {
                   </div>
                 </div>
 
-                <ul className="mb-2 sm:min-h-[316px] text-white">
+                <ul className="mb-2 md:min-h-[428px] text-white">
                   {pricingDataStarter.map((text, index) => (
                     <li className="mb-1 flex" key={`${text}-${index}`}>
                       <CheckArrowIcon />
@@ -166,7 +175,7 @@ export const Pricing = () => {
                 <a
                   className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-5"
                   href="https://calendly.com/qantto/30min?back=1&month=2023-07"
-                  target='_blank'
+                  target="_blank"
                 >
                   {t('PRICING.cards.two.cta')}
                 </a>
@@ -185,7 +194,7 @@ export const Pricing = () => {
                   </div>
                 </div>
 
-                <ul className="mb-2 sm:min-h-[316px] text-white">
+                <ul className="mb-2 md:min-h-[428px] text-white">
                   {pricingDataBusines.map((text, index) => (
                     <li className="mb-1 flex" key={`${text}-${index}`}>
                       <CheckArrowIcon />
@@ -197,7 +206,7 @@ export const Pricing = () => {
                 <a
                   className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
                   href="https://calendly.com/qantto/30min?back=1&month=2023-07"
-                  target='_blank'
+                  target="_blank"
                 >
                   {t('PRICING.cards.three.cta')}
                 </a>
@@ -216,7 +225,7 @@ export const Pricing = () => {
                   </div>
                 </div>
 
-                <ul className="mb-2 sm:min-h-[316px] text-white">
+                <ul className="mb-2 md:min-h-[428px] text-white">
                   {pricingDataEnterprise.map((text, index) => (
                     <li className="mb-1 flex" key={`${text}-${index}`}>
                       <CheckArrowIcon />
@@ -228,7 +237,7 @@ export const Pricing = () => {
                 <a
                   className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-5"
                   href="https://calendly.com/qantto/30min?back=1&month=2023-07"
-                  target='_blank'
+                  target="_blank"
                 >
                   {t('PRICING.cards.four.cta')}
                 </a>
