@@ -74,10 +74,7 @@ export function Footer() {
                 </h3>
                 <ul>
                   <li className="mb-4">
-                    <p
-                      className="text-gray-400"
-                      aria-label="ubicacion"
-                    >
+                    <p className="text-gray-400" aria-label="ubicacion">
                       651 N Broad St <br />
                       Suite 201 <br />
                       Middletown, DE 19709 <br />
@@ -97,7 +94,7 @@ export function Footer() {
                       className="text-gray-400 hover:text-gray-300"
                       href={isEs ? termsEs : termsEn}
                       aria-label="terms and conditions"
-                      target='_blank'
+                      target="_blank"
                     >
                       {t('FOOTER.termsAndConditions')}
                     </a>
@@ -107,7 +104,7 @@ export function Footer() {
                       className="text-gray-400 hover:text-gray-300"
                       href={isEs ? policyEs : policyEn}
                       aria-label="privacy policy"
-                      target='_blank'
+                      target="_blank"
                     >
                       {t('FOOTER.privacyPolicy')}
                     </a>
@@ -125,10 +122,10 @@ export function Footer() {
                   <li>
                     <a
                       className="text-gray-400 hover:text-gray-300"
-                      href="mailto:hello@qantto.io"
+                      href="mailto:team@qantto.io"
                       aria-label="email"
                     >
-                      hello@qantto.io
+                      team@qantto.io
                     </a>
                   </li>
                 </ul>
