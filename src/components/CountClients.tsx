@@ -18,7 +18,9 @@ export const CountClients = () => {
     fetchData()
 
     const generateRandomInterval = () => {
-      return Math.floor(Math.random() * (10000 - 3000 + 1)) + 3000 // Generar un número aleatorio entre 3000 y 10000
+      return (
+        Math.floor(Math.random() * (5 * 60 * 1000 - 3 * 1000 + 1)) + 3 * 1000
+      ) // Generar un número aleatorio entre 3s y 5m
     }
 
     let timer
