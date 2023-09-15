@@ -19,7 +19,7 @@
     "sub": "Increase your conversion rate by automating the sales process",
     "title": "We are the first\nQuoting-Automation platform",
     "description": "We change the quoting experience. We are not a template software.",
-    "cta": "Schedule your demo"
+    "cta": "Create an account"
   },
   "ONBOARDING": {
     "title": "Getting started is very easy",
@@ -103,7 +103,7 @@
     "cards": {
       "one": {
         "title": "Free",
-        "cta": "Start",
+        "cta": "Create an account",
         "list": {
           "one": "1 service",
           "two": "1 subservice",
@@ -118,7 +118,7 @@
       },
       "two": {
         "title": "Starter",
-        "cta": "Start",
+        "cta": "Create an account",
         "list": {
           "one": "2 services",
           "two": "4 subservices",
@@ -135,7 +135,7 @@
       },
       "three": {
         "title": "Business",
-        "cta": "Start",
+        "cta": "Create an account",
         "list": {
           "one": "5 services",
           "two": "10 subservices",
@@ -153,7 +153,7 @@
       },
       "four": {
         "title": "Enterprise",
-        "cta": "Start",
+        "cta": "Create an account",
         "list": {
           "one": "Unlimited services",
           "two": "Unlimited subservices",

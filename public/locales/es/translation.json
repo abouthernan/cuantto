@@ -19,7 +19,7 @@
     "sub": "Aumenta tu tasa de conversión automatizando el proceso de ventas",
     "title": "Somos la primera plataforma de\nQuoting-Automation",
     "description": "Cambiamos la experiencia de cotizar. No somos un software de plantillas.",
-    "cta": "Agenda tu demo"
+    "cta": "Crear cuenta"
   },
   "ONBOARDING": {
     "title": "Empezar es muy fácil",
@@ -103,7 +103,7 @@
     "cards": {
       "one": {
         "title": "Free",
-        "cta": "Empezar",
+        "cta": "Crear cuenta",
         "list": {
           "one": "1 servicio",
           "two": "1 subservicio",
@@ -118,7 +118,7 @@
       },
       "two": {
         "title": "Starter",
-        "cta": "Empezar",
+        "cta": "Crear cuenta",
         "list": {
           "one": "2 servicios",
           "two": "4 subservicios",
@@ -135,7 +135,7 @@
       },
       "three": {
         "title": "Business",
-        "cta": "Empezar",
+        "cta": "Crear cuenta",
         "list": {
           "one": "5 servicios",
           "two": "10 subservicios",
@@ -153,7 +153,7 @@
       },
       "four": {
         "title": "Enterprise",
-        "cta": "Empezar",
+        "cta": "Crear cuenta",
         "list": {
           "one": "Servicios ilimitados",
           "two": "Subservicios ilimitados",
