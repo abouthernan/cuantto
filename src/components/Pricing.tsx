@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { CheckArrowIcon } from '../assets/icons/index'
+import { CheckArrowIcon } from '../assets/icons/Icons'
 
 export const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true)
