@@ -14,6 +14,7 @@ import { Pricing } from "../components/Pricing";
 import Testimonials from "../components/Testimonials.astro";
 import Banner3 from "../components/Banner3.astro";
 import { Faqs } from "../components/Faqs";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Qantto">
@@ -31,4 +32,5 @@ import { Faqs } from "../components/Faqs";
 	<Testimonials />
 	<Banner3 />
 	<Faqs client:visible />
+	<Footer client:visible />
 </Layout>
