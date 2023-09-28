@@ -1,0 +1,23 @@
+---
+import { CountClients } from "./CountClients";
+---
+
+<section class="text-white container w-full mt-14 mx-auto relative">
+  <div
+    class="flex max-w-5xl flex-col bg-qBlack rounded-3xl justify-center items-center py-10 mx-auto my-8 shadow-2xl space-y-6 overflow-hidden"
+  >
+    <p class="text-3xl text-white font-bold">
+      <small>+</small><CountClients client:visible />
+    </p>
+
+    <h2 class="z-10 text-3xl max-w-sm text-center balance font-semibold">
+      Empresas y emprendedores están <span class="text-qGreen"
+        >aumentando sus ingresos con Qannto</span
+      >
+    </h2>
+
+    <span class="z-10 text-4xl">😉</span>
+
+    <p class="z-10">...Son datos y hay que darlos...</p>
+  </div>
+</section>
