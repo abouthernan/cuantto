@@ -73,12 +73,12 @@ export const Pricing = () => {
         className="w-screen flex justify-center relative"
         id="pricing"
       >
-        <div className="pb-20 pt-12 bg-customBg w-full max-w-7xl">
+        <div className="pb-20 bg-customBg w-full max-w-7xl">
           <div>
             <div className="container mx-auto px-4">
-              <div className="max-w-md mx-auto text-center mb-16">
+              <div className="max-w-[560px] mx-auto text-center mb-16">
                 <span className="text-qGreen">Planes</span>
-                <h2 className="my-2 text-3xl font-bold  text-white balance">
+                <h2 className="my-2 text-3xl font-bold  text-white">
                   Paga solo por <span class="text-qGreen">oportunidades reales</span> de venta
                 </h2>
                 <p className="text-white/80 w-full text-center">
@@ -270,8 +270,8 @@ export const Pricing = () => {
         </div>
       </section>
 
-      <div class="text-center text-white/80 max-w-xs mx-auto balance -mt-8">
-        <p>Todos los planes incluyen chat y <span class="text-qGreen">video soporte</span> con nuestro equipo.</p>
+      <div class="text-center text-white/80 max-w-xs mx-auto balance -mt-8 font-base">
+        <p>Todos los planes incluyen chat y <span class="text-qGreen font-bold">video soporte</span> con nuestro equipo.</p>
       </div>
     </>
   )
