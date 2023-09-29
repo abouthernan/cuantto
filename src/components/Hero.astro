@@ -1,6 +1,6 @@
 ---
 import { t } from "i18next";
-// import { Trans } from "astro-i18next/components";
+import { Trans } from "astro-i18next/components";
 ---
 
 <main
@@ -62,11 +62,12 @@ import { t } from "i18next";
     </a>
     <div class="font-light text-base">
       <p>
-        <!-- <Trans i18nKey="MESSAGES.qanttoWithDays"> -->
-         Prueba <span class="text-qGreen font-bold">Qantto</span> sin costo por <strong
-          class="font-bold">14 días.</strong
-        >
-        <!-- </Trans> -->
+        <Trans i18nKey="MESSAGES.qanttoWithDays">
+          Prueba <span class="text-qGreen font-bold">Qantto</span> sin costo por
+
+
+          <strong class="font-bold">14 días.</strong>
+        </Trans>
       </p>
       <p>{t("MESSAGES.noCreditCard")}</p>
     </div>

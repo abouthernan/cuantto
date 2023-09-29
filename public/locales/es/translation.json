@@ -1,0 +1,30 @@
+{
+  "site": {
+    "title": "Qantto - Cotizador online",
+    "description": "Cotizador online de seguros de auto, hogar, vida y más. Cotizá, compará y contratá online."
+  },
+  "NAV": {
+    "benefits": "Beneficios",
+    "pricing": "Precios",
+    "resources": "Recursos",
+    "questions": "Preguntas"
+  },
+  "CTA": {
+    "login": "Ingresar",
+    "signup": "Inicia tu Free Trial",
+    "freeTrial": "Inicia tu Free-Trial Ahora"
+  },
+  "MESSAGES": {
+    "qanttoWithDays": "Prueba <0>Qantto</0> sin costo por <1>14 días.</1>",
+    "noCreditCard": "No te pedimos tarjeta de crédito",
+    "problem": "Problema",
+    "solution": "Solución",
+    "benefit": "Beneficio"
+  },
+  "HERO": {
+    "subtitle": "Plataforma #1 de Quoting-Automation para equipos y empresas.",
+    "textOne": "Deja de gastar tu tiempo gestionando leads no calificados.",
+    "textTwo": "Genera cotizaciones 100% automáticas, en tiempo real, 24/7.",
+    "textThree": "Tu proceso de ventas en piloto automático."
+  }
+}

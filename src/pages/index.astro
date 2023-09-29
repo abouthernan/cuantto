@@ -1,4 +1,5 @@
 ---
+import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
@@ -15,9 +16,11 @@ import Testimonials from "../components/Testimonials.astro";
 import Banner3 from "../components/Banner3.astro";
 import { Faqs } from "../components/Faqs";
 import Footer from "../components/Footer.astro";
+
+changeLanguage("es");
 ---
 
-<Layout title="Qantto">
+<Layout>
 	<Header />
 	<Hero />
 	<Steper />
