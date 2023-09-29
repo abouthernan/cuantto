@@ -37,10 +37,10 @@
   },
   "STEPER": {
     "textOne": "En promedio este flujo le toma a los equipos y empresas entre <0>18 y 42 horas...</0>",
-    "textTwo": "...con <0>Qantto</0> le tomará <1>10 minutos.</1>"
+    "textTwo": "...con <0>Qantto</0> te tomará <1>10 minutos.</1>"
   },
   "BENEFITS": {
-    "title": "Aumenta <0>tu Tasa de Converción hasta</0> en un 30%",
+    "title": "Aumenta <0>tu Tasa de Conversión hasta</0> en un 30%",
     "description": "Al proporcionar a los clientes una oferta que se adapta perfectamente a sus necesidades y presupuesto, la probabilidad de que acepten la cotización es significativamente mayor. Esto se traduce en un aumento cuantificable en los ingresos y la rentabilidad de tu negocio.",
     "steps": {
       "one": {
@@ -53,7 +53,7 @@
       },
       "three": {
         "title": "Haz Tu Match Ideal",
-        "description": "Al conocer el valor de tu producto o servicio en tiempo real, el cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo valioso. <0/><1/> Así tu negocio puede concentrar sus esfuerzos en aquellos clientes que harán el <2>match perfecto precio-calidad.</2>"
+        "description": "Al conocer el valor de tu producto o servicio en tiempo real, el cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo valioso.\n\nAsí tu negocio puede concentrar sus esfuerzos en aquellos clientes que harán el <0>match perfecto precio-calidad.</0>"
       }
     }
   }
