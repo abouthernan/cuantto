@@ -1,6 +1,4 @@
 ---
-const QuoteIcon = "/images/quote.svg";
-
 const t = (el: string) => el;
 
 const lang = "es";
@@ -53,8 +51,8 @@ const testimonialsData = [
       {
         testimonialsData.map((testimonial, index) => (
           <div class="w-11/12 relative lg:h-[495px] sm:w-4/5 md:w-[560px] lg:w-1/3 rounded-xl bg-qGray flex flex-col px-6 py-4">
-            <div class="flex mb-2 w-11 h-11 aspect-square">
-              <QuoteIcon />
+            <div class="flex mb-3 h-8 aspect-video object-contain">
+              <img src="/images/quote.png" alt="quote image" />
             </div>
             <div class="text-white">{testimonial.content}</div>
             <div class="flex mt-4 mb-2 xl:mt-8 xl:mb-4 lg:absolute lg:bottom-2">
