@@ -99,13 +99,12 @@ import { Trans } from "astro-i18next/components";
         <h3 class="font-bold leading-tight text-xl">
           {t("BENEFITS.steps.three.title")}
         </h3>
-        <p class="text-white/90 mt-2 font-light">
+        <p class="text-white/90 mt-2 font-light whitespace-pre-wrap word-wrap">
           <Trans i18nKey="BENEFITS.steps.three.description">
             Al conocer el valor de tu producto o servicio en tiempo real, el
             cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo
-            valioso. <br /><br /> Así tu negocio puede concentrar sus esfuerzos
-            en aquellos clientes que harán el <strong
-              class="text-white font-bold"
+            valioso. Así tu negocio puede concentrar sus esfuerzos en aquellos
+            clientes que harán el <strong class="text-white font-bold"
               >match perfecto precio-calidad.</strong
             >
           </Trans>
@@ -114,3 +113,9 @@ import { Trans } from "astro-i18next/components";
     </ol>
   </div>
 </section>
+
+<style>
+  .word-wrap {
+    word-wrap: break-word;
+  }
+</style>
