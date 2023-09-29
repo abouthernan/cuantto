@@ -1,29 +1,31 @@
+import { t } from "i18next";
+
 export const menu = [
   {
-    label: 'Beneficios',
+    label: t("NAV.benefits"),
     path: '/#beneficios',
   },
   {
-    label: 'Planes',
+    label: t("NAV.pricing"),
     path: '/#planes',
   },
   {
-    label: 'Recursos',
+    label: t("NAV.resources"),
     path: '/#recursos',
   },
   {
-    label: 'Preguntas',
+    label: t("NAV.questions"),
     path: '/#preguntas',
   }
 ];
 
 export const menuButtons = [
   {
-    label: 'Ingresar',
+    label: t("CTA.login"),
     path: '#',
   },
   {
-    label: 'Inicia tu Free Trial',
+    label: t("CTA.signup"),
     path: '#',
   },
 ];
