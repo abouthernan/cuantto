@@ -1,9 +1,14 @@
+---
+import { t } from "i18next";
+// import { Trans } from "astro-i18next/components";
+---
+
 <main
   class="lg:min-h-[calc(100vh-88px)] grid place-items-center place-content-center gap-20 max-w-7xl mx-auto z-0 pt-10 lg:pt-0 px-2 lg:px-0 mt-[88px]"
 >
   <section class="text-white text-center space-y-5 -z-10">
     <p class="text-qGreen text-lg lg:text-2xl">
-      Plataforma #1 de Quoting-Automation para equipos y empresas.
+      {t("HERO.subtitle")}
     </p>
 
     <div
@@ -11,10 +16,10 @@
     >
       <span
         class="border text-qPurple border-qPurple rounded-md px-4 py-1 relative after:absolute after:h-5 after:w-[1px] after:-bottom-5 after:right-11 lg:after:w-5 lg:after:h-[1px] after:bg-qPurple lg:after:-right-5 lg:after:top-[15px] lg:text-lg"
-        >Problema</span
+        >{t("MESSAGES.problem")}</span
       >
       <h2 class="text-3xl lg:text-4xl">
-        Deja de gastar tu tiempo gestionando leads no calificados.
+        {t("HERO.textOne")}
       </h2>
     </div>
 
@@ -24,13 +29,14 @@
       <h2
         class="text-3xl order-2 lg:order-1 lg:text-4xl bg-qPurple text-qBlack font-semibold px-4 py-2 rounded-md"
       >
-        Genera cotizaciones 100% automáticas, en tiempo real, 24/7.
+        {t("HERO.textTwo")}
       </h2>
 
       <span
         class="border order-1 lg:order-2 border-qGreen rounded-md px-4 py-1 relative after:absolute after:h-5 after:w-[1px] after:-bottom-5 after:right-11 lg:after:w-5 lg:after:h-[1px] after:bg-qGreen text-qGreen lg:after:-left-5 lg:after:top-[15px]"
-        >Solucion</span
       >
+        {t("MESSAGES.solution")}
+      </span>
     </div>
 
     <div
@@ -38,10 +44,11 @@
     >
       <span
         class="border text-qSky border-qSky rounded-md px-4 py-1 relative after:absolute after:h-5 after:w-[1px] lg:after:w-5 after:-bottom-5 after:right-11 lg:after:h-[1px] after:bg-qSky lg:after:-right-5 lg:after:top-[15px]"
-        >Beneficio</span
       >
+        {t("MESSAGES.benefit")}
+      </span>
       <h2 class="text-3xl lg:text-4xl">
-        Tu proceso de ventas en piloto automático.
+        {t("HERO.textThree")}
       </h2>
     </div>
   </section>
@@ -50,15 +57,18 @@
     <a
       href="#"
       class="px-4 py-2 bg-qGreen hover:bg-qGreen/80 transition-colors duration-300 text-qBlack font-semibold rounded-md"
-      >Inicia tu Free-Trial Ahora</a
     >
-    <div>
+      {t("CTA.freeTrial")}
+    </a>
+    <div class="font-light text-base">
       <p>
-        Prueba <span class="text-qGreen">Qantto</span> sin costo por <strong
-          >14 días.</strong
+        <!-- <Trans i18nKey="MESSAGES.qanttoWithDays"> -->
+         Prueba <span class="text-qGreen font-bold">Qantto</span> sin costo por <strong
+          class="font-bold">14 días.</strong
         >
+        <!-- </Trans> -->
       </p>
-      <p>No te pedimos tarjeta de crédito.</p>
+      <p>{t("MESSAGES.noCreditCard")}</p>
     </div>
   </section>
 </main>
