@@ -1,3 +1,8 @@
+---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+---
+
 <section class="container max-w-7xl mx-auto flex justify-between flex-wrap">
   <div class="flex items-center">
     <img
@@ -7,15 +12,12 @@
     />
     <div class="max-w-md">
       <h2 class="text-qGreen font-bold text-3xl balance">
-        Aumenta <span class="text-white">tu Tasa de Converción hasta</span> en
-        un 30%
+        <Trans i18nKey="BENEFITS.title">
+          Aumenta <span class="text-white">tu Tasa de Converción hasta</span> en
+          un 30%
+        </Trans>
       </h2>
-      <p class="text-white mt-5 font-light">
-        Al proporcionar a los clientes una oferta que se adapta perfectamente a
-        sus necesidades y presupuesto, la probabilidad de que acepten la
-        cotización es significativamente mayor. Esto se traduce en un aumento
-        cuantificable en los ingresos y la rentabilidad de tu negocio.
-      </p>
+      <p class="text-white mt-5 font-light">{t("BENEFITS.description")}</p>
     </div>
   </div>
   <div class="steper">
@@ -38,12 +40,16 @@
             ></path></svg
           >
         </span>
-        <h3 class="font-bold leading-tight text-xl">Ahorra Tiempo</h3>
+        <h3 class="font-bold leading-tight text-xl">
+          {t("BENEFITS.steps.one.title")}
+        </h3>
         <p class="text-white/90 mt-2 font-light">
-          Las empresas configuran sus productos o servicios <strong
-            class="text-white font-bold">una sola vez</strong
-          >, lo que ahorra tiempo en la preparación de cotizaciones
-          personalizadas para cada cliente.
+          <Trans i18nKey="BENEFITS.steps.one.description">
+            Las empresas configuran sus productos o servicios <strong
+              class="text-white font-bold">una sola vez</strong
+            >, lo que ahorra tiempo en la preparación de cotizaciones
+            personalizadas para cada cliente.
+          </Trans>
         </p>
       </li>
       <li class="mb-10 ml-12">
@@ -62,12 +68,16 @@
             ></path></svg
           >
         </span>
-        <h3 class="font-bold leading-tight text-xl">Disminuye Costos</h3>
+        <h3 class="font-bold leading-tight text-xl">
+          {t("BENEFITS.steps.two.title")}
+        </h3>
         <p class="text-white/90 mt-2 font-light">
-          Podrás escalar tu negocio de manera <strong
-            class="text-white font-bold">más eficiente</strong
-          > sin necesidad de aumentar proporcionalmente la inversión en
-          personal.
+          <Trans i18nKey="BENEFITS.steps.two.description">
+            Podrás escalar tu negocio de manera <strong
+              class="text-white font-bold">más eficiente</strong
+            > sin necesidad de aumentar proporcionalmente la inversión en
+            personal.
+          </Trans>
         </p>
       </li>
       <li class="mb-10 ml-12">
@@ -86,14 +96,19 @@
             ></path></svg
           >
         </span>
-        <h3 class="font-bold leading-tight text-xl">Haz Tu Match Ideal</h3>
+        <h3 class="font-bold leading-tight text-xl">
+          {t("BENEFITS.steps.three.title")}
+        </h3>
         <p class="text-white/90 mt-2 font-light">
-          Al conocer el valor de tu producto o servicio en tiempo real, el
-          cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo
-          valioso. <br /><br /> Así tu negocio puede concentrar sus esfuerzos en
-          aquellos clientes que harán el <strong class="text-white font-bold"
-            >match perfecto precio-calidad.</strong
-          >
+          <Trans i18nKey="BENEFITS.steps.three.description">
+            Al conocer el valor de tu producto o servicio en tiempo real, el
+            cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo
+            valioso. <br /><br /> Así tu negocio puede concentrar sus esfuerzos
+            en aquellos clientes que harán el <strong
+              class="text-white font-bold"
+              >match perfecto precio-calidad.</strong
+            >
+          </Trans>
         </p>
       </li>
     </ol>
