@@ -53,7 +53,7 @@
       },
       "three": {
         "title": "Haz Tu Match Ideal",
-        "description": "Al conocer el valor de tu producto o servicio en tiempo real, el cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo valioso.\n\nAsí tu negocio puede concentrar sus esfuerzos en aquellos clientes que harán el <0>match perfecto precio-calidad.</0>"
+        "description": "Al conocer el valor de tu producto o servicio en tiempo real, el cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo valioso.<0 /><1 />Así tu negocio puede concentrar sus esfuerzos en aquellos clientes que harán el <2>match perfecto precio-calidad.</2>"
       }
     }
   }
