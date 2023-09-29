@@ -1,9 +1,16 @@
+---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+---
+
 <section class="container px-2 lg:px-0 py-20 max-w-7xl mx-auto">
   <div class="text-white balance text-left flex w-full justify-start mb-[70px]">
     <p class="max-w-sm text-center relative left-[9%]">
-      En promedio este flujo le toma a los equipos y empresas entre <span
-        class="text-qRed">18 y 42 horas...</span
-      >
+      <Trans i18nKey="STEPER.textOne">
+        En promedio este flujo le toma a los equipos y empresas entre <span
+          class="text-qRed">18 y 42 horas...</span
+        >
+      </Trans>
     </p>
   </div>
 
@@ -22,7 +29,7 @@
           />
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Lead
+          {t("MESSAGES.lead")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-white"></div>
@@ -44,7 +51,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Contacta
+          {t("MESSAGES.contact")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-gray-300"></div>
@@ -64,7 +71,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Cotiza
+          {t("MESSAGES.quote")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-gray-300"></div>
@@ -83,7 +90,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Acepta
+          {t("MESSAGES.accept")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-gray-300"></div>
@@ -105,7 +112,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Contratan
+          {t("MESSAGES.hire")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-gray-300"></div>
@@ -127,7 +134,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Firman
+          {t("MESSAGES.sign")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-gray-300"></div>
@@ -149,7 +156,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Pagan
+          {t("MESSAGES.pay")}
         </div>
       </div>
       <div class="flex-auto border-t border-dashed border-gray-300"></div>
@@ -169,7 +176,7 @@
           >
         </div>
         <div class="absolute top-0 -ml-6 text-center mt-[85px] w-32 text-white">
-          Inician
+          {t("MESSAGES.start")}
         </div>
       </div>
       <!-- step -->
@@ -181,9 +188,11 @@
     class="text-white balance text-left flex w-full justify-center mt-[70px] max-w-sm"
   >
     <p class="relative left-[32%] text-center">
-      ...con <span class="text-qGreen font-bold">Qantto</span> le tomará <strong
-        >10 minutos.</strong
-      >
+      <Trans i18nKey="STEPER.textTwo">
+        ...con <span class="text-qGreen font-bold">Qantto</span> le tomará <strong
+          >10 minutos.</strong
+        >
+      </Trans>
     </p>
   </div>
 </section>

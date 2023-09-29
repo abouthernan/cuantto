@@ -19,12 +19,24 @@
     "noCreditCard": "No te pedimos tarjeta de crédito",
     "problem": "Problema",
     "solution": "Solución",
-    "benefit": "Beneficio"
+    "benefit": "Beneficio",
+    "lead": "Lead",
+    "contact": "Contacta",
+    "quote": "Cotiza",
+    "accept": "Acepta",
+    "hire": "Contratan",
+    "sign": "Firman",
+    "pay": "Pagan",
+    "start": "Inician"
   },
   "HERO": {
     "subtitle": "Plataforma #1 de Quoting-Automation para equipos y empresas.",
     "textOne": "Deja de gastar tu tiempo gestionando leads no calificados.",
     "textTwo": "Genera cotizaciones 100% automáticas, en tiempo real, 24/7.",
     "textThree": "Tu proceso de ventas en piloto automático."
+  },
+  "STEPER": {
+    "textOne": "En promedio este flujo le toma a los equipos y empresas entre <0>18 y 42 horas...</0>",
+    "textTwo": "...con <0>Qantto</0> le tomará <1>10 minutos.</1>"
   }
 }
