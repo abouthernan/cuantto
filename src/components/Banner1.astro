@@ -1,18 +1,28 @@
+---
+import { Trans } from "astro-i18next/components";
+---
+
 <section class="text-white container w-full mt-14 mx-auto relative">
   <div
     class="flex max-w-5xl flex-col bg-qBlack rounded-3xl justify-center items-center py-10 mx-auto my-8 shadow-2xl space-y-6 circuit overflow-hidden"
   >
     <p class="z-10">
-      <span class="text-qGreen">Elimina</span> cuellos de botella.
+      <Trans i18nKey="BANNER1.subtitle">
+        <span class="text-qGreen">Elimina</span> cuellos de botella.
+      </Trans>
     </p>
 
     <h2 class="z-10 text-3xl max-w-sm text-center balance font-semibold">
-      Genera cotizaciones <span class="text-qGreen">100% automáticas</span>, en
-      tiempo real, 24/7.
+      <Trans i18nKey="BANNER1.title">
+        Genera cotizaciones <span class="text-qGreen">100% automáticas</span>,
+        en tiempo real, 24/7.
+      </Trans>
     </h2>
 
     <p class="z-10">
-      <span class="text-qGreen">No Somos</span> un software de plantillas.
+      <Trans i18nKey="BANNER1.description">
+        <span class="text-qGreen">No Somos</span> un software de plantillas.
+      </Trans>
     </p>
     <span class="z-10 text-4xl">😉</span>
   </div>

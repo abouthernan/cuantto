@@ -56,5 +56,36 @@
         "description": "Al conocer el valor de tu producto o servicio en tiempo real, el cliente podrá aceptar o rechazar tu propuesta sin que pierdas tiempo valioso.\n\nAsí tu negocio puede concentrar sus esfuerzos en aquellos clientes que harán el <0>match perfecto precio-calidad.</0>"
       }
     }
+  },
+  "BANNER1": {
+    "subtitle": "<0>Elimina</0> cuellos de botella.",
+    "title": "Genera cotizaciones <0>100% automáticas</0>, en tiempo real, 24/7.",
+    "description": "<0>No Somos</0> un software de plantillas."
+  },
+  "STEPER2": {
+    "subtitle": "Activa Ahora...",
+    "title": "...Tu piloto automático en 5 pasos",
+    "cards": {
+      "one": {
+        "title": "Registrate",
+        "description": "Crea una cuenta y activa tu <0>free-trial de 14 días sin costo.</0>\nNo te pedimos tarjeta de crédito."
+      },
+      "two": {
+        "title": "Crea tu perfil",
+        "description": "<0>Personaliza</0> la página de destino a la que irán tus clientes a cotizar. Ej. <1>qantto.io/miempresa</1> Nombre de tu empresa, una descripción y el logotipo."
+      },
+      "three": {
+        "title": "Configura",
+        "description": "Agrega los servicios y subservicios que ofreces y <0>Configura los parámetros de precio</0> para cada una de las opciones."
+      },
+      "four": {
+        "title": "Comparte",
+        "description": "<0>Comparte el link</0> que te generará la plataforma a tus clientes. Podrás compartirlo vía Whatsapp, Email, Redes o incluso embeberlo dentro de tu página web."
+      },
+      "five": {
+        "title": "Recibe",
+        "description": "Crea una cuenta y activa tu <0>free-trial de 14 días sin costo.</0> No te pedimos tarjeta de crédito."
+      }
+    }
   }
 }
