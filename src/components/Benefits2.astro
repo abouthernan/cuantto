@@ -1,13 +1,22 @@
+---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+---
+
 <section class="text-white/80 mt-24">
-  <p class="text-center">¿Aún no te convences?</p>
+  <p class="text-center">{t("BENEFITS2.subtitle")}</p>
   <h2
     class="text-center text-3xl text-white font-semibold max-w-md balance mx-auto"
   >
-    Dale <span class="text-qGreen">superpoderes</span> a tu equipo de ventas
+    <Trans i18nKey="BENEFITS2.title">
+      Dale <span class="text-qGreen">superpoderes</span> a tu equipo de ventas
+    </Trans>
   </h2>
   <p class="text-center mt-2">
-    Crea tu equipo y <strong class="text-white">asigna roles</strong>
-     personalizados.
+    <Trans i18nKey="BENEFITS2.description">
+      Crea tu equipo y <strong class="text-white">asigna roles</strong>
+      personalizados.
+    </Trans>
   </p>
 
   <div class="grid md:grid-cols-2 place-items-center mt-20 gap-5">
@@ -28,13 +37,16 @@
       </div>
       <div class="max-w-sm">
         <h3 class="text-lg font-semibold text-white">
-          Mantente siempre disponible
+          {t("BENEFITS2.list.one.title")}
         </h3>
         <p class="font-light text-base">
-          Tu negocio estará disponible las <strong class="text-white font-bold"
-            >24 horas del día, los 7 días de la semana</strong
-          >, sin costos adicionales y sin sacrificar la disponibilidad para tus
-          clientes.
+          <Trans i18nKey="BENEFITS2.list.one.desc">
+            Tu negocio estará disponible las <strong
+              class="text-white font-bold"
+              >24 horas del día, los 7 días de la semana</strong
+            >, sin costos adicionales y sin sacrificar la disponibilidad para
+            tus clientes.
+          </Trans>
         </p>
       </div>
     </div>
@@ -55,13 +67,15 @@
       </div>
       <div class="max-w-sm">
         <h3 class="text-lg font-semibold text-white">
-          Ve un paso adelante de tu competencia
+          {t("BENEFITS2.list.two.title")}
         </h3>
         <p class="font-light text-base">
-          Al poder ofrecer cotizaciones precisas y personalizadas de manera
-          rápida, <strong class="text-white font-bold"
-            >te vuelves más competitivo en el mercado</strong
-          > y puedes ganar más negocios.
+          <Trans i18nKey="BENEFITS2.list.two.desc">
+            Al poder ofrecer cotizaciones precisas y personalizadas de manera
+            rápida, <strong class="text-white font-bold"
+              >te vuelves más competitivo en el mercado</strong
+            > y puedes ganar más negocios.
+          </Trans>
         </p>
       </div>
     </div>
@@ -82,14 +96,16 @@
       </div>
       <div class="max-w-sm">
         <h3 class="text-lg font-semibold text-white">
-          Conoce a tu cliente mejor que tus competidores
+          {t("BENEFITS2.list.three.title")}
         </h3>
         <p class="font-light text-base">
-          Qantto proporciona herramientas de análisis de datos que permiten a
-          las empresas obtener información valiosa sobre las <strong
-            class="text-white font-bold"
-            >preferencias y comportamientos de sus clientes.</strong
-          >
+          <Trans i18nKey="BENEFITS2.list.three.desc">
+            Qantto proporciona herramientas de análisis de datos que permiten a
+            las empresas obtener información valiosa sobre las <strong
+              class="text-white font-bold"
+              >preferencias y comportamientos de sus clientes.</strong
+            >
+          </Trans>
         </p>
       </div>
     </div>
@@ -110,14 +126,16 @@
       </div>
       <div class="max-w-sm">
         <h3 class="text-lg font-semibold text-white">
-          Da transparencia en tus costos
+          {t("BENEFITS2.list.four.title")}
         </h3>
         <p class="font-light text-base">
-          Al proporcionar cotizaciones basadas en valores específicos, creas
-          transparencia en la estructura de precios, lo que <strong
-            class="text-white font-bold"
-            >genera confianza en los clientes.</strong
-          >
+          <Trans i18nKey="BENEFITS2.list.four.desc">
+            Al proporcionar cotizaciones basadas en valores específicos, creas
+            transparencia en la estructura de precios, lo que <strong
+              class="text-white font-bold"
+              >genera confianza en los clientes.</strong
+            >
+          </Trans>
         </p>
       </div>
     </div>
@@ -137,12 +155,16 @@
         >
       </div>
       <div class="max-w-sm">
-        <h3 class="text-lg font-semibold text-white">Amplia tu cobertura</h3>
+        <h3 class="text-lg font-semibold text-white">
+          {t("BENEFITS2.list.five.title")}
+        </h3>
         <p class="font-light text-base">
-          Al ofrecer cotizaciones en tiempo real, puedes llegar a un público
-          global y <strong class="text-white font-bold"
-            >expandir tu alcance más allá de las limitaciones geográficas.</strong
-          >
+          <Trans i18nKey="BENEFITS2.list.five.desc">
+            Al ofrecer cotizaciones en tiempo real, puedes llegar a un público
+            global y <strong class="text-white font-bold"
+              >expandir tu alcance más allá de las limitaciones geográficas.</strong
+            >
+          </Trans>
         </p>
       </div>
     </div>
@@ -163,12 +185,10 @@
       </div>
       <div class="max-w-sm">
         <h3 class="text-lg font-semibold text-white">
-          Enfócate en lo estratégico
+          {t("BENEFITS2.list.six.title")}
         </h3>
         <p class="font-light text-base">
-          Al automatizar el proceso de cotización, las empresas pueden centrarse
-          en estrategias de crecimiento y desarrollo en lugar de tareas
-          administrativas.
+          {t("BENEFITS2.list.six.desc")}
         </p>
       </div>
     </div>
@@ -189,13 +209,15 @@
       </div>
       <div class="max-w-sm">
         <h3 class="text-lg font-semibold text-white">
-          Usa el poder de la automatización
+          {t("BENEFITS2.list.seven.title")}
         </h3>
         <p class="font-light text-base">
-          Al <strong class="text-white font-bold"
-            >eliminar tareas manuales repetitivas</strong
-          >, con Qantto libera a tu equipo para centrarse en actividades más
-          estratégicas y creativas.
+          <Trans i18nKey="BENEFITS2.list.seven.desc">
+            Al <strong class="text-white font-bold"
+              >eliminar tareas manuales repetitivas</strong
+            >, con Qantto libera a tu equipo para centrarse en actividades más
+            estratégicas y creativas.
+          </Trans>
         </p>
       </div>
     </div>
@@ -215,12 +237,16 @@
         >
       </div>
       <div class="max-w-sm">
-        <h3 class="text-lg font-semibold text-white">Reduce errores</h3>
+        <h3 class="text-lg font-semibold text-white">
+          {t("BENEFITS2.list.eight.title")}
+        </h3>
         <p class="font-light text-base">
-          La automatización reduce la posibilidad de errores humanos en las
-          cotizaciones, lo que <strong class="text-white font-bold"
-            >mejora la confiabilidad</strong
-          > de la información.
+          <Trans i18nKey="BENEFITS2.list.eight.desc">
+            La automatización reduce la posibilidad de errores humanos en las
+            cotizaciones, lo que <strong class="text-white font-bold"
+              >mejora la confiabilidad</strong
+            >
+          </Trans>
         </p>
       </div>
     </div>

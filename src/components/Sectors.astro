@@ -1,13 +1,21 @@
+---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+---
+
 <section
   class="flex items-center justify-between container my-40 max-w-7xl mx-auto"
+  id="resources"
 >
   <div class="max-w-sm">
     <h2 class="text-3xl text-white font-bold balance text-center">
-      Sectores que están innovando con <span class="text-qGreen">Qantto</span>.
+      <Trans i18nKey="SECTORS.title">
+        Sectores que están innovando con <span class="text-qGreen">Qantto</span
+        >.
+      </Trans>
     </h2>
     <p class="text-white/80 text-center balance mt-3">
-      Más de 10 industrias están redefininedo el proceso quote-to-cash
-      aumentando sus ingresos hasta un 30%.
+      {t("SECTORS.desc")}
     </p>
   </div>
 
@@ -29,7 +37,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Agencias de Marketing</p>
+        <p class="text-white/80">{t("SECTORS.cards.one.first")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -46,7 +54,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Eventos</p>
+        <p class="text-white/80">{t("SECTORS.cards.one.second")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -63,7 +71,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">IT & Software</p>
+        <p class="text-white/80">{t("SECTORS.cards.one.third")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -79,7 +87,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Servicios Legales</p>
+        <p class="text-white/80">{t("SECTORS.cards.one.fourth")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -96,7 +104,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Servicios</p>
+        <p class="text-white/80">{t("SECTORS.cards.one.fifth")}</p>
       </div>
     </div>
 
@@ -117,7 +125,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Tecnología y desarrollo</p>
+        <p class="text-white/80">{t("SECTORS.cards.two.first")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -134,7 +142,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Cybersecurity</p>
+        <p class="text-white/80">{t("SECTORS.cards.two.second")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -151,7 +159,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Manufactoring</p>
+        <p class="text-white/80">{t("SECTORS.cards.two.third")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -168,7 +176,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Remodelación</p>
+        <p class="text-white/80">{t("SECTORS.cards.two.fourth")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -185,7 +193,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Consultoría</p>
+        <p class="text-white/80">{t("SECTORS.cards.two.fifth")}</p>
       </div>
     </div>
 
@@ -206,7 +214,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Transporte y logística</p>
+        <p class="text-white/80">{t("SECTORS.cards.three.first")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -223,7 +231,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Autopartes</p>
+        <p class="text-white/80">{t("SECTORS.cards.three.second")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -240,7 +248,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Reparación y mantenimiento</p>
+        <p class="text-white/80">{t("SECTORS.cards.three.third")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -256,7 +264,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Salud y cuidado personal</p>
+        <p class="text-white/80">{t("SECTORS.cards.three.fourth")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -272,7 +280,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Medicina y estética</p>
+        <p class="text-white/80">{t("SECTORS.cards.three.fifth")}</p>
       </div>
     </div>
 
@@ -293,7 +301,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Remodelación</p>
+        <p class="text-white/80">{t("SECTORS.cards.four.first")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -310,7 +318,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Finanzas</p>
+        <p class="text-white/80">{t("SECTORS.cards.four.second")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -326,7 +334,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Limpieza y mantenimiento</p>
+        <p class="text-white/80">{t("SECTORS.cards.four.third")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -343,7 +351,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Cosmética y belleza</p>
+        <p class="text-white/80">{t("SECTORS.cards.four.fourth")}</p>
       </div>
       <!-- item -->
       <div class="flex gap-3 items-center">
@@ -360,7 +368,7 @@
             ></path></svg
           >
         </div>
-        <p class="text-white/80">Contabilidad</p>
+        <p class="text-white/80">{t("SECTORS.cards.four.fifth")}</p>
       </div>
     </div>
   </div>

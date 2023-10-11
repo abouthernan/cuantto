@@ -6,8 +6,9 @@ import {
   TwitterIcon,
   YoutubeIcon,
 } from "../assets/icons";
-const t = (el: string) => el;
-const isEs = true;
+import i18next, { t } from "i18next";
+
+const isEs = i18next.language === "es";
 
 // legal
 const termsEs = "/legal/terms-es.pdf";
@@ -152,6 +153,7 @@ const securityEn = "/legal/security-en.pdf";
         class="lg:text-center text-sm text-white/80 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block"
       >
         {t("FOOTER.copyright")}
+        {" "}
         {new Date().getFullYear()}.
       </p>
     </div>

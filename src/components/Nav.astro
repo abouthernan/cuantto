@@ -1,5 +1,36 @@
 ---
-import { menu, menuButtons } from "../constants";
+import { ToggleLang } from "./ToggleLang";
+import { t } from "i18next";
+
+const menu = [
+  {
+    label: t("NAV.benefits"),
+    path: "/#benefits",
+  },
+  {
+    label: t("NAV.pricing"),
+    path: "/#pricing",
+  },
+  {
+    label: t("NAV.resources"),
+    path: "/#resources",
+  },
+  {
+    label: t("NAV.questions"),
+    path: "/#faqs",
+  },
+];
+
+const menuButtons = [
+  {
+    label: t("CTA.login"),
+    path: "#",
+  },
+  {
+    label: t("CTA.signup"),
+    path: "#",
+  },
+];
 ---
 
 <nav
@@ -52,6 +83,8 @@ import { menu, menuButtons } from "../constants";
       ))
     }
   </div>
+
+  <ToggleLang client:load />
 </nav>
 
 <style>

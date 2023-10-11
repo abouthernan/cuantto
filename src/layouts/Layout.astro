@@ -2,10 +2,11 @@
 import ShadowBg from "../components/ShadowBg.astro";
 import i18next, { t } from "i18next";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+import { HeadHrefLangs } from "astro-i18next/components";
 ---
 
 <!doctype html>
-<html lang={i18next.language}>
+<html lang={i18next.language} class="overflow-x-hidden scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -16,6 +17,7 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 		<GoogleFontsOptimizer
 			url="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
 		/>
+		<HeadHrefLangs />
 	</head>
 	<body class="bg-qBg font-inter overflow-x-hidden">
 		<ShadowBg />

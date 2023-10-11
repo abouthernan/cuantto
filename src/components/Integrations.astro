@@ -1,4 +1,6 @@
 ---
+import { Trans } from "astro-i18next/components";
+
 const integrations1 = [
   "/images/integrations/whatsapp.png",
   "/images/integrations/zapier.svg",
@@ -21,11 +23,15 @@ const integrations2 = [
   id="services"
 >
   <h2 class="text-white text-center text-3xl font-bold">
-    <span class="text-qGreen">Potencia</span> tu maquina de ventas
+    <Trans i18nKey="INTEGRATIONS.title">
+      <span class="text-qGreen">Potencia</span> tu maquina de ventas
+    </Trans>
   </h2>
   <p class="text-white/80 w-full text-center mb-10 mt-3">
-    Integra <span class="text-qGreen font-bold">Qantto</span> con tus sistemas
-    CRM, CLM, ARP, sSign, DocuSign, Payments.
+    <Trans i18nKey="INTEGRATIONS.desc">
+      Integra <span class="text-qGreen font-bold">Qantto</span> con tus sistemas
+      CRM, CLM, ARP, sSign, DocuSign, Payments.
+    </Trans>
   </p>
 
   <ul
@@ -54,10 +60,6 @@ const integrations2 = [
       ))
     }
   </ul>
-
-  <div class="grid place-items-center my-5">
-    <img class="h-14" src="/images/logo-qantto-white.svg" alt="logo qantto" />
-  </div>
 
   <ul
     class="gap-x-5 animate-integrations overflow-hidden space-x-4 sm:space-x-10 inline-flex w-[calc(240px*10)] mt-5 direction-reverse"

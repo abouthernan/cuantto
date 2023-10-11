@@ -1,32 +1,23 @@
 ---
-const t = (el: string) => el;
-
-const lang = "es";
-const isEs = lang === "es";
+import { t } from "i18next";
 
 const testimonialsData = [
   {
-    customerName: t("Carlos Jimenez"),
-    customerTitle: t("Director de Marketing"),
-    content: t(
-      '"Desde que empecé a utilizar Qantto, mi proceso de cotización de servicios se ha vuelto increíblemente fácil y rápido. La plataforma es intuitiva y me permite generar cotizaciones profesionales en cuestión de minutos. Ahora puedo dedicar más tiempo a atender a mis clientes y hacer crecer mi negocio. ¡Gracias, Qantto!"',
-    ),
+    customerName: t("TESTIMONIALS.clients.one.name"),
+    customerTitle: t("TESTIMONIALS.clients.one.role"),
+    content: t("TESTIMONIALS.clients.one.quote"),
     image: "https://randomuser.me/api/portraits/men/86.jpg",
   },
   {
-    customerName: t("Camila Soto"),
-    customerTitle: t("Directora de Ventas"),
-    content: t(
-      '"Qantto ha revolucionado la forma en que gestiono mis cotizaciones de servicios. Antes, pasaba horas calculando costos y elaborando documentos. Con Qantto, todo se hace automáticamente, lo que me ahorra tiempo y esfuerzo. Además, la precisión de las cotizaciones me ha ayudado a mejorar mi rentabilidad y evitar errores costosos. Recomiendo Qantto a todos los emprendedores y profesionales que deseen simplificar su proceso de cotización."',
-    ),
+    customerName: t("TESTIMONIALS.clients.two.name"),
+    customerTitle: t("TESTIMONIALS.clients.two.role"),
+    content: t("TESTIMONIALS.clients.two.quote"),
     image: "https://randomuser.me/api/portraits/women/26.jpg",
   },
   {
-    customerName: t("Andrés Pérez"),
-    customerTitle: t("Director de Operaciones"),
-    content: t(
-      '"Qantto es una herramienta imprescindible para mi negocio. La posibilidad de crear cotizaciones las 24 horas del día, los 7 días de la semana, me permite responder rápidamente a las solicitudes de mis clientes. La plataforma es fácil de usar y personalizable, lo que me permite adaptar las cotizaciones a las necesidades específicas de cada cliente. Estoy encantado con los resultados que he obtenido gracias a Qantto y no puedo imaginar mi negocio sin esta valiosa herramienta."',
-    ),
+    customerName: t("TESTIMONIALS.clients.three.name"),
+    customerTitle: t("TESTIMONIALS.clients.three.role"),
+    content: t("TESTIMONIALS.clients.three.quote"),
     image: "https://randomuser.me/api/portraits/men/31.jpg",
   },
 ];
@@ -35,14 +26,15 @@ const testimonialsData = [
 <section class="w-full flex justify-center pt-10 mb-16 mt-28 lg:mb-32 relative">
   <div class="flex flex-col w-full lg:w-[1150px] justify-center">
     <p class="text-center text-qGreen font-semibold mb-2 px-2 md:px-0">
-      ¿Por qué aman Qantto?
+      {t("TESTIMONIALS.sub")}
     </p>
 
     <h3
       class="text-center text-white text-3xl font-bold mb-16 max-w-lg balance mx-auto"
     >
-      Sabemos que la clave para crear un gran producto es
-      <span class="text-qGreen">{isEs ? "escuchar" : "listening"}</span>
+      {t("TESTIMONIALS.title")}
+      {" "}
+      <span class="text-qGreen">{t("TESTIMONIALS.listening")}</span>
     </h3>
 
     <div

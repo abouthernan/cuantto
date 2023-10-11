@@ -1,7 +1,8 @@
-import { useState } from 'preact/hooks'
+import { useState } from 'react'
+import { useTranslation } from "react-i18next";
 
 export const Faqs = () => {
-  const t = (el: string) => el
+  const { t } = useTranslation('translation');
   return (
     <section
       className="relative pt-16 pb-16 overflow-hidden"
@@ -20,7 +21,6 @@ export const Faqs = () => {
               <FAQBox
                 title={t('FAQS.list.one.question')}
                 content={t('FAQS.list.one.answer')}
-                defaultOpen
               />
             </div>
 
@@ -28,7 +28,6 @@ export const Faqs = () => {
               <FAQBox
                 title={t('FAQS.list.two.question')}
                 content={t('FAQS.list.two.answer')}
-                defaultOpen={false}
               />
             </div>
 
@@ -36,7 +35,48 @@ export const Faqs = () => {
               <FAQBox
                 title={t('FAQS.list.three.question')}
                 content={t('FAQS.list.three.answer')}
-                defaultOpen={false}
+              />
+            </div>
+
+            <div className="w-full p-1">
+              <FAQBox
+                title={t('FAQS.list.four.question')}
+                content={t('FAQS.list.four.answer')}
+              />
+            </div>
+
+            <div className="w-full p-1">
+              <FAQBox
+                title={t('FAQS.list.five.question')}
+                content={t('FAQS.list.five.answer')}
+              />
+            </div>
+
+            <div className="w-full p-1">
+              <FAQBox
+                title={t('FAQS.list.six.question')}
+                content={t('FAQS.list.six.answer')}
+              />
+            </div>
+
+            <div className="w-full p-1">
+              <FAQBox
+                title={t('FAQS.list.seven.question')}
+                content={t('FAQS.list.seven.answer')}
+              />
+            </div>
+
+            <div className="w-full p-1">
+              <FAQBox
+                title={t('FAQS.list.eight.question')}
+                content={t('FAQS.list.eight.answer')}
+              />
+            </div>
+
+            <div className="w-full p-1">
+              <FAQBox
+                title={t('FAQS.list.nine.question')}
+                content={t('FAQS.list.nine.answer')}
               />
             </div>
 
@@ -44,7 +84,6 @@ export const Faqs = () => {
               <FAQBox
                 title={t('FAQS.list.ten.question')}
                 content={t('FAQS.list.ten.answer')}
-                defaultOpen={false}
               />
             </div>
           </div>

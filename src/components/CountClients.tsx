@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useState } from 'react'
 
 const API_URL =
   import.meta.env.MODE === 'development'

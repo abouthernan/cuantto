@@ -1,66 +1,68 @@
-import { useState } from 'preact/hooks'
-import { CheckArrowIcon } from '../assets/icons/Icons'
+import { useState } from 'react'
+import { CheckArrowIcon } from '../assets/icons'
+import { useTranslation } from "react-i18next";
 
 export const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true)
-  const t = (el: string) => el
+
+  const { t } = useTranslation('translation');
 
   const pricingDataStarter = [
-    '1 usuario',
-    '1 Servicio',
-    '2 Subservicios',
-    '10 Leads',
-    '10 Consultas',
-    'Tus clientes podrán hacer cotizaciones ilimitadas',
-    'Logo de tu empresa en las quotes',
-    'Notificaciones en dashboard',
-    'Agendamiento de citas'
+    t("PRICING.cards.one.one"),
+    t("PRICING.cards.one.two"),
+    t("PRICING.cards.one.three"),
+    t("PRICING.cards.one.four"),
+    t("PRICING.cards.one.five"),
+    t("PRICING.cards.one.six"),
+    t("PRICING.cards.one.seven"),
+    t("PRICING.cards.one.eight"),
+    t("PRICING.cards.one.nine")
   ]
 
   const pricingDataTeams = [
-    '3 Usuarios',
-    '2 Servicios',
-    '4 Subservicios',
-    '30 Leads',
-    '30 Consultas',
-    'Historial de hasta 5 últimos registros',
-    'Tus clientes podrán hacer cotizaciones ilimitadas',
-    'Logo de tu empresa en las quotes',
-    'Notificaciones en dashboard',
-    'Agendamiento de citas',
-    'Estadísticas'
+    t("PRICING.cards.two.one"),
+    t("PRICING.cards.two.two"),
+    t("PRICING.cards.two.three"),
+    t("PRICING.cards.two.four"),
+    t("PRICING.cards.two.five"),
+    t("PRICING.cards.two.six"),
+    t("PRICING.cards.two.seven"),
+    t("PRICING.cards.two.eight"),
+    t("PRICING.cards.two.nine"),
+    t("PRICING.cards.two.ten"),
+    t("PRICING.cards.two.eleven")
   ]
 
   const pricingDataBusines = [
-    '5 Usuarios',
-    '5 Servicios',
-    '10 Subservicios',
-    '60 Leads',
-    '60 Consultas',
-    'Historial de hasta 10 últimos registros',
-    'Tus clientes podrán hacer cotizaciones ilimitadas',
-    'Logo de tu empresa en las quotes',
-    'Notificaciones en dashboard',
-    'Agendamiento de citas',
-    'Estadísticas avanzadas',
-    'Reportes AI (Automáticos)',
-    'Exportar data'
+    t("PRICING.cards.three.one"),
+    t("PRICING.cards.three.two"),
+    t("PRICING.cards.three.three"),
+    t("PRICING.cards.three.four"),
+    t("PRICING.cards.three.five"),
+    t("PRICING.cards.three.six"),
+    t("PRICING.cards.three.seven"),
+    t("PRICING.cards.three.eight"),
+    t("PRICING.cards.three.nine"),
+    t("PRICING.cards.three.ten"),
+    t("PRICING.cards.three.eleven"),
+    t("PRICING.cards.three.twelve"),
+    t("PRICING.cards.three.thirteen")
   ]
 
   const pricingDataUltimate = [
-    'Usuarios ilimitados',
-    'Servicios ilimitados',
-    'Subservicios ilimitados',
-    'Leads ilimitados',
-    'Consultas ilimitadas',
-    'Historial de registros ilimitado',
-    'Tus clientes podrán hacer cotizaciones ilimitadas',
-    'Logo de tu empresa en las quotes',
-    'Notificaciones en dashboard',
-    'Agendamiento de citas',
-    'Estadísticas avanzadas',
-    'Reportes AI (Automáticos)',
-    'Exportar data',
+    t("PRICING.cards.four.one"),
+    t("PRICING.cards.four.two"),
+    t("PRICING.cards.four.three"),
+    t("PRICING.cards.four.four"),
+    t("PRICING.cards.four.five"),
+    t("PRICING.cards.four.six"),
+    t("PRICING.cards.four.seven"),
+    t("PRICING.cards.four.eight"),
+    t("PRICING.cards.four.nine"),
+    t("PRICING.cards.four.ten"),
+    t("PRICING.cards.four.eleven"),
+    t("PRICING.cards.four.twelve"),
+    t("PRICING.cards.four.thirteen")
   ]
 
   const handleChange = () => {
@@ -77,12 +79,12 @@ export const Pricing = () => {
           <div>
             <div className="container mx-auto px-4">
               <div className="max-w-[560px] mx-auto text-center mb-16">
-                <span className="text-qGreen">Planes</span>
+                <span className="text-qGreen">{t("PRICING.subtitle")}</span>
                 <h2 className="my-2 text-3xl font-bold  text-white">
-                  Paga solo por <span class="text-qGreen">oportunidades reales</span> de venta
+                  {t("PRICING.title")} <span className="text-qGreen">{t("PRICING.title2")}</span> {t("PRICING.title3")}
                 </h2>
                 <p className="text-white/80 w-full text-center">
-                  Pon tu proceso de ventas en piloto automático !Ahora!
+                  {t("PRICING.desc")}
                 </p>
                 <br />
                 <label className="mx-auto bg-qGray relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer overflow-hidden">
@@ -99,10 +101,10 @@ export const Pricing = () => {
                         isMonthly ? 'mr-9 ml-3 ' : 'mr-9 ml-3 text-white/80'
                       }
                     >
-                      Mensual
+                      {t("MESSAGES.montly")}
                     </div>
                     <div className={isMonthly ? 'text-white/80' : ''}>
-                      Anual
+                      {t("MESSAGES.annual")}
                       <span className="absolute text-black bg-orange-400 shadow -top-[7px] -right-[60px] w-24 text-[11px] rotate-[45deg]">
                         25% Off
                       </span>
@@ -115,21 +117,22 @@ export const Pricing = () => {
                 {/* card */}
                 <div className="w-[300px] p-8 bg-qGray rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Starter
+                    {t("PRICING.cards.one.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? '$14' : '$14'}
+                      {isMonthly ? '$14' : '$168'}
                     </div>
                     <div className="text-white/80">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                      / {' '}
+                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
                     </div>
                   </div>
 
                   <ul className="mb-2 md:min-h-[456px] text-white/80">
                     {pricingDataStarter.map((text, index) => (
                       <li className="mb-1 flex gap-3" key={`${text}-${index}`}>
-                        <div class="w-6 h-6 aspect-square text-qGreen">
+                        <div className="w-6 h-6 aspect-square text-qGreen">
                           <CheckArrowIcon />
                         </div>
                         <span>{text}</span>
@@ -142,32 +145,33 @@ export const Pricing = () => {
                     href="https://calendly.com/qantto/30min?back=1&month=2023-07"
                     target="_blank"
                   >
-                    Inicia tu Free-Trial Ahora
+                    {t("CTA.freeTrial")}
                   </a>
 
-                  <div class="text-center text-sm text-white/80 mt-2">
-                    <p>14 días <strong class="text-white">gratis</strong>.</p>
-                    <p>No te pedimos tarjeta de crédito.</p>
+                  <div className="text-center text-sm text-white/80 mt-2">
+                    <p>{t("MESSAGES.days14")} <strong className="text-white">{t("MESSAGES.free")}</strong>.</p>
+                    <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
                 {/* card */}
                 <div className="w-[300px] p-8 bg-qGray rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Teams
+                    {t("PRICING.cards.two.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
                       {isMonthly ? '$48' : '$432'}
                     </div>
                     <div className="text-white/80">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                      / {' '}
+                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
                     </div>
                   </div>
 
                   <ul className="mb-2 md:min-h-[456px] text-white/80">
                     {pricingDataTeams.map((text, index) => (
                       <li className="mb-1 flex gap-3" key={`${text}-${index}`}>
-                        <div class="w-6 h-6 aspect-square text-qGreen">
+                        <div className="w-6 h-6 aspect-square text-qGreen">
                           <CheckArrowIcon />
                         </div>
                         <span>{text}</span>
@@ -180,35 +184,36 @@ export const Pricing = () => {
                     href="https://calendly.com/qantto/30min?back=1&month=2023-07"
                     target="_blank"
                   >
-                    Inicia tu Free-Trial Ahora
+                    {t("CTA.freeTrial")}
                   </a>
 
-                  <div class="text-center text-sm text-white/80 mt-2">
-                    <p>14 días <strong class="text-white">gratis</strong>.</p>
-                    <p>No te pedimos tarjeta de crédito.</p>
+                  <div className="text-center text-sm text-white/80 mt-2">
+                    <p>{t("MESSAGES.days14")} <strong className="text-white">{t("MESSAGES.free")}</strong>.</p>
+                    <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
                 {/* card */}
                 <div className="w-[300px] p-8 bg-qGreen rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-qBlack text-left">
-                    Business
+                    {t("PRICING.cards.three.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2">
                       {isMonthly ? '$250' : '$2.244'}
                     </div>
                     <div className="text-qBlack/80">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                      / {' '}
+                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
                     </div>
                   </div>
 
                   <ul className="mb-2 md:min-h-[456px] text-white/80">
                     {pricingDataBusines.map((text, index) => (
                       <li className="mb-1 flex gap-3" key={`${text}-${index}`}>
-                        <div class="w-6 h-6 aspect-square text-qBlack">
+                        <div className="w-6 h-6 aspect-square text-qBlack">
                           <CheckArrowIcon />
                         </div>
-                        <span class="text-qBlack">{text}</span>
+                        <span className="text-qBlack">{text}</span>
                       </li>
                     ))}
                   </ul>
@@ -218,32 +223,33 @@ export const Pricing = () => {
                     href="https://calendly.com/qantto/30min?back=1&month=2023-07"
                     target="_blank"
                   >
-                    Inicia tu Free-Trial Ahora
+                    {t("CTA.freeTrial")}
                   </a>
 
-                  <div class="text-center text-sm text-qBlack mt-2">
-                    <p>14 días <strong class="text-qBlack">gratis</strong>.</p>
-                    <p>No te pedimos tarjeta de crédito.</p>
+                  <div className="text-center text-sm text-qBlack mt-2">
+                    <p>{t("MESSAGES.days14")} <strong className="text-qBlack">{t("MESSAGES.free")}</strong>.</p>
+                    <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
                 {/* card */}
                 <div className="w-[300px] p-8 bg-qGray rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Ultimate
+                    {t("PRICING.cards.four.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
                       {isMonthly ? '$498' : '$4.476'}
                     </div>
                     <div className="text-white/80">
-                      {isMonthly ? t('PRICING.month') : t('PRICING.year')}
+                      / {' '}
+                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
                     </div>
                   </div>
 
                   <ul className="mb-2 md:min-h-[456px] text-white/80">
                     {pricingDataUltimate.map((text, index) => (
                       <li className="mb-1 flex gap-3" key={`${text}-${index}`}>
-                        <div class="w-6 h-6 aspect-square text-qGreen">
+                        <div className="w-6 h-6 aspect-square text-qGreen">
                           <CheckArrowIcon />
                         </div>
                         <span>{text}</span>
@@ -256,12 +262,12 @@ export const Pricing = () => {
                     href="https://calendly.com/qantto/30min?back=1&month=2023-07"
                     target="_blank"
                   >
-                    Inicia tu Free-Trial Ahora
+                    {t("CTA.freeTrial")}
                   </a>
 
-                  <div class="text-center text-sm text-white/80 mt-2">
-                    <p>14 días <strong class="text-white">gratis</strong>.</p>
-                    <p>No te pedimos tarjeta de crédito.</p>
+                  <div className="text-center text-sm text-white/80 mt-2">
+                    <p>{t("MESSAGES.days14")} <strong className="text-white">{t("MESSAGES.free")}</strong>.</p>
+                    <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
               </div>
@@ -270,8 +276,8 @@ export const Pricing = () => {
         </div>
       </section>
 
-      <div class="text-center text-white/80 max-w-xs mx-auto balance -mt-8 font-base">
-        <p>Todos los planes incluyen chat y <span class="text-qGreen font-bold">video soporte</span> con nuestro equipo.</p>
+      <div className="text-center text-white/80 max-w-xs mx-auto balance -mt-8 font-base">
+        <p>{t("PRICING.footer.text1")} <span className="text-qGreen font-bold">{t("PRICING.footer.text2")}</span> {t("PRICING.footer.text3")}</p>
       </div>
     </>
   )

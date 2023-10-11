@@ -1,0 +1,39 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
+import Steper from "../../components/Steper.astro";
+import Benefits1 from "../../components/Benefits1.astro";
+import Banner1 from "../../components/Banner1.astro";
+import Steper2 from "../../components/Steper2.astro";
+import Benefits2 from "../../components/Benefits2.astro";
+import Banner2 from "../../components/Banner2.astro";
+import Integrations from "../../components/Integrations.astro";
+import Sectors from "../../components/Sectors.astro";
+import { Pricing } from "../../components/Pricing";
+import Testimonials from "../../components/Testimonials.astro";
+import Banner3 from "../../components/Banner3.astro";
+import { Faqs } from "../../components/Faqs";
+import Footer from "../../components/Footer.astro";
+
+changeLanguage("en");
+---
+
+<Layout>
+	<Header />
+	<Hero />
+	<Steper />
+	<Benefits1 />
+	<Banner1 />
+	<Steper2 />
+	<Benefits2 />
+	<Banner2 />
+	<Integrations />
+	<Sectors />
+	<Pricing client:visible />
+	<Testimonials />
+	<Banner3 />
+	<Faqs client:visible />
+	<Footer />
+</Layout>
