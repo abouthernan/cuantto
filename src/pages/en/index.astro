@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import i18next, { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
@@ -18,9 +18,13 @@ import { Faqs } from "../../components/Faqs";
 import { Footer } from "../../components/Footer";
 
 changeLanguage("en");
+
+const title = i18next.language === "es"
+    ? "Qantto - Cotizador de servicios online"
+    : "Qantto - Online services quote";
 ---
 
-<Layout>
+<Layout title={title}>
   <Header client:load />
   <Hero client:load />
   <Steper client:load />
