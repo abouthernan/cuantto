@@ -1,39 +1,39 @@
 ---
 import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Hero from "../../components/Hero.astro";
-import Steper from "../../components/Steper.astro";
-import Benefits1 from "../../components/Benefits1.astro";
-import Banner1 from "../../components/Banner1.astro";
-import Steper2 from "../../components/Steper2.astro";
-import Benefits2 from "../../components/Benefits2.astro";
-import Banner2 from "../../components/Banner2.astro";
-import Integrations from "../../components/Integrations.astro";
-import Sectors from "../../components/Sectors.astro";
+import { Header } from "../../components/Header";
+import { Hero } from "../../components/Hero";
+import { Steper } from "../../components/Steper";
+import { Benefits1 } from "../../components/Benefits1";
+import { Banner1 } from "../../components/Banner1";
+import { Steper2 } from "../../components/Steper2";
+import { Benefits2 } from "../../components/Benefits2";
+import { Banner2 } from "../../components/Banner2";
+import { Integrations } from "../../components/Integrations";
+import { Sectors } from "../../components/Sectors";
 import { Pricing } from "../../components/Pricing";
-import Testimonials from "../../components/Testimonials.astro";
-import Banner3 from "../../components/Banner3.astro";
+import { Testimonials } from "../../components/Testimonials";
+import { Banner3 } from "../../components/Banner3";
 import { Faqs } from "../../components/Faqs";
-import Footer from "../../components/Footer.astro";
+import { Footer } from "../../components/Footer";
 
 changeLanguage("en");
 ---
 
 <Layout>
-	<Header />
-	<Hero />
-	<Steper />
-	<Benefits1 />
-	<Banner1 />
-	<Steper2 />
-	<Benefits2 />
-	<Banner2 />
-	<Integrations />
-	<Sectors />
-	<Pricing client:visible />
-	<Testimonials />
-	<Banner3 />
-	<Faqs client:visible />
-	<Footer />
+  <Header client:load />
+  <Hero client:load />
+  <Steper client:load />
+  <Benefits1 client:visible />
+  <Banner1 client:visible />
+  <Steper2 client:visible />
+  <Benefits2 client:visible />
+  <Banner2 client:visible />
+  <Integrations client:visible />
+  <Sectors client:visible />
+  <Pricing client:visible />
+  <Testimonials client:visible />
+  <Banner3 client:load />
+  <Faqs client:visible />
+  <Footer client:visible />
 </Layout>
