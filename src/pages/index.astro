@@ -1,50 +1,43 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Hero } from "../components/Hero.jsx";
-import { Stepper } from "../components/Stepper.jsx";
-import { Navbar } from "../components/Navbar.jsx";
-import { Features1 } from "../components/Features1.jsx";
-import { Features2 } from "../components/Features2.jsx";
-import { Estadistics } from "../components/Estadistics.jsx";
-import { Testimonials } from "../components/Testimonials.jsx";
-import { FAQ } from "../components/FAQ.jsx";
-import { Pricing } from "../components/Pricing";
-import { Brands } from "../components/Brands.jsx";
-import { Footer } from "../components/Footer.jsx";
-import { ScrollUpButton } from "../components/ScrollUpButton";
-import "../styles/Theme.css";
-import "../styles/Diagonals.css";
 import i18next, { changeLanguage } from "i18next";
-import { LanguageSelector } from "astro-i18next/components";
-import { Integrations } from "../components/Integrations.jsx";
+import Layout from "../layouts/Layout.astro";
+import { Header } from "../components/Header";
+import { Hero } from "../components/Hero";
+import { Steper } from "../components/Steper";
+import { Benefits1 } from "../components/Benefits1";
+import { Banner1 } from "../components/Banner1";
+import { Steper2 } from "../components/Steper2";
+import { Benefits2 } from "../components/Benefits2";
+import { Banner2 } from "../components/Banner2";
+import { Integrations } from "../components/Integrations";
+import { Sectors } from "../components/Sectors";
+import { Pricing } from "../components/Pricing";
+import { Testimonials } from "../components/Testimonials";
+import { Banner3 } from "../components/Banner3";
+import { Faqs } from "../components/Faqs";
+import { Footer } from "../components/Footer";
 
 changeLanguage("es");
 
-const lang = i18next.language;
-const title = lang === "es"
+const title = i18next.language === "es"
     ? "Qantto - Cotizador de servicios online"
     : "Qantto - Online services quote";
 ---
 
 <Layout title={title}>
-  <Navbar client:load />
-  <LanguageSelector
-    languageMapping={{
-      es: 'ES',
-      en: 'EN'
-    }}
-    class="z-50 fixed right-[75px] lg:right-14 top-7 bg-transparent focus:bg-customBg text-white outline-none toggle-lang"
-  />
+  <Header client:load />
   <Hero client:load />
-  <Stepper client:load />
-  <Features1 client:load />
-  <Estadistics client:load />
-  <Features2 client:load />
-  <Integrations client:load/>
-  <Pricing client:load />
-  <Testimonials client:load />
-  <Brands client:load />
-  <FAQ client:load />
-  <Footer client:load />
-  <ScrollUpButton client:load />
+  <Steper client:load />
+  <Benefits1 client:visible />
+  <Banner1 client:visible />
+  <Steper2 client:visible />
+  <Benefits2 client:visible />
+  <Banner2 client:visible />
+  <Integrations client:visible />
+  <Sectors client:visible />
+  <Pricing client:visible />
+  <Testimonials client:visible />
+  <Banner3 client:load />
+  <Faqs client:visible />
+  <Footer client:visible />
 </Layout>

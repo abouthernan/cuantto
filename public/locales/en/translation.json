@@ -1,231 +1,323 @@
 {
-  "SITE": {
-    "title": "Qantto - Online Quote Generator",
-    "description": "Online quote generator for auto, home, life insurance, and more. Quote, compare, and purchase online.",
-    "keywords": "insurance, quote, online, auto, home, life, personal accident, travel, pets, commercial, liability, surety, retirement"
+  "site": {
+    "title": "Qantto - Online Quoter",
+    "description": "Online quoting for auto, home, life insurance, and more. Quote, compare, and purchase online."
   },
-  "HEADER": {
-    "nav": {
-      "benefits": "Benefits",
-      "prices": "Pricing",
-      "faqs": "FAQs"
-    },
-    "buttons": {
-      "login": "Log In",
-      "signup": "Sign Up"
-    }
+  "NAV": {
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "resources": "Resources",
+    "questions": "Questions"
+  },
+  "CTA": {
+    "login": "Log In",
+    "signup": "Start Your Free Trial",
+    "freeTrial": "Start Your Free Trial Now"
+  },
+  "MESSAGES": {
+    "qanttoWithDays": "Try <0>Qantto</0> for free for <1>14 days.</1>",
+    "noCreditCard": "We don't ask for a credit card",
+    "problem": "Problem",
+    "solution": "Solution",
+    "benefit": "Benefit",
+    "lead": "Lead",
+    "contact": "Contact",
+    "quote": "Quote",
+    "accept": "Accept",
+    "hire": "Hire",
+    "sign": "Sign",
+    "pay": "Pay",
+    "start": "Start",
+    "month": "Month",
+    "year": "Year",
+    "montly": "Monthly",
+    "annual": "Annual",
+    "days14": "14 Days",
+    "free": "Free"
   },
   "HERO": {
-    "sub": "Increase your conversion rate by automating the sales process",
-    "title": "We are the first\nQuoting-Automation platform",
-    "description": "We change the quoting experience. We are not a template software.",
-    "cta": "Create an account"
+    "subtitle": "The #1 Quoting-Automation Platform for Teams and Businesses.",
+    "textOne": "Stop wasting your time managing unqualified leads.",
+    "textTwo": "Generate 100% automated quotes, in real-time, 24/7.",
+    "textThree": "Your sales process on autopilot."
   },
-  "ONBOARDING": {
-    "title": "Getting started is very easy",
-    "one": "We create your workspace",
-    "two": "We add your team",
-    "three": "We carry out the implementation",
-    "four": "We launch",
-    "five": "We accompany you and grow together"
+  "STEPER": {
+    "textOne": "On average, this process takes teams and businesses between <0>18 and 42 hours...</0>",
+    "textTwo": "...with <0>Qantto</0>, it will take you <1>10 minutes.</1>"
   },
-  "INTEGRATIONS": {
-    "sub": "INTEGRATIONS",
-    "title": "Give them superpowers",
-    "description": "to your sales team. Integrate Qantto and unleash their potential"
-  },
-  "FEATURES1": {
-    "sub": "Response time does matter",
-    "title": "Configure once and receive hundreds of quotes per day",
-    "description": "Eliminate the sales team's work overload and increase your income by eliminating bottlenecks and rework. Improve your customer's buying experience.",
-    "list": {
-      "one": "Real-time quotes.",
-      "two": "Your business always available: 24/7.",
-      "three": "Focus on qualified clients.",
-      "four": "Provide cost transparency.",
-      "five": "Enhance your clients' experience.",
-      "six": "Real-time data about your business.",
-      "seven": "Reach your ideal target."
-    }
-  },
-  "FEATURES2": {
-    "sub": "Real-Time Statistics",
-    "title": "Focus on what matters",
-    "description": "Don't waste valuable time for your sales team.",
-    "list": {
-      "one": "View your prospects in real time.",
-      "two": "Measure purchase intent.",
-      "three": "Determine the best pricing strategy.",
-      "four": "Allocate resources intelligently.",
-      "five": "Reduce personnel costs.",
-      "six": "Obtain customer information.",
-      "seven": "Store the information."
-    }
-  },
-  "ESTADISTICS": {
-    "one": " of consumers expect a response on social media the same day, while 28% expect it within an hour. Statista.",
-    "two": " of consumers expect a response via email within a maximum of six hours. Forrester.",
-    "three": " of customers say an immediate response is 'very important' to them when using live chat on a website. HubSpot.",
-    "four": " of customers define 'immediate' as a maximum of 10 minutes of waiting. HubSpot.",
-    "five": " of adults believe that respecting their time is the best thing a brand can do for them in terms of customer experience. Forrester.",
-    "six": " of customers are willing to accept a slower chat pace to achieve better service quality. Kayako.",
-    "seven": " of consumers believe that experience is more important than price when making a purchase. Gartner."
-  },
-  "TESTIMONIALS": {
-    "sub": "Testimonials",
-    "title": "We know that the key to creating a great product is",
-    "clients": {
+  "BENEFITS": {
+    "title": "Increase <0>your Conversion Rate by up to</0> 30%",
+    "description": "By providing customers an offer that perfectly fits their needs and budget, the likelihood of them accepting the quote is significantly higher. This translates into a quantifiable increase in your business's revenue and profitability.",
+    "steps": {
       "one": {
-        "name": "Carlos Jimenez",
-        "role": "Marketing Director",
-        "quote": "Since I started using Qantto, my service quoting process has become incredibly easy and fast. The platform is intuitive and allows me to generate professional quotes in a matter of minutes. Now, I can dedicate more time to serving my clients and growing my business. Thank you, Qantto!"
+        "title": "Save Time",
+        "description": "Companies set up their products or services <0>only once</0>, saving time in preparing customized quotes for each customer."
       },
       "two": {
-        "name": "Camila Soto",
-        "role": "Sales Manager",
-        "quote": "Qantto has revolutionized the way I manage my service quotations. Before, I would spend hours calculating costs and creating documents. With Qantto, everything is done automatically, saving me time and effort. Additionally, the accuracy of the quotations has helped me improve my profitability and avoid costly mistakes. I recommend Qantto to all entrepreneurs and professionals who want to simplify their quotation process."
+        "title": "Reduce Costs",
+        "description": "You can scale your business <0>more efficiently</0> without the need to proportionally increase personnel investment."
       },
       "three": {
-        "name": "Andrés Pérez",
-        "role": "Oparations Director",
-        "quote": "Qantto is an essential tool for my business. The ability to create quotations 24/7 allows me to respond quickly to my clients' requests. The platform is user-friendly and customizable, allowing me to tailor the quotations to each client's specific needs. I am delighted with the results I have achieved thanks to Qantto, and I can't imagine my business without this valuable tool."
+        "title": "Find Your Ideal Match",
+        "description": "By knowing the value of your product or service in real-time, the customer can accept or reject your proposal without wasting valuable time.\n\nThis allows your business to focus efforts on customers who will make the <0>perfect price-quality match.</0>"
+      }
+    }
+  },
+  "BANNER1": {
+    "subtitle": "<0>Eliminate</0> bottlenecks.",
+    "title": "Generate <0>100% automated</0> quotes, in real-time, 24/7.",
+    "description": "<0>We're not</0> a template software."
+  },
+  "STEPER2": {
+    "subtitle": "Activate Now...",
+    "title": "...Your autopilot in 5 steps",
+    "cards": {
+      "one": {
+        "title": "Register",
+        "description": "Create an account and activate your <0>14-day free trial at no cost.</0>\nWe don't ask for a credit card."
+      },
+      "two": {
+        "title": "Create your profile",
+        "description": "<0>Customize</0> the landing page where your customers will quote. Ex. <1>qantto.io/mycompany</1> Company name, a description, and the logo."
+      },
+      "three": {
+        "title": "Configure",
+        "description": "Add the services and subservices you offer and <0>Configure the price parameters</0> for each option."
+      },
+      "four": {
+        "title": "Share",
+        "description": "<0>Share the link</0> the platform generates to your customers. You can share it via WhatsApp, Email, Social Media, or even embed it on your website."
+      },
+      "five": {
+        "title": "Receive",
+        "description": "Create an account and activate your <0>14-day free trial at no cost.</0> We don't ask for a credit card."
+      }
+    }
+  },
+  "BENEFITS2": {
+    "subtitle": "Still not convinced?",
+    "title": "Give your sales team <0>superpowers</0>",
+    "description": "Create your team and <0>assign custom roles.</0>",
+    "list": {
+      "one": {
+        "title": "Always stay available",
+        "desc": "Your business will be available <0>24 hours a day, 7 days a week</0>, without additional costs and without sacrificing availability for your customers."
+      },
+      "two": {
+        "title": "Stay one step ahead of your competition",
+        "desc": "By being able to offer accurate and personalized quotes quickly, <0>you become more competitive in the market</0> and can win more business."
+      },
+      "three": {
+        "title": "Know your customer better than your competitors",
+        "desc": "Qantto provides data analysis tools that allow companies to gain valuable insights into their <0>customers' preferences and behaviors.</0>"
+      },
+      "four": {
+        "title": "Provide transparency in your costs",
+        "desc": "By providing quotes based on specific values, you create transparency in the pricing structure, <0>building trust with customers.</0>"
+      },
+      "five": {
+        "title": "Expand your coverage",
+        "desc": "By offering real-time quotes, you can reach a global audience and <0>expand your reach beyond geographical limitations.</0>"
+      },
+      "six": {
+        "title": "Focus on the strategic",
+        "desc": "By automating the quoting process, companies can focus on growth and development strategies rather than administrative tasks."
+      },
+      "seven": {
+        "title": "Harness the power of automation",
+        "desc": "By <0>eliminating repetitive manual tasks</0>, with Qantto, free up your team to focus on more strategic and creative activities."
+      },
+      "eight": {
+        "title": "Reduce errors",
+        "desc": "Automation reduces the chance of human errors in quotes, <0>improving reliability.</0>"
+      }
+    }
+  },
+  "BANNER2": {
+    "title": "Grow Smart with AI",
+    "desc": "Thanks to Qantto's artificial intelligence, <0>your company receives a detailed and personalized report analyzing collected data. This report not only highlights key results but also identifies opportunities and specific improvement strategies.</0> By leveraging AI to make data-driven decisions, your company can take concrete actions to optimize operations and increase efficiency, leading to a clear path to continuous growth and success."
+  },
+  "INTEGRATIONS": {
+    "title": "<0>Empower</0> your sales machine",
+    "desc": "Integrate <0>Qantto</0> with your CRM, CLM, ARP, sSign, DocuSign, Payments."
+  },
+  "SECTORS": {
+    "title": "Industries Innovating with <0>Qantto</0>.",
+    "desc": "Over 10 industries are redefining the quote-to-cash process, increasing revenue by up to 30%.",
+    "cards": {
+      "one": {
+        "first": "Marketing Agencies",
+        "second": "Events",
+        "third": "IT & Software",
+        "fourth": "Legal Services",
+        "fifth": "Services"
+      },
+      "two": {
+        "first": "Technology and Development",
+        "second": "Cybersecurity",
+        "third": "Manufacturing",
+        "fourth": "Remodeling",
+        "fifth": "Consultancy"
+      },
+      "three": {
+        "first": "Transportation and Logistics",
+        "second": "Auto Parts",
+        "third": "Repair and Maintenance",
+        "fourth": "Health and Personal Care",
+        "fifth": "Medicine and Esthetics"
+      },
+      "four": {
+        "first": "Remodeling",
+        "second": "Finance",
+        "third": "Cleaning and Maintenance",
+        "fourth": "Cosmetics and Beauty",
+        "fifth": "Accounting"
       }
     }
   },
   "PRICING": {
-    "sub": "PRICING",
-    "description": "Our plans are tailored to the needs of each company according to its size.\n\nWe don't generalize anything. We are entrepreneurs",
-    "title": "Choose Your Best Plan",
-    "monthly": "Monthly",
-    "yearly": "Yearly",
-    "month": "/ month",
-    "year": "/ year",
+    "subtitle": "Plans",
+    "title": "Pay only for ",
+    "title2": "real ",
+    "title3": "sales opportunities",
+    "desc": "Put your sales process on autopilot now!",
+    "footer": {
+      "text1": "All plans include chat and ",
+      "text2": "video support ",
+      "text3": "with our team."
+    },
     "cards": {
       "one": {
-        "title": "Free",
-        "cta": "Create an account",
-        "list": {
-          "one": "1 service",
-          "two": "1 subservice",
-          "three": "1 user",
-          "four": "3 leads per month",
-          "five": "3 queries per month",
-          "six": "Your clients can make unlimited quotes",
-          "seven": "Your company's logo on quotes",
-          "eight": "Dashboard notifications",
-          "nine": "Appointment scheduling"
-        }
+        "name": "Starter",
+        "one": "1 User",
+        "two": "1 Service",
+        "three": "2 Subservices",
+        "four": "10 leads",
+        "five": "10 inquiries",
+        "six": "Your clients can make unlimited quotes",
+        "seven": "Your company's logo on quotes",
+        "eight": "Notifications on dashboard",
+        "nine": "Appointment scheduling"
       },
       "two": {
-        "title": "Starter",
-        "cta": "Create an account",
-        "list": {
-          "one": "2 services",
-          "two": "4 subservices",
-          "three": "2 users",
-          "four": "15 leads per month",
-          "five": "15 queries per month",
-          "six": "History of up to the last 5 records",
-          "seven": "Your clients can make unlimited quotes",
-          "eight": "Your company's logo on quotes",
-          "nine": "Dashboard notifications",
-          "ten": "Appointment scheduling",
-          "eleven": "Statistics"
-        }
+        "name": "Teams",
+        "one": "3 Users",
+        "two": "2 Services",
+        "three": "4 Subservices",
+        "four": "30 leads",
+        "five": "30 inquiries",
+        "six": "History of up to the last 5 records",
+        "seven": "Your clients can make unlimited quotes",
+        "eight": "Your company's logo on quotes",
+        "nine": "Notifications on dashboard",
+        "ten": "Appointment scheduling",
+        "eleven": "Statistics"
       },
       "three": {
-        "title": "Business",
-        "cta": "Create an account",
-        "list": {
-          "one": "5 services",
-          "two": "10 subservices",
-          "three": "5 users",
-          "four": "30 quotes per month",
-          "five": "30 queries per month",
-          "six": "History of up to the last 10 records",
-          "seven": "Your clients can make unlimited quotes",
-          "eight": "Your company's logo on quotes",
-          "nine": "Dashboard notifications",
-          "ten": "Appointment scheduling",
-          "eleven": "Advanced Statistics",
-          "twelve": "Export Data"
-        }
+        "name": "Business",
+        "one": "5 Users",
+        "two": "5 Services",
+        "three": "10 Subservices",
+        "four": "60 leads",
+        "five": "60 inquiries",
+        "six": "History of up to the last 10 records",
+        "seven": "Your clients can make unlimited quotes",
+        "eight": "Your company's logo on quotes",
+        "nine": "Notifications on dashboard",
+        "ten": "Appointment scheduling",
+        "eleven": "Advanced statistics",
+        "twelve": "AI Reports (Automatic)",
+        "thirteen": "Export data"
       },
       "four": {
-        "title": "Enterprise",
-        "cta": "Create an account",
-        "list": {
-          "one": "Unlimited services",
-          "two": "Unlimited subservices",
-          "three": "Unlimited users",
-          "four": "Unlimited quotes",
-          "five": "Your clients can make unlimited quotes",
-          "six": "Unlimited record history",
-          "seven": "Your company's logo on quotes",
-          "eight": "Dashboard notifications",
-          "nine": "Appointment scheduling",
-          "ten": "Advanced Statistics",
-          "eleven": "Export Data"
-        }
+        "name": "Ultimate",
+        "one": "Unlimited Users",
+        "two": "Unlimited Services",
+        "three": "Unlimited Subservices",
+        "four": "Unlimited leads",
+        "five": "Unlimited inquiries",
+        "six": "Unlimited records history",
+        "seven": "Your clients can make unlimited quotes",
+        "eight": "Your company's logo on quotes",
+        "nine": "Notifications on dashboard",
+        "ten": "Appointment scheduling",
+        "eleven": "Advanced statistics",
+        "twelve": "AI Reports (Automatic)",
+        "thirteen": "Export data"
       }
     }
   },
-  "BRANDS": {
-    "title": "companies and entrepreneurs are increasing their income with"
+  "TESTIMONIALS": {
+    "sub": "Why they love Qantto?",
+    "title": "We know that the key to creating a great product is",
+    "listening": "listening",
+    "clients": {
+      "one": {
+        "name": "Carlos Jimenez",
+        "role": "Marketing Director",
+        "quote": "Since I started using Qantto, my service quoting process has become incredibly easy and fast. The platform is intuitive and allows me to generate professional quotes in minutes. Now I can spend more time serving my clients and growing my business. Thanks, Qantto!"
+      },
+      "two": {
+        "name": "Camila Soto",
+        "role": "Sales Director",
+        "quote": "Qantto has revolutionized how I manage my service quotes. Before, I spent hours calculating costs and preparing documents. With Qantto, everything is done automatically, saving me time and effort. Additionally, the accuracy of the quotes has helped me improve profitability and avoid costly errors. I recommend Qantto to all entrepreneurs and professionals looking to simplify their quoting process."
+      },
+      "three": {
+        "name": "Andrés Pérez",
+        "role": "Operations Director",
+        "quote": "Qantto is an essential tool for my business. The ability to create quotes 24/7 allows me to respond quickly to my clients' requests. The platform is user-friendly and customizable, allowing me to tailor quotes to each client's specific needs. I am delighted with the results I have achieved with Qantto and cannot imagine my business without this valuable tool."
+      }
+    }
+  },
+  "BANNER3": {
+    "title": "Companies and entrepreneurs are <0>increasing their revenue with Qannto</0>",
+    "desc": "...It's data and it has to be given..."
   },
   "FAQS": {
-    "sub": "Do you have any questions?",
-    "title": "Frequently Asked Questions (FAQs)",
+    "sub": "Questions",
+    "title": "Still have questions?",
     "list": {
       "one": {
         "question": "What is Qantto?",
-        "answer": "At Qantto, we understand that quoting products and services can be a complicated task and consume many technological and human resources. That's why we have created a technological tool that allows you to customize every aspect of the quotation and generate hundreds of proposals automatically and efficiently, in real time, 24/7.\n\nOur application is designed to help companies, businesses, and individuals save time and money in the quoting process, eliminating the need for a large sales team and allowing you to focus on what matters most: closing the sale."
+        "answer": "At Qantto, we understand that quoting products and services can be a complicated task and consume many technological and human resources. That's why we've created a technological tool that allows you to customize every aspect of the quote and generate hundreds of proposals automatically and efficiently, in real-time, 24/7.\n\nOur application is designed to help businesses, enterprises, and individuals save time and money in the quoting process, eliminating the need for a large sales team and allowing you to focus on what matters most: closing the sale."
       },
       "two": {
         "question": "How does it work?",
-        "answer": "Imagine being able to provide your customers with personalized and automatic quotes, 24 hours a day, 7 days a week. Without having to invest in sales personnel and spend hours on quoting tasks. With Qantto, this dream becomes a reality.\n\nThe process is easy and fast.\n\nYou don't need technical knowledge. With the following simple steps, you can get started. It will only take you 5 minutes.\n\nFirst: create an account and select a plan. You will always have the free plan available. We don't ask for credit card information.\n\nSecond: customize the landing page where your customers will go to request a quote. For example, qantto.io/mycompany. Provide your company name, a description, and the logo.\n\nThird: create the services and sub-services you offer. Configure the pricing parameters for each option.\n\nFourth: share the link generated by the platform with your customers. That's it! Now your customers can create automatic quotes and receive real-time estimates, without you or your sales team having to spend valuable hours on the task. Instead, focus on your potential customers and closing deals."
+        "answer": "Imagine being able to deliver customized and automatic quotes to your clients 24 hours a day, 7 days a week, without having to invest in a sales team and dedicate hours to quoting tasks. With Qantto, this dream is a reality.\n\nThe process is easy and fast.\n\nYou don't need technical knowledge. With the following simple steps, you can get started. It will take you 5 minutes to do it.\n\nFirst: create an account and select a plan. You will always have the free plan available. We don't ask for a credit card.\n\nSecond: customize the landing page where your clients will go to get a quote. For example, qantto.io/mycompany. Your company's name, a description, and the logo.\n\nThird: create the services and subservices you offer and configure the price parameters for each option.\n\nFourth: share the link generated by the platform with your clients. Now your clients can automatically create quotes and receive a real-time estimate, without you or your sales team having to spend valuable hours of work. Instead, focus on your potential clients and closing the deal."
       },
       "three": {
         "question": "Why choose us?",
-        "answer": "With Qantto, you can save time and money in the quoting process, allowing you to focus on growing your business. Our application is user-friendly, fully customizable, and best of all, automated. This allows you to tailor it to the specific needs of your business and your clients. Additionally, we provide technical support and personalized guidance to assist you throughout the implementation process. Don't wait any longer, join Qantto and save valuable time and resources for your organization."
+        "answer": "With Qantto, you can save time and money in the quoting process, allowing you to focus on growing your business. Our application is easy to use, fully customizable, and, best of all, automatic. This allows you to adapt it to the needs of your business and your clients. In addition, we provide technical support and personalized advice to assist you in the implementation process. Don't wait any longer, join Qantto and save valuable time and resources for your organization."
       },
       "four": {
         "question": "How is the tool customized for my business?",
-        "answer": "Step by step:\n\n1. Create an account and select a plan: As a customer, you need to create an account on Qantto and choose the plan that best suits your needs. You can opt for a paid plan or use the free option to test the tool.\n\n2. Customize the platform: Once registered with an active plan, you can customize the tool according to your business. You can add your brand, a company description, and configure the services you offer.\n\n3. Set up service parameters and features: For each service, the user can configure specific parameters or features, such as materials used, estimated time, required quantity, among others. These parameters will help calculate the value of each service.\n\n4. Validate the final costs: After configuring the questions and services, the user can validate the final costs of the services provided by Qantto. This will allow them to have a clear view of the prices and make adjustments if necessary.\n\n5. Save the configuration and share the link: Once the customization is complete, the user can save the configuration and generate a unique link to share with their customers. This will allow them to access the tool and start quoting the offered services."
+        "answer": "Step by step:\n\n1. Create an account and select a plan: as a customer, you need to create an account on Qantto and select the plan that best suits your needs. You can choose a paid plan or use the free option to try the tool. We don't ask for a credit card.\n\n2. Customize the platform: Once registered and with an active plan, you can customize the tool according to your business. You can add your brand, a description of your company, and configure the services you offer.\n\n3. Configure service parameters and features: For each service, the user can configure specific parameters or features, such as materials used, estimated time, required quantity, among others. These parameters will help calculate the value of each service.\n\n4. Validate final costs: After configuring the questions and services, the user can validate the final costs of the services provided by Qantto. This will allow them to have a clear view of the prices and make adjustments if necessary.\n\n5. Save the configuration and share the link: Once the customization is complete, the user can save the configuration and generate a unique link to share with their clients. This will allow them to access the tool and start quoting the services offered."
       },
       "five": {
-        "question": "Do I need technical knowledge or third-party involvement to use it?",
-        "answer": "No, advanced technical knowledge or the intervention of third parties is not required to use Qantto. The initial setup process involves defining the options and possible responses for each question and assigning them a value (price). This configuration can be done by the business owner or the salesperson in charge. Once this initial setup is complete, you can use Qantto autonomously without the need for additional technical knowledge."
+        "question": "Do I need technical knowledge or third parties to use it?",
+        "answer": "No, using Qantto does not require advanced technical knowledge or the intervention of third parties. The initial setup process involves defining the options and possible answers for each question and assigning them a value (price). This configuration can be done by the business owner or the person in charge of sales. Once this initial configuration is complete, you can use Qantto autonomously and without the need for additional technical knowledge."
       },
       "six": {
-        "question": "How does the tool ensure that the provided quote is accurate and reliable?",
-        "answer": "Qantto is based on the configuration made by the user to calculate the quote for each service according to the established requirements. The user has the ability to configure their own prices and specify the necessary details for each project.\n\nHowever, it is important to note that each project is unique and may have additional specific requirements. As a result, the value provided by the tool is an estimate and could vary up to 20% depending on the individual requirements."
+        "question": "How does the tool ensure that the quote it provides is accurate and reliable?",
+        "answer": "Qantto relies on the configuration made by the user to calculate the quote for each service according to the established requirements. The user has the ability to configure their own prices and specify the details needed for each project.\n\nHowever, it is important to note that each project is unique and may have additional specific requirements. As a result, the value provided by the tool is an estimate and could vary up to 20% depending on individual requirements."
       },
       "seven": {
         "question": "What security measures are taken to protect my clients' data?",
-        "answer": "We take security measures to protect customer data. Data encryption, restricted access, data backup and recovery, protection against threats and vulnerabilities, and compliance with data protection regulations are implemented. These measures ensure the confidentiality, integrity, and availability of customer information."
+        "answer": "We take security measures to protect customer data. Data encryption, restricted access, data backup and recovery, protection against threats and vulnerabilities are used, and data protection regulations are complied with. These measures ensure the confidentiality, integrity, and availability of customer information."
       },
       "eight": {
-        "question": "What type of technical support or advice is provided after the implementation of the tool?",
-        "answer": "We provide a robust technical support service and guidance after the tool's implementation. Our support team is available to assist you with any technical inquiries or issues you may encounter. Additionally, we have expert advisors who will provide guidance in tool configuration and help you optimize your processes. We are committed to offering comprehensive service to ensure your success with Qantto."
-      },
-      "nine": {
-        "question": "What if my business has specific requirements that cannot be covered by the tool?",
-        "answer": "Although the tool offers extensive customization, we understand that every business is unique and may have specific requirements.\n\nIn situations where the specific requirements of your business cannot be directly covered by the tool, we offer customized solutions. Our team of experts is available to assess your needs and work with you to find a solution that fits your business in a personalized manner.\n\nWhether through further customization of the existing tool or the development of new functionalities, we will strive to meet your specific requirements and ensure that you obtain the maximum value from our platform."
-      },
-      "ten": {
-        "question": "How does the tool integrate with other systems or platforms that I am already using?",
-        "answer": "Qantto allows you to redirect your customers to other links of tools you use for your business, such as Calendly, WhatsApp, or your website."
+        "question": "What type of technical support or guidance is offered after the implementation of the tool?",
+        "answer": "We offer a robust technical support service and guidance after the implementation of the tool. Our support team is available to assist you with any technical inquiries or issues you may face. Additionally, we have expert advisors who will provide guidance in tool configuration and help you optimize your processes. We are committed to providing ongoing support to ensure the success of your business with Qantto."
       }
     }
   },
   "FOOTER": {
     "description": "Qantto is the first Quoting-Automation platform for your business or company.\n\nWelcome to the era of AI and automation. Increase your conversion rate by automating the sales process.",
     "product": "Legal",
-    "pricesAndPlans": "Prices and plans",
-    "termsAndConditions": "Terms and conditions",
-    "privacyPolicy": "Privacy policy",
-    "copyright": "Copyright. All right reserved. © Qantto LLC",
+    "pricesAndPlans": "Prices and Plans",
+    "termsAndConditions": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "Copyright. All rights reserved. © Qantto LLC",
     "security": "Security",
     "location": "Location"
   }

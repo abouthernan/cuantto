@@ -17,7 +17,6 @@ export const extractCount = async () => {
     const countDocument = await counts.findOne({})
     return countDocument.count
   } finally {
-    // No cerramos la conexión aquí
   }
 }
 
@@ -29,6 +28,5 @@ export const incrementCount = async (newCount: number) => {
 
     await counts.updateOne({}, { $set: { count: newCount } })
   } finally {
-    // No cerramos la conexión aquí
   }
 }

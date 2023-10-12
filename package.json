@@ -8,31 +8,31 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "i18n:generate": "astro-i18next generate"
   },
   "dependencies": {
-    "@astrojs/tailwind": "3.1.1",
-    "@astrojs/vercel": "3.4.0",
-    "@fontsource/inter": "4.5.15",
-    "astro": "2.5.4",
+    "@astrojs/react": "3.0.3",
+    "@astrojs/tailwind": "5.0.0",
+    "@astrojs/vercel": "5.0.2",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "astro": "3.2.4",
+    "astro-google-fonts-optimizer": "0.2.2",
     "astro-i18next": "1.0.0-beta.21",
-    "dotenv": "16.0.3",
-    "framer-motion": "10.11.2",
-    "i18next": "22.5.0",
-    "i18next-browser-languagedetector": "7.0.2",
-    "i18next-fs-backend": "2.1.2",
-    "i18next-http-backend": "2.2.1",
-    "mongodb": "5.5",
-    "react-i18next": "12.3.1",
-    "tailwindcss": "3.3.1"
+    "dotenv": "16.3.1",
+    "i18next": "22.4.14",
+    "i18next-browser-languagedetector": "7.1.0",
+    "i18next-fs-backend": "2.1.1",
+    "i18next-http-backend": "2.2.2",
+    "mongodb": "6.1.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-i18next": "13.2.2",
+    "tailwindcss": "3.0.24"
   },
   "devDependencies": {
-    "@astrojs/react": "2.1.1",
-    "eslint": "8.41.0",
-    "eslint-plugin-astro": "0.27.1",
-    "prettier": "2.8.8",
-    "prettier-plugin-astro": "0.9.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "prettier": "3.0.3",
+    "prettier-plugin-astro": "0.12.0"
   }
 }
