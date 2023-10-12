@@ -24,3 +24,110 @@ import { HeadHrefLangs } from "astro-i18next/components";
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+
+  /* nav */
+  :has(#toggleNav.open) .nav-mobil {
+    @apply top-[88px] translate-y-0;
+  }
+
+  .balance {
+    text-wrap: balance;
+  }
+
+  .word-wrap {
+    word-wrap: break-word;
+  }
+
+  .border-r-dashed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px dashed #6ef96e;
+    width: 100%;
+    height: 1px;
+    top: 40px;
+    right: -50%;
+    z-index: -1;
+  }
+
+  .direction-reverse {
+    animation-direction: reverse;
+  }
+
+  .nav-button {
+    @apply space-x-0;
+  }
+
+  .nav-button a {
+    @apply pr-8;
+  }
+
+  .nav-button a:last-child {
+    @apply bg-qGreen text-qBlack px-4;
+  }
+
+  .nav-button a:last-child {
+    @apply border-none;
+  }
+
+  .nav-button a:last-child:hover {
+    @apply bg-qGreen/80 text-qBlack;
+  }
+
+  @media (max-width: 768px) {
+    .nav-button a {
+      @apply border-qGreen text-qGreen;
+    }
+  }
+
+  /* banner */
+  .circuit::before,
+  .circuit-mask {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1024px;
+    height: 100%;
+    background-image: url("/images/circuit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .circuit-mask {
+    -webkit-mask: url("/images/circuit.svg");
+    mask: url("/images/circuit.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .circuit-mask::before {
+    content: "";
+    position: absolute;
+    border: 3px solid #6ef96e;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: onda 8s 2s infinite;
+  }
+
+  @keyframes onda {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(8);
+    }
+    100% {
+      transform: scale(8);
+    }
+  }
+</style>

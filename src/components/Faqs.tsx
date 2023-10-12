@@ -1,100 +1,102 @@
-import { useState } from 'react'
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const Faqs = () => {
-  const { t } = useTranslation('translation');
+  const { t } = useTranslation("translation");
   return (
-    <section
-      className="relative pt-16 pb-16 overflow-hidden"
-      id="faqs"
-    >
+    <section className="relative pt-16 pb-16 overflow-hidden" id="faqs">
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-2 text-qGreen text-center">
-            Preguntas
-          </p>
+          <p className="mb-2 text-qGreen text-center">Preguntas</p>
           <h2 className="mb-16 text-white text-3xl font-bold text-center">
             ¿Aún tienes dudas?
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.one.question')}
-                content={t('FAQS.list.one.answer')}
+                title={t("FAQS.list.one.question")}
+                content={t("FAQS.list.one.answer")}
+                defaultOpen={true}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.two.question')}
-                content={t('FAQS.list.two.answer')}
+                title={t("FAQS.list.two.question")}
+                content={t("FAQS.list.two.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.three.question')}
-                content={t('FAQS.list.three.answer')}
+                title={t("FAQS.list.three.question")}
+                content={t("FAQS.list.three.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.four.question')}
-                content={t('FAQS.list.four.answer')}
+                title={t("FAQS.list.four.question")}
+                content={t("FAQS.list.four.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.five.question')}
-                content={t('FAQS.list.five.answer')}
+                title={t("FAQS.list.five.question")}
+                content={t("FAQS.list.five.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.six.question')}
-                content={t('FAQS.list.six.answer')}
+                title={t("FAQS.list.six.question")}
+                content={t("FAQS.list.six.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.seven.question')}
-                content={t('FAQS.list.seven.answer')}
+                title={t("FAQS.list.seven.question")}
+                content={t("FAQS.list.seven.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.eight.question')}
-                content={t('FAQS.list.eight.answer')}
+                title={t("FAQS.list.eight.question")}
+                content={t("FAQS.list.eight.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.nine.question')}
-                content={t('FAQS.list.nine.answer')}
+                title={t("FAQS.list.nine.question")}
+                content={t("FAQS.list.nine.answer")}
               />
             </div>
 
             <div className="w-full p-1">
               <FAQBox
-                title={t('FAQS.list.ten.question')}
-                content={t('FAQS.list.ten.answer')}
+                title={t("FAQS.list.ten.question")}
+                content={t("FAQS.list.ten.answer")}
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
+};
+
+interface FAQBoxProps {
+  defaultOpen?: boolean;
+  title: string;
+  content: string;
 }
 
-const FAQBox = ({ defaultOpen, title, content }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen)
+const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen ?? false);
 
   return (
     <div
@@ -106,8 +108,9 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           {title}
         </h3>
         <p
-          className={`text-white/80 pt-4 transition-all duration-300 overflow-hidden break-words whitespace-pre-wrap ${isOpen ? 'max-h-screen' : 'max-h-0'
-            }`}
+          className={`text-white/80 pt-4 transition-all duration-300 overflow-hidden break-words whitespace-pre-wrap ${
+            isOpen ? "max-h-screen" : "max-h-0"
+          }`}
         >
           {content}
         </p>
@@ -119,8 +122,9 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           viewBox="0 0 20 20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`transition-all duration-500  ${isOpen ? 'rotate-[360deg]' : 'rotate-[180deg]'
-            }`}
+          className={`transition-all duration-500  ${
+            isOpen ? "rotate-[360deg]" : "rotate-[180deg]"
+          }`}
         >
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
@@ -132,5 +136,5 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         </svg>
       </div>
     </div>
-  )
-}
+  );
+};
