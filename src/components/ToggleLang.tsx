@@ -36,7 +36,7 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
         aria-expanded="true"
       >
         <img
-          src={`https://flagcdn.com/w20/${lang}.png`}
+          src={`https://flagcdn.com/${lang}.svg`}
           alt={`${i18n.language} Flag`}
           className="w-6 h-6 mr-2 rounded-full"
         />
@@ -67,9 +67,9 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
             role="menuitem"
           >
             <img
-              src="https://flagcdn.com/w20/us.png"
+              src="https://flagcdn.com/us.svg"
               alt="US Flag"
-              className="w-4 h-4 mr-2"
+              className="w-5 h-5 mr-2 object-cover aspect-video"
             />
             English
           </button>
@@ -79,9 +79,9 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
             role="menuitem"
           >
             <img
-              src="https://flagcdn.com/w20/es.png"
+              src="https://flagcdn.com/es.svg"
               alt="ES Flag"
-              className="w-4 h-4 mr-2"
+              className="w-5 h-5 mr-2 object-cover aspect-video"
             />
             Español
           </button>
