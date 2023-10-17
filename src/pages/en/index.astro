@@ -16,6 +16,7 @@ import { Testimonials } from "../../components/Testimonials";
 import { Banner3 } from "../../components/Banner3";
 import { Faqs } from "../../components/Faqs";
 import { Footer } from "../../components/Footer";
+import { FloatButton } from "../../components/FloatButton";
 
 changeLanguage("en");
 
@@ -28,16 +29,17 @@ const title = i18next.language === "es"
   <Header client:load />
   <Hero client:load />
   <Steper client:load />
-  <Benefits1 client:visible />
-  <Banner1 client:visible />
-  <Steper2 client:visible />
-  <Benefits2 client:visible />
-  <Banner2 client:visible />
-  <Integrations client:visible />
-  <Sectors client:visible />
-  <Pricing client:visible />
-  <Testimonials client:visible />
+  <Benefits1 client:load />
+  <Banner1 client:load />
+  <Steper2 client:load />
+  <Benefits2 client:load />
+  <Banner2 client:load />
+  <Integrations client:load />
+  <Sectors client:load />
+  <Pricing client:load />
+  <Testimonials client:load />
   <Banner3 client:load />
-  <Faqs client:visible />
-  <Footer client:visible />
+  <Faqs client:load />
+  <Footer client:load />
+  <FloatButton client:load />
 </Layout>

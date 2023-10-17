@@ -10,7 +10,6 @@ export const Sectors = () => {
       <div className="max-w-sm">
         <h2 className="text-3xl text-white font-bold balance text-center">
           <Trans i18nKey="SECTORS.title">
-            Sectores que están innovando con{" "}
             <span className="text-qGreen">Qantto</span>.
           </Trans>
         </h2>

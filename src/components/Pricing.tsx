@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CheckArrowIcon } from '../assets/icons'
 import { useTranslation } from "react-i18next";
+import { dashboardRouter } from '../constants';
 
 export const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true)
@@ -120,8 +121,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.one.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$14' : '$168'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-12 text-base line-through'>$168</span>
+                      )}
                     </div>
                     <div className="text-white/80">
                       / {' '}
@@ -142,7 +147,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}
@@ -159,8 +164,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.two.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$48' : '$432'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-12 text-base line-through'>$576</span>
+                      )}
                     </div>
                     <div className="text-white/80">
                       / {' '}
@@ -181,7 +190,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}
@@ -198,8 +207,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.three.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2 relative">
                       {isMonthly ? '$250' : '$2.244'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-16 text-base line-through'>${(3000).toLocaleString()}</span>
+                      )}
                     </div>
                     <div className="text-qBlack/80">
                       / {' '}
@@ -220,7 +233,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qGreen py-2 px-4 w-full rounded-xl rounded-t-xl bg-qBlack font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}
@@ -237,8 +250,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.four.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$498' : '$4.476'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-16 text-base line-through'>${(5976).toLocaleString()}</span>
+                      )}
                     </div>
                     <div className="text-white/80">
                       / {' '}
@@ -259,7 +276,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}

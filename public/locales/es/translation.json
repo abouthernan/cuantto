@@ -328,5 +328,8 @@
     "copyright": "Copyright. All right reserved. © Qantto LLC",
     "security": "Seguridad",
     "location": "Ubicación"
+  },
+  "FLOAT": {
+    "text": "¿Te podemos ayudar en algo?"
   }
 }

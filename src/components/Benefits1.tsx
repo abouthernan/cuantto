@@ -16,7 +16,6 @@ export const Benefits1 = () => {
         <div className="max-w-md">
           <h2 className="text-qGreen font-bold text-3xl balance">
             <Trans i18nKey="BENEFITS.title">
-              Aumenta{" "}
               <span className="text-white">tu Tasa de Converción hasta</span> en
               un 30%
             </Trans>
@@ -45,10 +44,7 @@ export const Benefits1 = () => {
             </h3>
             <p className="text-white/90 mt-2 font-light">
               <Trans i18nKey="BENEFITS.steps.one.description">
-                Las empresas configuran sus productos o servicios{" "}
                 <strong className="text-white font-bold">una sola vez</strong>,
-                lo que ahorra tiempo en la preparación de cotizaciones
-                personalizadas para cada cliente.
               </Trans>
             </p>
           </li>
@@ -69,10 +65,7 @@ export const Benefits1 = () => {
             </h3>
             <p className="text-white/90 mt-2 font-light">
               <Trans i18nKey="BENEFITS.steps.two.description">
-                Podrás escalar tu negocio de manera{" "}
                 <strong className="text-white font-bold">más eficiente</strong>{" "}
-                sin necesidad de aumentar proporcionalmente la inversión en
-                personal.
               </Trans>
             </p>
           </li>
@@ -93,10 +86,6 @@ export const Benefits1 = () => {
             </h3>
             <p className="text-white/90 mt-2 font-light whitespace-pre-wrap word-wrap">
               <Trans i18nKey="BENEFITS.steps.three.description">
-                Al conocer el valor de tu producto o servicio en tiempo real, el
-                cliente podrá aceptar o rechazar tu propuesta sin que pierdas
-                tiempo valioso. Así tu negocio puede concentrar sus esfuerzos en
-                aquellos clientes que harán el{" "}
                 <strong className="text-white font-bold">
                   match perfecto precio-calidad.
                 </strong>
