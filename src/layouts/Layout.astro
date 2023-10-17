@@ -9,6 +9,7 @@ import ShadowBg from "../components/ShadowBg.astro";
 import i18next from "i18next";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import { HeadHrefLangs } from "astro-i18next/components";
+import Metatags from "../components/Metatags.astro";
 ---
 
 <!doctype html>
@@ -25,6 +26,7 @@ import { HeadHrefLangs } from "astro-i18next/components";
 			url="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
 		/>
 		<HeadHrefLangs />
+    <Metatags />
 	</head>
 	<body class="bg-qBg font-inter overflow-x-hidden">
 		<ShadowBg />
