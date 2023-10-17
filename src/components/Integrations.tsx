@@ -24,13 +24,12 @@ export const Integrations = () => {
     >
       <h2 className="text-white text-center text-3xl font-bold">
         <Trans i18nKey="INTEGRATIONS.title">
-          <span className="text-qGreen">Potencia</span> tu maquina de ventas
+          <span className="text-qGreen">Potencia</span>
         </Trans>
       </h2>
       <p className="text-white/80 w-full text-center mb-10 mt-3">
         <Trans i18nKey="INTEGRATIONS.desc">
-          Integra <span className="text-qGreen font-bold">Qantto</span> con tus
-          sistemas CRM, CLM, ARP, sSign, DocuSign, Payments.
+          <span className="text-qGreen font-bold">Qantto</span>{" "}
         </Trans>
       </p>
 

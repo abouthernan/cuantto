@@ -27,11 +27,9 @@ export const Steper2 = () => {
           </h2>
           <p className="text-qBlack balance text-center font-light">
             <Trans i18nKey="STEPER2.cards.one.description">
-              Crea una cuenta y activa tu{" "}
               <strong className="text-qBlack font-bold">
                 free-trial de 14 días sin costo.
               </strong>
-              No te pedimos tarjeta de crédito.
             </Trans>
           </p>
         </div>
@@ -56,9 +54,7 @@ export const Steper2 = () => {
               <strong className="text-white group-hover:text-qBlack">
                 Personaliza
               </strong>
-              la página de destino a la que irán tus clientes a cotizar. Ej.{" "}
               <span className="underline">qantto.io/miempresa</span>
-              Nombre de tu empresa, una descripción y el logotipo.
             </Trans>
           </p>
         </div>
@@ -80,11 +76,9 @@ export const Steper2 = () => {
           </h2>
           <p className="text-white/80 balance text-center group-hover:text-qBlack">
             <Trans i18nKey="STEPER2.cards.three.description">
-              Agrega los servicios y subservicios que ofreces y{" "}
               <strong className="text-white group-hover:text-qBlack">
                 Configura los parámetros de precio
               </strong>{" "}
-              para cada una de las opciones.
             </Trans>
           </p>
         </div>
@@ -109,9 +103,6 @@ export const Steper2 = () => {
               <strong className="text-white group-hover:text-qBlack">
                 Comparte el link
               </strong>{" "}
-              que te generará la plataforma a tus clientes. Podrás compartirlo
-              vía Whatsapp, Email, Redes o incluso embeberlo dentro de tu página
-              web.
             </Trans>
           </p>
         </div>
@@ -133,11 +124,9 @@ export const Steper2 = () => {
           </h2>
           <p className="text-white/80 balance text-center group-hover:text-qBlack">
             <Trans i18nKey="STEPER2.cards.five.description">
-              Crea una cuenta y activa tu{" "}
               <strong className="text-white group-hover:text-qBlack">
                 free-trial de 14 días sin costo.
               </strong>
-              No te pedimos tarjeta de crédito.
             </Trans>
           </p>
         </div>

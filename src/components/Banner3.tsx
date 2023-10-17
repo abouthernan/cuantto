@@ -14,7 +14,6 @@ export const Banner3 = () => {
 
         <h2 className="z-10 text-3xl max-w-sm text-center balance font-semibold">
           <Trans i18nKey="BANNER3.title">
-            Empresas y emprendedores están{" "}
             <span className="text-qGreen">
               aumentando sus ingresos con Qannto
             </span>

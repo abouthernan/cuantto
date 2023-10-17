@@ -8,7 +8,6 @@ export const Steper = () => {
         <div className="text-white balance text-left flex w-full justify-start mb-[70px]">
           <p className="max-w-sm text-center relative left-[9%]">
             <Trans i18nKey="STEPER.textOne">
-              En promedio este flujo le toma a los equipos y empresas entre{" "}
               <span className="text-qRed">18 y 42 horas...</span>
             </Trans>
           </p>
@@ -163,8 +162,8 @@ export const Steper = () => {
         <div className="text-white balance text-left flex w-full justify-center mt-[70px] max-w-sm">
           <p className="relative left-[32%] text-center">
             <Trans i18nKey="STEPER.textTwo">
-              ...con <span className="text-qGreen font-bold">Qantto</span> le
-              tomará <strong>10 minutos.</strong>
+              <span className="text-qGreen font-bold">Qantto</span> le tomará{" "}
+              <strong>10 minutos.</strong>
             </Trans>
           </p>
         </div>

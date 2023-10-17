@@ -7,14 +7,12 @@ export const Benefits2 = () => {
       <p className="text-center">{t("BENEFITS2.subtitle")}</p>
       <h2 className="text-center text-3xl text-white font-semibold max-w-md balance mx-auto">
         <Trans i18nKey="BENEFITS2.title">
-          Dale <span className="text-qGreen">superpoderes</span> a tu equipo de
-          ventas
+          <span className="text-qGreen">superpoderes</span>
         </Trans>
       </h2>
       <p className="text-center mt-2">
         <Trans i18nKey="BENEFITS2.description">
-          Crea tu equipo y <strong className="text-white">asigna roles</strong>
-          personalizados.
+          <strong className="text-white">asigna roles</strong>
         </Trans>
       </p>
 
@@ -38,12 +36,9 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.one.desc">
-                Tu negocio estará disponible las{" "}
                 <strong className="text-white font-bold">
                   24 horas del día, los 7 días de la semana
                 </strong>
-                , sin costos adicionales y sin sacrificar la disponibilidad para
-                tus clientes.
               </Trans>
             </p>
           </div>
@@ -67,12 +62,9 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.two.desc">
-                Al poder ofrecer cotizaciones precisas y personalizadas de
-                manera rápida,{" "}
                 <strong className="text-white font-bold">
                   te vuelves más competitivo en el mercado
                 </strong>{" "}
-                y puedes ganar más negocios.
               </Trans>
             </p>
           </div>
@@ -96,8 +88,6 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.three.desc">
-                Qantto proporciona herramientas de análisis de datos que
-                permiten a las empresas obtener información valiosa sobre las{" "}
                 <strong className="text-white font-bold">
                   preferencias y comportamientos de sus clientes.
                 </strong>
@@ -124,8 +114,6 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.four.desc">
-                Al proporcionar cotizaciones basadas en valores específicos,
-                creas transparencia en la estructura de precios, lo que{" "}
                 <strong className="text-white font-bold">
                   genera confianza en los clientes.
                 </strong>
@@ -152,8 +140,6 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.five.desc">
-                Al ofrecer cotizaciones en tiempo real, puedes llegar a un
-                público global y{" "}
                 <strong className="text-white font-bold">
                   expandir tu alcance más allá de las limitaciones geográficas.
                 </strong>
@@ -202,12 +188,9 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.seven.desc">
-                Al{" "}
                 <strong className="text-white font-bold">
                   eliminar tareas manuales repetitivas
                 </strong>
-                , con Qantto libera a tu equipo para centrarse en actividades
-                más estratégicas y creativas.
               </Trans>
             </p>
           </div>
@@ -231,8 +214,6 @@ export const Benefits2 = () => {
             </h3>
             <p className="font-light text-base">
               <Trans i18nKey="BENEFITS2.list.eight.desc">
-                La automatización reduce la posibilidad de errores humanos en
-                las cotizaciones, lo que{" "}
                 <strong className="text-white font-bold">
                   mejora la confiabilidad
                 </strong>
