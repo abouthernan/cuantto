@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import { CheckArrowIcon } from '../assets/icons'
+import { useState } from "react";
+import { CheckArrowIcon } from "../assets/icons";
 import { useTranslation } from "react-i18next";
-import { dashboardRouter } from '../constants';
+import { dashboardRouter } from "../constants";
 
 export const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true)
+  const [isMonthly, setIsMonthly] = useState(true);
 
-  const { t } = useTranslation('translation');
+  const { t } = useTranslation("translation");
 
   const pricingDataStarter = [
     t("PRICING.cards.one.one"),
@@ -17,8 +17,8 @@ export const Pricing = () => {
     t("PRICING.cards.one.six"),
     t("PRICING.cards.one.seven"),
     t("PRICING.cards.one.eight"),
-    t("PRICING.cards.one.nine")
-  ]
+    t("PRICING.cards.one.nine"),
+  ];
 
   const pricingDataTeams = [
     t("PRICING.cards.two.one"),
@@ -31,8 +31,8 @@ export const Pricing = () => {
     t("PRICING.cards.two.eight"),
     t("PRICING.cards.two.nine"),
     t("PRICING.cards.two.ten"),
-    t("PRICING.cards.two.eleven")
-  ]
+    t("PRICING.cards.two.eleven"),
+  ];
 
   const pricingDataBusines = [
     t("PRICING.cards.three.one"),
@@ -47,8 +47,8 @@ export const Pricing = () => {
     t("PRICING.cards.three.ten"),
     t("PRICING.cards.three.eleven"),
     t("PRICING.cards.three.twelve"),
-    t("PRICING.cards.three.thirteen")
-  ]
+    t("PRICING.cards.three.thirteen"),
+  ];
 
   const pricingDataUltimate = [
     t("PRICING.cards.four.one"),
@@ -63,26 +63,25 @@ export const Pricing = () => {
     t("PRICING.cards.four.ten"),
     t("PRICING.cards.four.eleven"),
     t("PRICING.cards.four.twelve"),
-    t("PRICING.cards.four.thirteen")
-  ]
+    t("PRICING.cards.four.thirteen"),
+  ];
 
   const handleChange = () => {
-    setIsMonthly(!isMonthly)
-  }
+    setIsMonthly(!isMonthly);
+  };
 
   return (
     <>
-      <section
-        className="w-screen flex justify-center relative"
-        id="pricing"
-      >
+      <section className="w-screen flex justify-center relative" id="pricing">
         <div className="pb-20 bg-customBg w-full max-w-7xl">
           <div>
             <div className="container mx-auto px-4">
               <div className="max-w-[560px] mx-auto text-center mb-16">
                 <span className="text-qGreen">{t("PRICING.subtitle")}</span>
                 <h2 className="my-2 text-3xl font-bold  text-white">
-                  {t("PRICING.title")} <span className="text-qGreen">{t("PRICING.title2")}</span> {t("PRICING.title3")}
+                  {t("PRICING.title")}{" "}
+                  <span className="text-qGreen">{t("PRICING.title2")}</span>{" "}
+                  {t("PRICING.title3")}
                 </h2>
                 <p className="text-white/80 w-full text-center">
                   {t("PRICING.desc")}
@@ -99,12 +98,12 @@ export const Pricing = () => {
                   <div className="flex absolute text-qBlack text-sm font-bold">
                     <div
                       className={
-                        isMonthly ? 'mr-9 ml-3 ' : 'mr-9 ml-3 text-white/80'
+                        isMonthly ? "mr-9 ml-3 " : "mr-9 ml-3 text-white/80"
                       }
                     >
                       {t("MESSAGES.montly")}
                     </div>
-                    <div className={isMonthly ? 'text-white/80' : ''}>
+                    <div className={isMonthly ? "text-white/80" : ""}>
                       {t("MESSAGES.annual")}
                       <span className="absolute text-black bg-orange-400 shadow -top-[7px] -right-[60px] w-24 text-[11px] rotate-[45deg]">
                         25% Off
@@ -122,15 +121,16 @@ export const Pricing = () => {
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
-                      {isMonthly ? '$14' : '$168'}
+                      {isMonthly ? "$14" : "$126"}
 
                       {!isMonthly && (
-                        <span className='block text-qRed absolute top-0 -right-12 text-base line-through'>$168</span>
+                        <span className="block text-qRed absolute top-0 -right-12 text-base line-through">
+                          $168
+                        </span>
                       )}
                     </div>
                     <div className="text-white/80">
-                      / {' '}
-                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
+                      / {isMonthly ? t("MESSAGES.month") : t("MESSAGES.year")}
                     </div>
                   </div>
 
@@ -154,7 +154,13 @@ export const Pricing = () => {
                   </a>
 
                   <div className="text-center text-sm text-white/80 mt-2">
-                    <p>{t("MESSAGES.days14")} <strong className="text-white">{t("MESSAGES.free")}</strong>.</p>
+                    <p>
+                      {t("MESSAGES.days14")}{" "}
+                      <strong className="text-white">
+                        {t("MESSAGES.free")}
+                      </strong>
+                      .
+                    </p>
                     <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
@@ -165,15 +171,16 @@ export const Pricing = () => {
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
-                      {isMonthly ? '$48' : '$432'}
+                      {isMonthly ? "$48" : "$432"}
 
                       {!isMonthly && (
-                        <span className='block text-qRed absolute top-0 -right-12 text-base line-through'>$576</span>
+                        <span className="block text-qRed absolute top-0 -right-12 text-base line-through">
+                          $576
+                        </span>
                       )}
                     </div>
                     <div className="text-white/80">
-                      / {' '}
-                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
+                      / {isMonthly ? t("MESSAGES.month") : t("MESSAGES.year")}
                     </div>
                   </div>
 
@@ -197,7 +204,13 @@ export const Pricing = () => {
                   </a>
 
                   <div className="text-center text-sm text-white/80 mt-2">
-                    <p>{t("MESSAGES.days14")} <strong className="text-white">{t("MESSAGES.free")}</strong>.</p>
+                    <p>
+                      {t("MESSAGES.days14")}{" "}
+                      <strong className="text-white">
+                        {t("MESSAGES.free")}
+                      </strong>
+                      .
+                    </p>
                     <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
@@ -208,15 +221,16 @@ export const Pricing = () => {
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2 relative">
-                      {isMonthly ? '$250' : '$2.244'}
+                      {isMonthly ? "$250" : "$2.250"}
 
                       {!isMonthly && (
-                        <span className='block text-qRed absolute top-0 -right-16 text-base line-through'>${(3000).toLocaleString()}</span>
+                        <span className="block text-qRed absolute top-0 -right-16 text-base line-through">
+                          ${(3000).toLocaleString()}
+                        </span>
                       )}
                     </div>
                     <div className="text-qBlack/80">
-                      / {' '}
-                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
+                      / {isMonthly ? t("MESSAGES.month") : t("MESSAGES.year")}
                     </div>
                   </div>
 
@@ -240,7 +254,13 @@ export const Pricing = () => {
                   </a>
 
                   <div className="text-center text-sm text-qBlack mt-2">
-                    <p>{t("MESSAGES.days14")} <strong className="text-qBlack">{t("MESSAGES.free")}</strong>.</p>
+                    <p>
+                      {t("MESSAGES.days14")}{" "}
+                      <strong className="text-qBlack">
+                        {t("MESSAGES.free")}
+                      </strong>
+                      .
+                    </p>
                     <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
@@ -251,15 +271,16 @@ export const Pricing = () => {
                   </h4>
                   <div className="flex justify-start items-end mb-10">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
-                      {isMonthly ? '$498' : '$4.476'}
+                      {isMonthly ? "$498" : "$4.482"}
 
                       {!isMonthly && (
-                        <span className='block text-qRed absolute top-0 -right-16 text-base line-through'>${(5976).toLocaleString()}</span>
+                        <span className="block text-qRed absolute top-0 -right-16 text-base line-through">
+                          ${(5976).toLocaleString()}
+                        </span>
                       )}
                     </div>
                     <div className="text-white/80">
-                      / {' '}
-                      {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
+                      / {isMonthly ? t("MESSAGES.month") : t("MESSAGES.year")}
                     </div>
                   </div>
 
@@ -283,7 +304,13 @@ export const Pricing = () => {
                   </a>
 
                   <div className="text-center text-sm text-white/80 mt-2">
-                    <p>{t("MESSAGES.days14")} <strong className="text-white">{t("MESSAGES.free")}</strong>.</p>
+                    <p>
+                      {t("MESSAGES.days14")}{" "}
+                      <strong className="text-white">
+                        {t("MESSAGES.free")}
+                      </strong>
+                      .
+                    </p>
                     <p>{t("MESSAGES.noCreditCard")}.</p>
                   </div>
                 </div>
@@ -294,8 +321,14 @@ export const Pricing = () => {
       </section>
 
       <div className="text-center text-white/80 max-w-xs mx-auto balance -mt-8 font-base">
-        <p>{t("PRICING.footer.text1")} <span className="text-qGreen font-bold">{t("PRICING.footer.text2")}</span> {t("PRICING.footer.text3")}</p>
+        <p>
+          {t("PRICING.footer.text1")}{" "}
+          <span className="text-qGreen font-bold">
+            {t("PRICING.footer.text2")}
+          </span>{" "}
+          {t("PRICING.footer.text3")}
+        </p>
       </div>
     </>
-  )
-}
+  );
+};
