@@ -38,7 +38,7 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
         <img
           src={`https://flagcdn.com/${lang}.svg`}
           alt={`${i18n.language} Flag`}
-          className="w-6 h-6 mr-2 rounded-full"
+          className="w-6 h-6 mr-2 rounded-full object-cover aspect-video"
         />
         {i18n.language === "en" ? "EN" : "SP"}
 

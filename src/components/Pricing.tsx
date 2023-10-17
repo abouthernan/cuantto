@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CheckArrowIcon } from '../assets/icons'
 import { useTranslation } from "react-i18next";
+import { dashboardRouter } from '../constants';
 
 export const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true)
@@ -142,7 +143,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}
@@ -181,7 +182,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}
@@ -220,7 +221,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qGreen py-2 px-4 w-full rounded-xl rounded-t-xl bg-qBlack font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}
@@ -259,7 +260,7 @@ export const Pricing = () => {
 
                   <a
                     className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
-                    href="https://calendly.com/qantto/30min?back=1&month=2023-07"
+                    href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t("CTA.freeTrial")}

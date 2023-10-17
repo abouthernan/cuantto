@@ -162,7 +162,7 @@ export const Steper = () => {
         <div className="text-white balance text-left flex w-full justify-center mt-[70px] max-w-sm">
           <p className="relative left-[32%] text-center">
             <Trans i18nKey="STEPER.textTwo">
-              <span className="text-qGreen font-bold">Qantto</span> le tomará{" "}
+              <span className="text-qGreen font-bold">Qantto</span>
               <strong>10 minutos.</strong>
             </Trans>
           </p>

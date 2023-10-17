@@ -1,5 +1,6 @@
 import { ToggleLang } from "./ToggleLang";
 import { useTranslation } from "react-i18next";
+import { dashboardRouter } from "../constants";
 
 export const Nav = () => {
 
@@ -27,11 +28,11 @@ export const Nav = () => {
 const menuButtons = [
   {
     label: t("CTA.login"),
-    path: "https://app.qantto.com/login",
+    path: dashboardRouter.login
   },
   {
     label: t("CTA.signup"),
-    path: "https://app.qantto.com/register",
+    path: dashboardRouter.register
   },
 ];
 

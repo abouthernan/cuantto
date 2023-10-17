@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "react-i18next";
+import { dashboardRouter } from "../constants";
 
 export const Hero = () => {
   const { t } = useTranslation("translation");
@@ -34,7 +35,7 @@ export const Hero = () => {
 
       <section className="text-white text-center text-base space-y-5 lg:text-lg">
         <a
-          href="#"
+          href={dashboardRouter.register}
           className="px-4 py-2 bg-qGreen hover:bg-qGreen/80 transition-colors duration-300 text-qBlack font-semibold rounded-md"
         >
           {t("CTA.freeTrial")}
@@ -42,8 +43,7 @@ export const Hero = () => {
         <div className="font-light text-base">
           <p>
             <Trans i18nKey="MESSAGES.qanttoWithDays">
-              Prueba <span className="text-qGreen font-bold">Qantto</span> sin
-              costo por
+              <span className="text-qGreen font-bold">Qantto</span>
               <strong className="font-bold">14 días.</strong>
             </Trans>
           </p>
