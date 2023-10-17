@@ -3,38 +3,37 @@ import { useTranslation } from "react-i18next";
 import { dashboardRouter } from "../constants";
 
 export const Nav = () => {
-
   const { t } = useTranslation("translation");
 
   const menu = [
-  {
-    label: t("NAV.benefits"),
-    path: "/#benefits",
-  },
-  {
-    label: t("NAV.pricing"),
-    path: "/#pricing",
-  },
-  {
-    label: t("NAV.resources"),
-    path: "/#resources",
-  },
-  {
-    label: t("NAV.questions"),
-    path: "/#faqs",
-  },
-];
+    {
+      label: t("NAV.benefits"),
+      path: "/#benefits",
+    },
+    {
+      label: t("NAV.pricing"),
+      path: "/#pricing",
+    },
+    {
+      label: t("NAV.resources"),
+      path: "/#resources",
+    },
+    {
+      label: t("NAV.questions"),
+      path: "/#faqs",
+    },
+  ];
 
-const menuButtons = [
-  {
-    label: t("CTA.login"),
-    path: dashboardRouter.login
-  },
-  {
-    label: t("CTA.signup"),
-    path: dashboardRouter.register
-  },
-];
+  const menuButtons = [
+    {
+      label: t("CTA.login"),
+      path: dashboardRouter.login,
+    },
+    {
+      label: t("CTA.signup"),
+      path: dashboardRouter.register,
+    },
+  ];
 
   return (
     <>
