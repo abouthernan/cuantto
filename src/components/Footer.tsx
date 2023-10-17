@@ -51,12 +51,6 @@ export const Footer = () => {
                 </a>
                 <a
                   className="inline-block w-10 h-10 mr-2 p-3 bg-qGray text-white border-qGray hover:bg-qGray/80 transition-colors duration-300 rounded-xl"
-                  href="#"
-                >
-                  <TwitterIcon />
-                </a>
-                <a
-                  className="inline-block w-10 h-10 mr-2 p-3 bg-qGray text-white border-qGray hover:bg-qGray/80 transition-colors duration-300 rounded-xl"
                   href="https://www.instagram.com/qantto.io/"
                   target="_blank"
                   title="instagram"
