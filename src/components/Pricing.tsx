@@ -121,8 +121,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.one.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$14' : '$168'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-12 text-base line-through'>$168</span>
+                      )}
                     </div>
                     <div className="text-white/80">
                       / {' '}
@@ -160,8 +164,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.two.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$48' : '$432'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-12 text-base line-through'>$576</span>
+                      )}
                     </div>
                     <div className="text-white/80">
                       / {' '}
@@ -199,8 +207,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.three.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2 relative">
                       {isMonthly ? '$250' : '$2.244'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-16 text-base line-through'>${(3000).toLocaleString()}</span>
+                      )}
                     </div>
                     <div className="text-qBlack/80">
                       / {' '}
@@ -238,8 +250,12 @@ export const Pricing = () => {
                     {t("PRICING.cards.four.name")}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$498' : '$4.476'}
+
+                      {!isMonthly && (
+                        <span className='block text-qRed absolute top-0 -right-16 text-base line-through'>${(5976).toLocaleString()}</span>
+                      )}
                     </div>
                     <div className="text-white/80">
                       / {' '}
