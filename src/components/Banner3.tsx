@@ -20,7 +20,7 @@ export const Banner3 = () => {
           </Trans>
         </h2>
 
-        <span className="z-10 text-4xl">😉</span>
+        <span className="z-10 text-4xl">🤗</span>
 
         <p className="z-10">{t("BANNER3.desc")}</p>
       </div>
