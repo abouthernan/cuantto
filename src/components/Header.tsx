@@ -3,7 +3,7 @@ import { ToggleButton } from "./ToggleButton.tsx";
 
 export const Header = () => {
   return (
-    <header className="w-full fixed top-0 left-0 right-0 bg-transparent z-40 backdrop-blur-xl shadow">
+    <header className="w-full bg-transparent z-40 backdrop-blur-xl shadow">
       <section className="flex items-center justify-between py-1 container mx-auto px-2 lg:px-0 max-w-7xl">
         <a href="/" className="h-20 block">
           <img
