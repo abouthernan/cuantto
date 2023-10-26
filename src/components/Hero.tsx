@@ -4,7 +4,7 @@ import { dashboardRouter } from "../constants";
 export const Hero = () => {
   const { t, ready } = useTranslation("translation");
 
-  if (!ready) return null;
+  if (!ready) return "";
   return (
     <main className="lg:min-h-[calc(100vh-88px)] grid place-items-center place-content-center gap-20 max-w-7xl mx-auto z-0 pt-10 lg:pt-0 px-2 lg:px-0">
       <section className="text-white text-center space-y-5 -z-10">

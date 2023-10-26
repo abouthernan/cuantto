@@ -35,7 +35,7 @@ export const Nav = () => {
     },
   ];
 
-  if (!ready) return null;
+  if (!ready) return "loading";
 
   return (
     <>
