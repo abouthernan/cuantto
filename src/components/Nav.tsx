@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { dashboardRouter } from "../constants";
 
 export const Nav = () => {
-  const { t, ready } = useTranslation("translation");
+  const { t, ready } = useTranslation("translation", { useSuspense: false });
 
   const menu = [
     {

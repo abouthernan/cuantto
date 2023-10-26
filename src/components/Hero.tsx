@@ -2,7 +2,7 @@ import { useTranslation, Trans } from "react-i18next";
 import { dashboardRouter } from "../constants";
 
 export const Hero = () => {
-  const { t, ready } = useTranslation("translation");
+  const { t, ready } = useTranslation("translation", { useSuspense: true });
 
   if (!ready) return "";
   return (
