@@ -16,7 +16,8 @@ export const Nav = () => {
     },
     {
       label: t("NAV.resources"),
-      path: "/#resources",
+      path: "https://www.youtube.com/channel/UCha0Ys8Y_h_XWnaKrGZoc_Q",
+      external: true
     },
     {
       label: t("NAV.questions"),
@@ -40,11 +41,12 @@ export const Nav = () => {
   return (
     <>
       <nav className="grid nav-mobil duration-300 lg:hidden fixed px-2 w-full top-0 left-0 py-5 backdrop-blur-xl right-0 bottom-0 place-items-center h-[calc(100vh-88px)] text-center md:space-x-4 items-center transition-all -translate-y-full bg-qBg">
-        {menu.map(({ label, path }) => (
+        {menu.map(({ label, path, external }) => (
           <a
             className="text-white/90 font-normal text-lg py-3 w-full"
             href={path}
             key={label}
+            target={external ? '_blank' : ''}
           >
             {label}
           </a>
@@ -66,8 +68,8 @@ export const Nav = () => {
       {/* nav desktop */}
 
       <nav className="hidden lg:flex place-items-center text-center space-x-10 items-center">
-        {menu.map(({ label, path }) => (
-          <a className="text-white/90 font-normal" href={path} key={label}>
+        {menu.map(({ label, path, external }) => (
+          <a className="text-white/90 font-normal" href={path} key={label} target={external ? '_blank' : ''} >
             {label}
           </a>
         ))}
