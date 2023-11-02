@@ -23,7 +23,7 @@ export const FloatButton = () => {
   if (!ready) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 md:min-w-max">
+    <div className="fixed z-0 bottom-4 right-4 md:min-w-max">
       <button
         onClick={(e) => handleContact(e)}
         className="text-qBlack rounded-full flex items-center justify-center shadow-2xl relative"

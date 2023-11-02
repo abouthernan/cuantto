@@ -4,7 +4,7 @@ export const Sectors = () => {
   const { t } = useTranslation("translation");
   return (
     <section
-      className="flex items-center justify-between container my-40 max-w-7xl mx-auto"
+      className="flex flex-col lg:flex-row items-center justify-between container my-40 max-w-7xl mx-auto px-2"
       id="resources"
     >
       <div className="max-w-sm">
@@ -18,9 +18,9 @@ export const Sectors = () => {
         </p>
       </div>
 
-      <div className="flex gap-2">
+      <div className="flex gap-2 mt-6 lg:mt-0 overflow-x-auto w-full lg:overflow-x-hidden" data-orientation="horizontal" aria-orientation="horizontal">
         {/* // <!-- card --> */}
-        <div className="max-w-[223px] p-4 bg-qGreen/5 rounded-xl flex flex-col gap-4">
+        <div className="max-w-[223px] flex-shrink-0 p-4 bg-qGreen/5 rounded-xl flex flex-col gap-4">
           {/* // <!-- item --> */}
           <div className="flex gap-3 items-center">
             <div className="w-8 h-8 text-white">
@@ -99,7 +99,7 @@ export const Sectors = () => {
         </div>
 
         {/* // <!-- card --> */}
-        <div className="max-w-[223px] p-4 rounded-xl flex flex-col gap-4">
+        <div className="max-w-[223px] flex-shrink-0 p-4 rounded-xl flex flex-col gap-4">
           {/* // <!-- item --> */}
           <div className="flex gap-3 items-center">
             <div className="w-8 h-8 text-qGreen">
@@ -178,7 +178,7 @@ export const Sectors = () => {
         </div>
 
         {/* // <!-- card --> */}
-        <div className="max-w-[223px] p-4 bg-qGreen/5 rounded-xl flex flex-col gap-4">
+        <div className="max-w-[223px] flex-shrink-0 p-4 bg-qGreen/5 rounded-xl flex flex-col gap-4">
           {/* // <!-- item --> */}
           <div className="flex gap-3 items-center">
             <div className="w-8 h-8 text-white">
@@ -257,7 +257,7 @@ export const Sectors = () => {
         </div>
 
         {/* // <!-- card --> */}
-        <div className="max-w-[223px] p-4 rounded-xl flex flex-col gap-4">
+        <div className="max-w-[223px] flex-shrink-0 p-4 rounded-xl flex flex-col gap-4">
           {/* // <!-- item --> */}
           <div className="flex gap-3 items-center">
             <div className="w-8 h-8 text-qGreen">

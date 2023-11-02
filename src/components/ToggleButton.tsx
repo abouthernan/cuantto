@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const OpenIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,18 +18,17 @@ const CloseIcon = () => (
   </svg>
 );
 
-export const ToggleButton = () => {
-  const [showMenu, setShowMenu] = useState(false);
+interface ToggleButtonProps {
+  showMenu: boolean;
+  handleClick: () => void;
+}
 
-  const handleClick = () => {
-    setShowMenu(!showMenu);
-  };
-
+export const ToggleButton: React.FC<ToggleButtonProps> = ({ showMenu, handleClick }) => {
   return (
     <button
       id="toggleNav"
       onClick={handleClick}
-      className="w-10 h-10 flex lg:hidden border-2 rounded-md border-qGray items-center justify-center text-white p-2"
+      className={`w-10 h-10 flex lg:hidden border-2 rounded-md border-qGray items-center justify-center text-white p-2 ${showMenu ? 'open' : ''}`}
     >
       {showMenu ? <OpenIcon /> : <CloseIcon />}
     </button>

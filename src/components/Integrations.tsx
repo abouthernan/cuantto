@@ -19,15 +19,15 @@ const integrations2 = [
 export const Integrations = () => {
   return (
     <div
-      className="container block mx-auto my-40 overflow-hidden pt-4 max-w-7xl"
+      className="container block mx-auto my-40 overflow-hidden pt-4 max-w-7xl px-2"
       id="services"
     >
-      <h2 className="text-white text-center text-3xl font-bold">
+      <h2 className="text-white text-center text-2xl sm:text-3xl font-bold">
         <Trans i18nKey="INTEGRATIONS.title">
           <span className="text-qGreen">Potencia</span>
         </Trans>
       </h2>
-      <p className="text-white/80 w-full text-center mb-10 mt-3">
+      <p className="text-white/80 w-full text-sm sm:text-base text-center mb-10 mt-3">
         <Trans i18nKey="INTEGRATIONS.desc">
           <span className="text-qGreen font-bold">Qantto</span>{" "}
         </Trans>

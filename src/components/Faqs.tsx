@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 export const Faqs = () => {
   const { t } = useTranslation("translation");
   return (
-    <section className="relative pt-16 pb-16 overflow-hidden" id="faqs">
-      <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
+    <section className="relative pt-16 pb-16 overflow-hidden z-0" id="faqs">
+      <div className="relative z-10 container px-2 mx-auto">
         <div className="md:max-w-4xl mx-auto">
           <p className="mb-2 text-qGreen text-center">Preguntas</p>
           <h2 className="mb-16 text-white text-3xl font-bold text-center">

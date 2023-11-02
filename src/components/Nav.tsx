@@ -2,8 +2,12 @@ import { ToggleLang } from "./ToggleLang";
 import { useTranslation } from "react-i18next";
 import { dashboardRouter } from "../constants";
 
-export const Nav = () => {
-  const { t, ready } = useTranslation("translation", { useSuspense: false });
+interface NavProps {
+  handleClick: () => void;
+}
+
+export const Nav: React.FC<NavProps> = ({ handleClick }) => {
+  const { t } = useTranslation("translation");
 
   const menu = [
     {
@@ -36,17 +40,16 @@ export const Nav = () => {
     },
   ];
 
-  if (!ready) return "loading";
-
   return (
     <>
-      <nav className="grid nav-mobil duration-300 lg:hidden fixed px-2 w-full top-0 left-0 py-5 backdrop-blur-xl right-0 bottom-0 place-items-center h-[calc(100vh-88px)] text-center md:space-x-4 items-center transition-all -translate-y-full bg-qBg">
+      <nav className="grid nav-mobil z-50 duration-300 lg:hidden fixed px-2 w-full top-0 left-0 py-5 backdrop-blur-xl right-0 bottom-0 place-items-center h-[calc(100dvh-88px)] text-center md:space-x-4 items-center transition-all -translate-y-full bg-qBg">
         {menu.map(({ label, path, external }) => (
           <a
             className="text-white/90 font-normal text-lg py-3 w-full"
             href={path}
             key={label}
             target={external ? '_blank' : ''}
+            onClick={handleClick}
           >
             {label}
           </a>
@@ -58,6 +61,7 @@ export const Nav = () => {
               className="text-white text-center font-normal text-lg rounded-md py-2 px-4 border border-transparent transition-colors duration-300 ease-in-out"
               href={path}
               key={label}
+              onClick={handleClick}
             >
               {label}
             </a>

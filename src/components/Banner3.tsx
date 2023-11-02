@@ -5,7 +5,7 @@ export const Banner3 = () => {
   const { t } = useTranslation("translation");
   const count = useCountClients();
   return (
-    <section className="text-white container w-full mt-14 mx-auto relative">
+    <section className="text-white container w-full mt-14 mx-auto relative px-2">
       <div className="flex max-w-5xl flex-col bg-qBlack rounded-3xl justify-center items-center py-10 mx-auto my-8 shadow-2xl space-y-6 overflow-hidden">
         <p className="text-6xl text-white font-bold">
           <small>+</small>
