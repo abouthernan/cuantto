@@ -7,7 +7,7 @@ interface NavProps {
 }
 
 export const Nav: React.FC<NavProps> = ({ handleClick }) => {
-  const { t, ready } = useTranslation("translation", { useSuspense: false });
+  const { t } = useTranslation("translation");
 
   const menu = [
     {
@@ -39,8 +39,6 @@ export const Nav: React.FC<NavProps> = ({ handleClick }) => {
       path: dashboardRouter.register,
     },
   ];
-
-  if (!ready) return "loading";
 
   return (
     <>

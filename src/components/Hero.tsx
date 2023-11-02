@@ -6,7 +6,7 @@ export const Hero = () => {
 
   if (!ready) return "";
   return (
-    <main className="lg:min-h-[calc(100dvh-88px)] grid place-items-center place-content-center gap-10 lg:gap-20 max-w-7xl mx-auto z-0 pt-10 lg:pt-0 px-2 lg:px-0">
+      <main className="lg:min-h-[calc(100dvh-88px)] grid place-items-center place-content-center gap-14 lg:gap-20 max-w-7xl mx-auto z-0 pt-10 lg:pt-0 px-2 lg:px-0">
       <section className="text-white text-center space-y-5 -z-10">
         <p className="text-qGreen text-sm sm:text-lg lg:text-2xl">{t("HERO.subtitle")}</p>
 
@@ -35,7 +35,7 @@ export const Hero = () => {
         </div>
       </section>
 
-      <section className="text-white text-center text-base space-y-5 lg:text-lg">
+      <section className="text-white text-center text-sm sm:text-base space-y-5 lg:text-lg">
         <a
           href={dashboardRouter.register}
           className="px-4 py-2 bg-qGreen hover:bg-qGreen/80 transition-colors duration-300 text-qBlack font-semibold rounded-md"
