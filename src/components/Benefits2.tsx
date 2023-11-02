@@ -5,7 +5,7 @@ export const Benefits2 = () => {
   return (
     <section className="text-white/80 mt-24">
       <p className="text-center">{t("BENEFITS2.subtitle")}</p>
-      <h2 className="text-center text-3xl text-white font-semibold max-w-md balance mx-auto">
+      <h2 className="text-center text-2xl sm:text-3xl text-white font-semibold max-w-md balance mx-auto">
         <Trans i18nKey="BENEFITS2.title">
           <span className="text-qGreen">superpoderes</span>
         </Trans>
@@ -16,10 +16,10 @@ export const Benefits2 = () => {
         </Trans>
       </p>
 
-      <div className="grid md:grid-cols-2 place-items-center mt-20 gap-5">
+      <div className="grid md:grid-cols-2 place-items-center mt-20 gap-5 px-2 md:px-0">
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"
@@ -45,7 +45,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"
@@ -71,7 +71,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -97,7 +97,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"
@@ -123,7 +123,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"
@@ -149,7 +149,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"
@@ -171,7 +171,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"
@@ -197,7 +197,7 @@ export const Benefits2 = () => {
         </div>
         {/* // <!-- item --> */}
         <div className="flex gap-5 items-start">
-          <div className="w-14 h-14 rounded-full p-3 bg-qPurple text-qBlack">
+          <div className="w-14 h-14 flex-shrink-0 rounded-full p-3 bg-qPurple text-qBlack">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="100%"

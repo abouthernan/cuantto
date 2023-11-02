@@ -4,17 +4,17 @@ export const Benefits1 = () => {
   const { t } = useTranslation("translation");
   return (
     <section
-      className="container max-w-7xl mx-auto flex justify-between flex-wrap"
+      className="container max-w-7xl mx-auto flex justify-between flex-wrap px-2 md:px-0"
       id="benefits"
     >
-      <div className="flex items-center">
+      <div className="flex flex-col md:flex-row items-center">
         <img
           className="max-w-xs max-h-xs aspect-square object-contain p-4"
           src="/images/rocket.png"
           alt="rocket image"
         />
         <div className="max-w-md">
-          <h2 className="text-qGreen font-bold text-3xl balance">
+          <h2 className="text-qGreen font-bold text-xl sm:text-3xl balance text-center md:text-left">
             <Trans i18nKey="BENEFITS.title">
               <span className="text-white">tu Tasa de Converción hasta</span> en
               un 30%
@@ -25,7 +25,7 @@ export const Benefits1 = () => {
           </p>
         </div>
       </div>
-      <div className="steper">
+      <div className="steper mt-10 md:mt-0 px-2 w-[90%] mx-auto md:w-[unset] md:px-0">
         <ol className="relative text-white border-l border-dashed h-[55%] border-gray-200 max-w-sm">
           <li className="mb-10 ml-12">
             <span className="absolute flex items-center justify-center w-14 h-14 py-3 bg-qSky rounded-full -left-7">

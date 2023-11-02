@@ -4,14 +4,14 @@ import { dashboardRouter } from "../constants";
 export const Steper2 = () => {
   const { t } = useTranslation("translation");
   return (
-    <section className="max-w-[1400px] mx-auto mt-24">
+    <section className="container md:max-w-[1400px] mx-auto mt-24 px-2 md:px-0">
       <p className="text-qGreen text-center">{t("STEPER2.subtitle")}</p>
-      <h2 className="text-white text-3xl font-semibold text-center">
+      <h2 className="text-white text-2xl sm:text-3xl font-semibold text-center">
         {t("STEPER2.title")}
       </h2>
-      <div className="flex flex-wrap items-start justify-center gap-5 mt-20 relative">
+      <div className="flex items-start justify-start lg:justify-center gap-5 mt-20 relative overflow-x-auto" data-orientation="horizontal" aria-orientation="horizontal">
         {/* // <!-- step --> */}
-        <div className="text-qBlack bg-qGreen flex flex-col items-center justify-start min-h-[260px] max-w-xs lg:max-w-[230px] pt-5 px-2 rounded-2xl relative border-r-dashed">
+        <div className="text-qBlack bg-qGreen flex flex-col items-center justify-start min-h-[260px] w-[230px] pt-5 px-2 rounded-2xl relative border-r-dashed flex-shrink-0" >
           <div className="w-10 h-10 bg-transparent backdrop-blur-3xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ export const Steper2 = () => {
           </p>
         </div>
         {/* // <!-- step --> */}
-        <div className="text-white flex flex-col items-center justify-start min-h-[260px] max-w-xs lg:max-w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group relative border-r-dashed">
+        <div className="text-white flex flex-col items-center justify-start min-h-[260px]  w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group relative border-r-dashed flex-shrink-0">
           <div className="w-10 h-10 bg-transparent backdrop-blur-3xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export const Steper2 = () => {
           </p>
         </div>
         {/* // <!-- step --> */}
-        <div className="text-white flex flex-col items-center justify-start max-w-xs min-h-[260px] lg:max-w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group relative border-r-dashed">
+        <div className="text-white flex flex-col items-center justify-start  min-h-[260px] w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group relative border-r-dashed flex-shrink-0">
           <div className="w-10 h-10 bg-transparent backdrop-blur-3xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export const Steper2 = () => {
           </p>
         </div>
         {/* // <!-- step --> */}
-        <div className="text-white flex flex-col items-center justify-start min-h-[260px] lg:max-w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group relative border-r-dashed">
+        <div className="text-white flex flex-col items-center justify-start min-h-[260px] w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group relative border-r-dashed flex-shrink-0">
           <div className="w-10 h-10 bg-transparent backdrop-blur-3xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ export const Steper2 = () => {
           </p>
         </div>
         {/* // <!-- step --> */}
-        <div className="text-white flex flex-col items-center justify-start min-h-[260px] lg:max-w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group">
+        <div className="text-white flex flex-col items-center justify-start min-h-[260px] w-[230px] pt-5 px-2 rounded-2xl transition-colors duration-300 hover:text-qBlack hover:bg-qGreen group flex-shrink-0">
           <div className="w-10 h-10 bg-transparent backdrop-blur-3xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"

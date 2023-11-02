@@ -14,7 +14,7 @@ export const Steper = () => {
 
       {/* // <!-- stepper --> */}
       <div className="mt-5 px-6 relative">
-        <div className="flex items-center gap-3 md:gap-9 before:absolute before:left-0 before:w-full md:before:w-1/2 before:h-44 before:rounded-xl before:bg-qGreen/5">
+        <div className="flex items-center gap-3 sm:gap-7 md:gap-0 before:absolute before:left-0 before:w-full md:before:w-1/2 before:h-44 before:rounded-xl before:bg-qGreen/5">
           {/* // <!-- step --> */}
           <div className="flex items-center text-white relative">
             <div className="rounded-full h-20 w-20 border border-white">
