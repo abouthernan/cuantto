@@ -3,7 +3,7 @@ import { useTranslation, Trans } from "react-i18next";
 export const Steper = () => {
   const { t } = useTranslation("translation");
   return (
-    <section className="container px-2 lg:px-0 py-20 max-w-7xl mx-auto z-[-1]">
+    <section className="container px-2 lg:px-0 py-20 max-w-7xl mx-auto z-0 overflow-x-auto" data-orientation="horizontal" aria-orientation="horizontal">
       <div className="text-white balance text-left flex w-full justify-start mb-[70px]">
         <p className="max-w-sm text-center relative left-[9%]">
           <Trans i18nKey="STEPER.textOne">
@@ -13,8 +13,8 @@ export const Steper = () => {
       </div>
 
       {/* // <!-- stepper --> */}
-      <div className="mt-5 md:px-6 relative">
-        <div className="flex items-center flex-col md:flex-row gap-9 md:gap-0 md:before:absolute md:before:left-0 md:before:w-1/2 md:before:h-44 md:before:rounded-xl md:before:bg-qGreen/5">
+      <div className="mt-5 px-6 relative">
+        <div className="flex items-center gap-3 md:gap-9 before:absolute before:left-0 before:w-full md:before:w-1/2 before:h-44 before:rounded-xl before:bg-qGreen/5">
           {/* // <!-- step --> */}
           <div className="flex items-center text-white relative">
             <div className="rounded-full h-20 w-20 border border-white">
@@ -159,7 +159,7 @@ export const Steper = () => {
       </div>
 
       <div className="text-white balance text-left flex w-full justify-center mt-[70px] max-w-sm">
-        <p className="relative left-[32%] text-center">
+        <p className="relative left-8 sm:left-16 lg:left-[32%] text-center">
           <Trans i18nKey="STEPER.textTwo">
             <span className="text-qGreen font-bold">Qantto</span>
             <strong>10 minutos.</strong>
