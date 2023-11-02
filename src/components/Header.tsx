@@ -1,11 +1,17 @@
+import { useState } from "react";
 import { Nav } from "./Nav.tsx";
 import { ToggleButton } from "./ToggleButton.tsx";
 
 export const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <header className="w-full bg-transparent z-40 backdrop-blur-xl shadow">
       <section className="flex items-center justify-between py-1 container mx-auto px-2 lg:px-0 max-w-7xl">
-        <a href="/" className="h-20 block">
+        <a href="/" className="h-20 aspect-video object-contain block">
           <img
             className="h-full w-full object-contain aspect-video"
             src="/images/logo-qantto-white.svg"
@@ -13,9 +19,9 @@ export const Header = () => {
           />
         </a>
 
-        <Nav />
+        <Nav handleClick={handleClick} />
 
-        <ToggleButton />
+        <ToggleButton showMenu={showMenu} handleClick={handleClick} />
       </section>
     </header>
   );

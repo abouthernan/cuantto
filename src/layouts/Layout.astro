@@ -45,6 +45,10 @@ import Metatags from "../components/Metatags.astro";
     @apply top-[88px] translate-y-0;
   }
 
+  :has(#toggleNav.open) html {
+    overflow-y: hidden!important;
+  }
+
   .balance {
     text-wrap: balance;
   }
