@@ -5,7 +5,7 @@ export const Steper = () => {
   return (
     <section className="container px-2 lg:px-0 py-20 max-w-7xl mx-auto z-0 overflow-x-auto" data-orientation="horizontal" aria-orientation="horizontal">
       <div className="text-white balance text-left flex w-full justify-start mb-[70px]">
-        <p className="max-w-sm text-center relative left-[9%]">
+          <p className="max-w-sm text-center relative sm:left-[15%] lg:left-[9%]">
           <Trans i18nKey="STEPER.textOne">
             <span className="text-qRed">18 y 42 horas...</span>
           </Trans>
@@ -14,9 +14,9 @@ export const Steper = () => {
 
       {/* // <!-- stepper --> */}
       <div className="mt-5 px-6 relative">
-        <div className="flex items-center gap-3 sm:gap-7 md:gap-0 before:absolute before:left-0 before:w-full md:before:w-1/2 before:h-44 before:rounded-xl before:bg-qGreen/5">
+        <div className="flex items-center before:absolute before:left-0 before:w-[625px] lg:before:w-1/2 before:h-44 before:rounded-3xl before:bg-qGreen/5">
           {/* // <!-- step --> */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-full h-20 w-20 border border-white">
               <img
                 className="w-full h-full rounded-full aspect-square object-cover"
@@ -28,9 +28,9 @@ export const Steper = () => {
               {t("MESSAGES.lead")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-white"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-white"></div>
           {/* // <!-- step --> */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border bg-qPurple border-qPurple">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,9 +46,9 @@ export const Steper = () => {
               {t("MESSAGES.contact")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-gray-300"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-gray-300"></div>
           {/* // <!-- step --> */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border bg-qGreen border-qGreen">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +64,9 @@ export const Steper = () => {
               {t("MESSAGES.quote")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-gray-300"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-gray-300"></div>
           {/* step  */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border bg-qSky border-qSky">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,9 +82,9 @@ export const Steper = () => {
               {t("MESSAGES.accept")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-gray-300"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-gray-300"></div>
           {/* step */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border border-[#8A8D00] bg-[#8A8D00]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,9 +100,9 @@ export const Steper = () => {
               {t("MESSAGES.hire")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-gray-300"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-gray-300"></div>
           {/* step */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border border-[#F9A06E] bg-[#F9A06E]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,9 +118,9 @@ export const Steper = () => {
               {t("MESSAGES.sign")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-gray-300"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-gray-300"></div>
           {/* step */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border border-qPurple bg-qPurple">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,9 +136,9 @@ export const Steper = () => {
               {t("MESSAGES.pay")}
             </div>
           </div>
-          <div className="flex-auto border-t border-dashed border-gray-300"></div>
+          <div className="flex-auto border-t min-w-[84px] flex-shrink-0 border-gray-300"></div>
           {/* // <!-- step --> */}
-          <div className="flex items-center text-white relative">
+          <div className="flex items-center flex-shrink-0 text-white relative">
             <div className="rounded-2xl h-20 w-20 py-5 border border-qGreen bg-qGreen">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +159,7 @@ export const Steper = () => {
       </div>
 
       <div className="text-white balance text-left flex w-full justify-center mt-[70px] max-w-sm">
-        <p className="relative left-8 sm:left-16 lg:left-[32%] text-center">
+        <p className="relative  sm:left-[32%] text-center">
           <Trans i18nKey="STEPER.textTwo">
             <span className="text-qGreen font-bold">Qantto</span>
             <strong>10 minutos.</strong>
