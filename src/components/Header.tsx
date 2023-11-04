@@ -22,7 +22,7 @@ export const Header = () => {
 
         <Nav handleClick={handleClick} />
 
-        <div className="flex space-x-2 lg:space-x-0">
+        <div className="flex space-x-2 lg:space-x-0 lg:hidden">
           <div className="lg:hidden">
             <ToggleLang />
           </div>
