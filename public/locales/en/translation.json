@@ -39,7 +39,11 @@
     "subtitle": "The #1 Quoting-Automation Platform for Teams and Businesses.",
     "textOne": "Stop wasting your time managing unqualified leads.",
     "textTwo": "Generate 100% automated quotes, in real-time, 24/7.",
-    "textThree": "Your sales process on autopilot."
+    "textThree": "Your sales process on autopilot.",
+    "mobileTitle": "<0>Generate</0> <1>quotes</1> <2>100% automatic</2> <3>in real time,</3> <4>24/7.</4>",
+    "mobileOne": "We are the #1 platform for <0>AI-powered Quoting Automation</0> for teams and businesses.",
+    "mobileTwo": "<0>Stop wasting time</0> managing unqualified leads.",
+    "mobileThree": "Put your sales process on <0>autopilot</0>."
   },
   "STEPER": {
     "textOne": "On average, this process takes teams and businesses between <0>18 and 42 hours...</0>",
