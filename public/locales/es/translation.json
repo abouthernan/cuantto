@@ -39,7 +39,11 @@
     "subtitle": "Plataforma #1 de Quoting-Automation para equipos y empresas.",
     "textOne": "Deja de gastar tu tiempo gestionando leads no calificados.",
     "textTwo": "Genera cotizaciones 100% automáticas, en tiempo real, 24/7.",
-    "textThree": "Tu proceso de ventas en piloto automático."
+    "textThree": "Tu proceso de ventas en piloto automático.",
+    "mobileTitle": "<0>Genera</0> <1>cotizaciones</1> <2>100% automáticas</2> <3>en tiempo real,</3> <4>24/7.</4>",
+    "mobileOne": "Somos la plataforma #1 de <0>Quoting-Automation con AI</0> para equipos y empresas.",
+    "mobileTwo": "<0>Deja de gastar tiempo</0> gestionando leads no calificados.",
+    "mobileThree": "Pon tu proceso de ventas en <0>piloto automático</0>."
   },
   "STEPER": {
     "textOne": "En promedio este flujo le toma a los equipos y empresas entre <0>18 y 42 horas...</0>",
