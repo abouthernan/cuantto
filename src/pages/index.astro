@@ -1,33 +1,36 @@
 ---
-import i18next, { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import { Header } from "../components/Header";
-import { Hero } from "../components/Hero";
-import { Steper } from "../components/Steper";
-import { Benefits1 } from "../components/Benefits1";
-import { Banner1 } from "../components/Banner1";
-import { Steper2 } from "../components/Steper2";
-import { Benefits2 } from "../components/Benefits2";
-import { Banner2 } from "../components/Banner2";
-import { Integrations } from "../components/Integrations";
-import { Sectors } from "../components/Sectors";
-import { Pricing } from "../components/Pricing";
-import { Testimonials } from "../components/Testimonials";
-import { Banner3 } from "../components/Banner3";
-import { Faqs } from "../components/Faqs";
-import { Footer } from "../components/Footer";
-import { FloatButton } from "../components/FloatButton";
+import i18next, { changeLanguage } from 'i18next'
+import Layout from '../layouts/Layout.astro'
+import { Header } from '../components/Header'
+import { Hero } from '../components/Hero'
+import { Steper } from '../components/Steper'
+import { Benefits1 } from '../components/Benefits1'
+import { Banner1 } from '../components/Banner1'
+import { Steper2 } from '../components/Steper2'
+import { Benefits2 } from '../components/Benefits2'
+import { Banner2 } from '../components/Banner2'
+import { Integrations } from '../components/Integrations'
+import { Sectors } from '../components/Sectors'
+import { Pricing } from '../components/Pricing'
+import { Testimonials } from '../components/Testimonials'
+import { Banner3 } from '../components/Banner3'
+import { Faqs } from '../components/Faqs'
+import { Footer } from '../components/Footer'
+import { FloatButton } from '../components/FloatButton'
+import Video from '../components/Video.astro'
 
-changeLanguage("es");
+changeLanguage('es')
 
-const title = i18next.language === "es"
-    ? "Qantto - Cotizador de servicios online"
-    : "Qantto - Online services quote";
+const title =
+  i18next.language === 'es'
+    ? 'Qantto - Cotizador de servicios online'
+    : 'Qantto - Online services quote'
 ---
 
 <Layout title={title}>
   <Header client:load />
   <Hero client:load />
+  <Video />
   <Steper client:load />
   <Benefits1 client:load />
   <Banner1 client:load />
