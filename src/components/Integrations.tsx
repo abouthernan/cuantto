@@ -1,4 +1,4 @@
-import { Trans } from 'react-i18next'
+import { useTranslation, Trans } from 'react-i18next'
 
 const integrations1 = [
   '/images/integrations/whatsapp.png',
@@ -17,6 +17,7 @@ const integrations2 = [
 ]
 
 export const Integrations = () => {
+  const { t } = useTranslation('translation')
   return (
     <div
       className="container block mx-auto my-40 overflow-hidden pt-4 max-w-7xl px-2"
