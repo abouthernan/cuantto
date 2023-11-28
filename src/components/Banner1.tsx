@@ -1,6 +1,7 @@
-import { Trans } from "react-i18next";
+import { useTranslation, Trans } from 'react-i18next'
 
 export const Banner1 = () => {
+  const { t } = useTranslation('translation')
   return (
     <section className="text-white container w-full mt-14 mx-auto relative px-2 md:px-0 z-0">
       <div className="flex max-w-5xl flex-col bg-qBlack rounded-3xl justify-center items-center py-10 mx-auto my-8 shadow-2xl space-y-6 circuit overflow-hidden">
@@ -25,5 +26,5 @@ export const Banner1 = () => {
       </div>
       <span className="circuit-mask z-0"></span>
     </section>
-  );
-};
+  )
+}

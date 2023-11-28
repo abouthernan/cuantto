@@ -2,9 +2,8 @@ import { useTranslation, Trans } from 'react-i18next'
 import { dashboardRouter } from '../constants'
 
 export const Hero = () => {
-  const { t, ready } = useTranslation('translation', { useSuspense: true })
+  const { t } = useTranslation('translation')
 
-  if (!ready) return ''
   return (
     <main className="lg:min-h-[calc(100dvh-88px)] grid place-items-center place-content-center gap-14 lg:gap-20 max-w-7xl mx-auto z-0 pt-10 lg:pt-0 px-2 lg:px-0">
       {/* desktop */}
