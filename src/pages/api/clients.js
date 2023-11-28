@@ -1,6 +1,6 @@
 import { extractCount, incrementCount } from '../../lib/mongodb.ts'
 
-export async function get() {
+export async function GET() {
   const count = await extractCount()
 
   return new Response(JSON.stringify({ count }), {
@@ -13,7 +13,7 @@ export async function get() {
   })
 }
 
-export async function post({ request }) {
+export async function POST({ request }) {
   let { count } = await request.json()
   const currentCount = await extractCount()
   const newCount = currentCount + 1
@@ -35,3 +35,4 @@ export async function post({ request }) {
     }
   })
 }
+
