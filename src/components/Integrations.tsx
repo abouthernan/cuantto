@@ -1,20 +1,20 @@
-import { Trans } from "react-i18next";
+import { Trans } from 'react-i18next'
 
 const integrations1 = [
-  "/images/integrations/whatsapp.png",
-  "/images/integrations/zapier.svg",
-  "/images/integrations/amocrm.svg",
-  "/images/integrations/hubspot.svg",
-  "/images/integrations/signstation.png",
-];
+  '/images/integrations/whatsapp.png',
+  '/images/integrations/zapier.svg',
+  '/images/integrations/amocrm.svg',
+  '/images/integrations/hubspot.svg',
+  '/images/integrations/signstation.png'
+]
 
 const integrations2 = [
-  "/images/integrations/paypal.svg",
-  "/images/integrations/pipedrive.svg",
-  "/images/integrations/salesforce.svg",
-  "/images/integrations/verisign.svg",
-  "/images/integrations/zoho.svg",
-];
+  '/images/integrations/paypal.svg',
+  '/images/integrations/pipedrive.svg',
+  '/images/integrations/salesforce.svg',
+  '/images/integrations/verisign.svg',
+  '/images/integrations/zoho.svg'
+]
 
 export const Integrations = () => {
   return (
@@ -29,13 +29,16 @@ export const Integrations = () => {
       </h2>
       <p className="text-white/80 w-full text-sm sm:text-base text-center mb-10 mt-3">
         <Trans i18nKey="INTEGRATIONS.desc">
-          <span className="text-qGreen font-bold">Qantto</span>{" "}
+          <span className="text-qGreen font-bold">Qantto</span>{' '}
         </Trans>
       </p>
 
       <ul className="gap-x-5 animate-integrations overflow-hidden space-x-4 sm:space-x-10 inline-flex w-[calc(240px*10)]">
         {integrations1.map((item) => (
-          <li className="relative h-28 w-60 rounded-md text-gray-300">
+          <li
+            className="relative h-28 w-60 rounded-md text-gray-300"
+            key={crypto.randomUUID()}
+          >
             <img
               src={item}
               alt="logo"
@@ -44,7 +47,10 @@ export const Integrations = () => {
           </li>
         ))}
         {integrations1.map((item) => (
-          <li className="relative h-28 w-60 rounded-md text-gray-300">
+          <li
+            className="relative h-28 w-60 rounded-md text-gray-300"
+            key={crypto.randomUUID()}
+          >
             <img
               src={item}
               alt="logo"
@@ -56,7 +62,10 @@ export const Integrations = () => {
 
       <ul className="gap-x-5 animate-integrations overflow-hidden space-x-4 sm:space-x-10 inline-flex w-[calc(240px*10)] mt-5 direction-reverse">
         {integrations2.map((item) => (
-          <li className="relative h-28 w-60 rounded-md text-gray-300">
+          <li
+            className="relative h-28 w-60 rounded-md text-gray-300"
+            key={crypto.randomUUID()}
+          >
             <img
               src={item}
               alt="logo"
@@ -65,7 +74,10 @@ export const Integrations = () => {
           </li>
         ))}
         {integrations2.map((item) => (
-          <li className="relative h-28 w-60 rounded-md text-gray-300">
+          <li
+            className="relative h-28 w-60 rounded-md text-gray-300"
+            key={crypto.randomUUID()}
+          >
             <img
               src={item}
               alt="logo"
@@ -75,5 +87,5 @@ export const Integrations = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
