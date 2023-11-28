@@ -215,12 +215,12 @@ export const Pricing = () => {
                   </div>
                 </div>
                 {/* card */}
-                <div className="w-[300px] p-8 bg-qGreen rounded-3xl">
-                  <h4 className="mb-2 text-xl font-bold font-heading text-qBlack text-left">
+                <div className="w-[300px] p-8 bg-qGray rounded-3xl">
+                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
                     {t('PRICING.cards.three.name')}
                   </h4>
                   <div className="flex justify-start items-end mb-10">
-                    <div className="text-4xl sm:text-5xl font-bold text-qBlack text-left mt-4 mr-2 relative">
+                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2 relative">
                       {isMonthly ? '$250' : '$2.250'}
 
                       {!isMonthly && (
@@ -229,7 +229,7 @@ export const Pricing = () => {
                         </span>
                       )}
                     </div>
-                    <div className="text-qBlack/80">
+                    <div className="text-white/80">
                       / {isMonthly ? t('MESSAGES.month') : t('MESSAGES.year')}
                     </div>
                   </div>
@@ -237,26 +237,26 @@ export const Pricing = () => {
                   <ul className="mb-2 md:min-h-[480px] text-white/80">
                     {pricingDataBusines.map((text, index) => (
                       <li className="mb-1 flex gap-3" key={`${text}-${index}`}>
-                        <div className="w-6 h-6 aspect-square text-qBlack">
+                        <div className="w-6 h-6 aspect-square text-qGreen">
                           <CheckArrowIcon />
                         </div>
-                        <span className="text-qBlack">{text}</span>
+                        <span>{text}</span>
                       </li>
                     ))}
                   </ul>
 
                   <a
-                    className="inline-block text-center text-qGreen py-2 px-4 w-full rounded-xl rounded-t-xl bg-qBlack font-bold leading-loose mt-5"
+                    className="inline-block text-center text-qBlack py-2 px-4 w-full rounded-xl rounded-t-xl bg-qGreen font-bold leading-loose mt-5"
                     href={dashboardRouter.register}
                     target="_blank"
                   >
                     {t('CTA.freeTrial')}
                   </a>
 
-                  <div className="text-center text-sm text-qBlack mt-2">
+                  <div className="text-center text-sm text-white mt-2">
                     <p>
                       {t('MESSAGES.days14')}{' '}
-                      <strong className="text-qBlack">
+                      <strong className="text-white">
                         {t('MESSAGES.free')}
                       </strong>
                       .
