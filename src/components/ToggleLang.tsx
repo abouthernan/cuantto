@@ -1,29 +1,29 @@
-import { type FC, useState } from "react";
-import i18n from "i18next";
+import { type FC, useState } from 'react'
+import i18n from 'i18next'
 
 export interface ToggleLangProps {}
 
 export const ToggleLang: FC<ToggleLangProps> = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false)
 
   const handleLanguageChange = (lng: string) => {
     i18n.changeLanguage(lng, () => {
-      if (lng === "us") {
-        document.documentElement.lang = "en";
-        window.location.pathname = "/en";
+      if (lng === 'us') {
+        document.documentElement.lang = 'en'
+        window.location.pathname = '/en'
       } else {
-        document.documentElement.lang = "es";
-        window.location.pathname = "/";
+        document.documentElement.lang = 'es'
+        window.location.pathname = '/'
       }
-    });
-    setShowMenu(false);
-  };
+    })
+    setShowMenu(false)
+  }
 
   const handleClick = () => {
-    setShowMenu(!showMenu);
-  };
+    setShowMenu(!showMenu)
+  }
 
-  const lang = i18n.language === "en" ? "us" : "es";
+  const lang = i18n.language === 'en' ? 'us' : 'es'
 
   return (
     <div className="relative text-left">
@@ -40,7 +40,7 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
           alt={`${i18n.language} Flag`}
           className="w-6 h-6 mr-2 rounded-full object-cover aspect-video"
         />
-        {i18n.language === "en" ? "EN" : "SP"}
+        {i18n.language === 'en' ? 'EN' : 'ES'}
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
 
       <div
         className={`${
-          showMenu ? "block" : "hidden"
+          showMenu ? 'block' : 'hidden'
         } origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}
         role="menu"
         aria-orientation="vertical"
@@ -62,7 +62,7 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
       >
         <div className="py-1" role="none">
           <button
-            onClick={() => handleLanguageChange("us")}
+            onClick={() => handleLanguageChange('us')}
             className="text-gray-700 flex w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
             role="menuitem"
           >
@@ -74,7 +74,7 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
             English
           </button>
           <button
-            onClick={() => handleLanguageChange("es")}
+            onClick={() => handleLanguageChange('es')}
             className="text-gray-700 flex w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
             role="menuitem"
           >
@@ -88,5 +88,5 @@ export const ToggleLang: FC<ToggleLangProps> = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

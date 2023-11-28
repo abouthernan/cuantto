@@ -138,7 +138,7 @@
     }
   },
   "BANNER2": {
-    "title": "Crece Inteligente con IA",
+    "title": "Crece inteligentemente con IA",
     "desc": "Gracias a la inteligencia artificial de Qantto, <0>tu empresa recibe un informe detallado y personalizado que analiza los datos recopilados. Este informe no solo destaca los resultados clave, sino que también identifica oportunidades y estrategias de mejora específicas</0>. Al aprovechar la IA para tomar decisiones basadas en datos, tu empresa puede tomar medidas concretas para optimizar sus operaciones y aumentar la eficiencia. Esto se traduce en un camino claro hacia un crecimiento y éxito continuo."
   },
   "INTEGRATIONS": {
@@ -210,7 +210,7 @@
         "three": "4 Subservicios",
         "four": "30 leads",
         "five": "30 consultas",
-        "six": "Historial de hasta 5 últimos registros",
+        "six": "Historial de hasta 5 últimos registros de leads y consultas",
         "seven": "Tus clientes podrán hacer cotizaciones ilimitadas",
         "eight": "Logo de tu empresa en las quotes",
         "nine": "Notificaciones en dashboard",
@@ -224,7 +224,7 @@
         "three": "10 Subservicios",
         "four": "60 leads",
         "five": "60 consultas",
-        "six": "Historial de hasta 10 últimos registros",
+        "six": "Historial de hasta 10 últimos registros de leads y consultas",
         "seven": "Tus clientes podrán hacer cotizaciones ilimitadas",
         "eight": "Logo de tu empresa en las quotes",
         "nine": "Notificaciones en dashboard",
@@ -234,13 +234,13 @@
         "thirteen": "Exportar data"
       },
       "four": {
-        "name": "ultimate",
+        "name": "Ultimate",
         "one": "Usuarios ilimitados",
         "two": "Servicios ilimitados",
         "three": "Subservicios ilimitados",
         "four": "Leads ilimitados",
         "five": "Consultas ilimitadas",
-        "six": "Historial de registros ilimitados",
+        "six": "Historial de registros ilimitados de leads y consultas",
         "seven": "Tus clientes podrán hacer cotizaciones ilimitadas",
         "eight": "Logo de tu empresa en las quotes",
         "nine": "Notificaciones en dashboard",
