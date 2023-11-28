@@ -1,44 +1,47 @@
-import { ToggleLang } from "./ToggleLang";
-import { useTranslation } from "react-i18next";
-import { dashboardRouter } from "../constants";
+import { ToggleLang } from './ToggleLang'
+import { useTranslation, getI18n } from 'react-i18next'
+import { dashboardRouter } from '../constants'
 
 interface NavProps {
-  handleClick: () => void;
+  handleClick: () => void
 }
 
 export const Nav: React.FC<NavProps> = ({ handleClick }) => {
-  const { t } = useTranslation("translation");
+  const { t } = useTranslation('translation')
+
+  const lang = getI18n().language
+  const path = lang === 'en' ? '/en' : ''
 
   const menu = [
     {
-      label: t("NAV.benefits"),
-      path: "/#benefits",
+      label: t('NAV.benefits'),
+      path: `${path}/#benefits`
     },
     {
-      label: t("NAV.pricing"),
-      path: "/#pricing",
+      label: t('NAV.pricing'),
+      path: `${path}/#pricing`
     },
     {
-      label: t("NAV.resources"),
-      path: "https://www.youtube.com/channel/UCha0Ys8Y_h_XWnaKrGZoc_Q",
+      label: t('NAV.resources'),
+      path: 'https://www.youtube.com/channel/UCha0Ys8Y_h_XWnaKrGZoc_Q',
       external: true
     },
     {
-      label: t("NAV.questions"),
-      path: "/#faqs",
-    },
-  ];
+      label: t('NAV.questions'),
+      path: `${path}/#faqs`
+    }
+  ]
 
   const menuButtons = [
     {
-      label: t("CTA.login"),
-      path: dashboardRouter.login,
+      label: t('CTA.login'),
+      path: dashboardRouter.login
     },
     {
-      label: t("CTA.signup"),
-      path: dashboardRouter.register,
-    },
-  ];
+      label: t('CTA.signup'),
+      path: dashboardRouter.register
+    }
+  ]
 
   return (
     <>
@@ -73,7 +76,12 @@ export const Nav: React.FC<NavProps> = ({ handleClick }) => {
 
       <nav className="hidden lg:flex place-items-center text-center space-x-10 items-center">
         {menu.map(({ label, path, external }) => (
-          <a className="text-white/90 font-normal" href={path} key={label} target={external ? '_blank' : ''} >
+          <a
+            className="text-white/90 font-normal"
+            href={path}
+            key={label}
+            target={external ? '_blank' : ''}
+          >
             {label}
           </a>
         ))}
@@ -93,5 +101,5 @@ export const Nav: React.FC<NavProps> = ({ handleClick }) => {
         <ToggleLang />
       </nav>
     </>
-  );
-};
+  )
+}
