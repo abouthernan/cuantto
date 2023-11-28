@@ -5,6 +5,5 @@ import astroI18next from 'astro-i18next'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), astroI18next()],
-  output: 'hybrid'
+  integrations: [react(), tailwind(), astroI18next()]
 })
