@@ -13,7 +13,7 @@ export const FloatButton = () => {
 
   const handleContact = (e: any) => {
     e.stopPropagation();
-    window.open("https://api.whatsapp.com/send?phone=13022038725", "_blank");
+    window.open("https://api.whatsapp.com/send?phone=13022790440", "_blank");
   };
 
   const onHoverShowText = () => {
