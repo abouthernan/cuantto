@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next'
+import '../styles/integrations.css'
 
 const integrations1 = [
   '/images/integrations/whatsapp.png',
@@ -34,59 +35,113 @@ export const Integrations = () => {
         </Trans>
       </p>
 
-      <ul className="gap-x-5 animate-integrations overflow-hidden space-x-4 sm:space-x-10 inline-flex w-[calc(240px*10)]">
-        {integrations1.map((item) => (
-          <li
-            className="relative h-28 w-60 rounded-md text-gray-300"
-            key={crypto.randomUUID()}
-          >
+      <div className="wrapper">
+        <div id="visual" data-countchildren>
+          <span className="dot">
             <img
-              src={item}
-              alt="logo"
-              className="aspect-video object-contain object-center w-full h-full"
+              src="/images/integrations/hubspot.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
             />
-          </li>
-        ))}
-        {integrations1.map((item) => (
-          <li
-            className="relative h-28 w-60 rounded-md text-gray-300"
-            key={crypto.randomUUID()}
-          >
+          </span>
+          <span className="dot">
             <img
-              src={item}
-              alt="logo"
-              className="aspect-video object-contain object-center w-full h-full"
+              src="/images/integrations/signstation.png"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
             />
-          </li>
-        ))}
-      </ul>
+          </span>
+          <span className="dot">
+            <img
+              src="/images/integrations/whatsapp.png"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
+            />
+          </span>
+          <span className="dot">
+            <img
+              src="/images/integrations/zapier.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
+            />
+          </span>
+          <span className="dot">
+            <img
+              src="/images/integrations/amocrm.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
+            />
+          </span>
+        </div>
 
-      <ul className="gap-x-5 animate-integrations overflow-hidden space-x-4 sm:space-x-10 inline-flex w-[calc(240px*10)] mt-5 direction-reverse">
-        {integrations2.map((item) => (
-          <li
-            className="relative h-28 w-60 rounded-md text-gray-300"
-            key={crypto.randomUUID()}
-          >
+        <div id="visual2" data-countchildren>
+          <span className="dot">
             <img
-              src={item}
-              alt="logo"
-              className="aspect-video object-contain object-center w-full h-full"
+              src="/images/integrations/salesforce.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
             />
-          </li>
-        ))}
-        {integrations2.map((item) => (
-          <li
-            className="relative h-28 w-60 rounded-md text-gray-300"
-            key={crypto.randomUUID()}
-          >
+          </span>
+          <span className="dot">
             <img
-              src={item}
-              alt="logo"
-              className="aspect-video object-contain object-center w-full h-full"
+              src="/images/integrations/verisign.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
             />
-          </li>
-        ))}
-      </ul>
+          </span>
+          <span className="dot">
+            <img
+              src="/images/integrations/zoho.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
+            />
+          </span>
+          <span className="dot">
+            <img
+              src="/images/integrations/paypal.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
+            />
+          </span>
+          <span className="dot">
+            <img
+              src="/images/integrations/pipedrive.svg"
+              alt=""
+              title=""
+              width="222"
+              height="184"
+              draggable="false"
+            />
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
