@@ -135,6 +135,18 @@
       top: calc(50% - (var(--size) / 2));
       z-index: 2;
     }
+
+    @media (width <= 768px) {
+      #visual {
+        --radius: 37vmin;
+        --tracksize: 22vmin;
+      }
+
+      #visual2 {
+        --radius: 19vmin;
+        --tracksize: 14vmin;
+      }
+    }
   }
 }
 
