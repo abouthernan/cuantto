@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Header } from '../components/Header.tsx'
+import { Footer } from '../components/Footer.tsx'
+---
+
+<Layout title="Page not found">
+  <Header />
+  <main class="min-h-[50vh] grid place-items-center">
+    <article class="flex flex-col space-y-5 items-center">
+      <h1 class="text-white text-6xl">Page not found.</h1>
+      <a href="/" class="text-qBlack font-semibold py-2 rounded-md px-5 text-xl bg-qGreen mt-6">&LeftArrow; Go back</a>
+    </article>
+  </main>
+  <Footer />
+</Layout>
