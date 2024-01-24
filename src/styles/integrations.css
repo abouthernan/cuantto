@@ -70,8 +70,8 @@
     /* The visualization */
     #visual {
       /* Dimensions of the visualization */
-      --radius: 20vmin;
-      --tracksize: 12vmin;
+      --radius: 24vmin;
+      --tracksize: 16vmin;
 
       /* Make it a circle, based on the dimensions */
       width: calc(var(--radius) * 2 + var(--tracksize));
@@ -86,8 +86,8 @@
 
     #visual2 {
       /* Dimensions of the visualization */
-      --radius: 10vmin;
-      --tracksize: 8vmin;
+      --radius: 12vmin;
+      --tracksize: 10vmin;
 
       /* Make it a circle, based on the dimensions */
       width: calc(var(--radius) * 2 + var(--tracksize));
@@ -107,13 +107,11 @@
     #visual {
       border-color: #e0e0e0;
       box-sizing: border-box;
-      border: 1px solid rgb(0 0 0 / 0.1) !important;
       animation: adjust-angle linear 60s infinite;
     }
 
     #visual2 {
       animation: adjust-angle linear 60s infinite reverse;
-      border: 1px solid rgb(0 0 0 / 0.1) !important;
     }
 
     /* Inject a dot at the center of the visualization */
