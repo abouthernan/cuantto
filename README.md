@@ -1,4 +1,4 @@
-# Qantto
+# Cuantto
 
 ## 🧞 Commands
 
